@@ -71,13 +71,13 @@ const Faqs = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6"
           >
             <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent">
               Frequently Asked
             </span>
             <br />
-            <span className="bg-gradient-to-r from-[#FFEE02] to-amber-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#D68F00] to-amber-400 bg-clip-text text-transparent">
               Questions
             </span>
           </motion.h1>
@@ -107,7 +107,7 @@ const Faqs = () => {
                 layout
                 className={`relative overflow-hidden rounded-2xl border-2 transition-all duration-500 cursor-pointer ${
                   openIndex === index
-                    ? "border-[#FFEE02] bg-white shadow-2xl"
+                    ? "border-[#D68F00] bg-white shadow-2xl"
                     : "border-gray-200 bg-white hover:border-gray-300 hover:shadow-lg"
                 }`}
                 whileHover={{ y: -2 }}
@@ -118,7 +118,7 @@ const Faqs = () => {
                     openIndex === index ? "opacity-5" : ""
                   }`}
                 >
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFEE02] rounded-full -translate-y-16 translate-x-16"></div>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#D68F00] rounded-full -translate-y-16 translate-x-16"></div>
                 </div>
 
                 <div className="w-full p-6 text-left flex items-center justify-between group">
@@ -126,8 +126,8 @@ const Faqs = () => {
                     <div
                       className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
                         openIndex === index
-                          ? "bg-[#FFEE02] text-black scale-110"
-                          : "bg-gray-100 text-gray-600 group-hover:bg-[#FFEE02] group-hover:text-black"
+                          ? "bg-[#D68F00] text-black scale-110"
+                          : "bg-gray-100 text-gray-600 group-hover:bg-[#D68F00] group-hover:text-black"
                       }`}
                     >
                       {index + 1}
@@ -149,8 +149,8 @@ const Faqs = () => {
                     transition={{ duration: 0.3 }}
                     className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
                       openIndex === index
-                        ? "border-[#FFEE02] bg-[#FFEE02] text-black"
-                        : "border-gray-300 text-gray-400 group-hover:border-[#FFEE02] group-hover:text-[#FFEE02]"
+                        ? "border-[#D68F00] bg-[#D68F00] text-black"
+                        : "border-gray-300 text-gray-400 group-hover:border-[#D68F00] group-hover:text-[#FFEE02]"
                     }`}
                   >
                     <svg
@@ -179,7 +179,7 @@ const Faqs = () => {
                       variants={answerVariants}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 ml-12 border-l-2 border-[#FFEE02]">
+                      <div className="px-6 pb-6 ml-12 border-l-2 border-[#D68F00]">
                         <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                       </div>
                     </motion.div>
@@ -197,10 +197,10 @@ const Faqs = () => {
             className="relative h-[600px] flex items-center justify-center"
           >
             <div className="relative z-10 w-80 h-96 bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-100">
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#FFEE02] to-amber-300"></div>
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#D68F00] to-amber-300"></div>
               <div className="p-6 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#FFEE02] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#D68F00] rounded-full flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-black"
                       fill="none"
@@ -224,7 +224,7 @@ const Faqs = () => {
                 <div className="flex-1 space-y-4">
                   {[1, 2, 3].map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#FFEE02] rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-[#D68F00] rounded-full mt-2"></div>
                       <div className="bg-gray-100 rounded-2xl p-3 flex-1">
                         <div className="h-2 bg-gray-300 rounded w-3/4 mb-2"></div>
                         <div className="h-2 bg-gray-300 rounded w-1/2"></div>
@@ -233,14 +233,14 @@ const Faqs = () => {
                   ))}
                 </div>
 
-                <div className="mt-6 p-4 bg-gradient-to-r from-[#FFEE02] to-amber-300 rounded-2xl text-center">
+                <div className="mt-6 p-4 bg-gradient-to-r from-[#D68F00] to-amber-300 rounded-2xl text-center">
                   <p className="text-black font-semibold">24/7 Customer Support</p>
                   <p className="text-black text-sm opacity-80">Always here to assist you</p>
                 </div>
               </div>
             </div>
 
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFEE02] rounded-full opacity-10 -translate-y-20 translate-x-20"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#D68F00] rounded-full opacity-10 -translate-y-20 translate-x-20"></div>
             <div className="absolute bottom-40 left-0 w-38 h-38 bg-black rounded-full opacity-5 translate-y-20 -translate-x-20"></div>
 
             <motion.div
@@ -248,7 +248,7 @@ const Faqs = () => {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="absolute top-20 left-4 w-16 h-16 bg-white rounded-2xl shadow-lg border border-gray-200 flex items-center justify-center"
             >
-              <div className="w-8 h-8 bg-[#FFEE02] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#D68F00] rounded-full"></div>
             </motion.div>
 
             <motion.div
@@ -261,7 +261,7 @@ const Faqs = () => {
               }}
               className="absolute bottom-20 right-8 w-12 h-12 bg-black rounded-2xl shadow-lg flex items-center justify-center"
             >
-              <div className="w-4 h-4 bg-[#FFEE02] rounded-full"></div>
+              <div className="w-4 h-4 bg-[#D68F00] rounded-full"></div>
             </motion.div>
           </motion.div>
         </div>

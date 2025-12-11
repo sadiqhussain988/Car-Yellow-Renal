@@ -135,7 +135,7 @@ const TrustedCabService = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src="https://i.pinimg.com/1200x/35/7c/54/357c54b83b935748cf756d018dadf1f4.jpg"
+          src="https://linkwayrides.com/assets/two-Tc7Bp5R2.png"
           alt="Cab Service 2"
           className="h-64 sm:h-80 md:h-96 rounded-2xl shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-500"/>
         <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-400 rounded-full blur-3xl opacity-25"></div>

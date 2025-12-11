@@ -450,7 +450,7 @@ export default function PopularDestination() {
         className="text-center text-3xl sm:text-4xl font-bold mb-8 text-gray-900"
         variants={zoomIn}
       >
-        Our Most Popular Destinations
+        Our Most <span className="text-[#D68F00]">Popular Destinations</span>
       </motion.h1>
 
       {/* Country List with scroll + arrows */}

@@ -41,7 +41,7 @@ Each smile is proof of our customer-first approach.`,
         {/* Section Title */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-            Our <span className="text-[#FFEE02]">Achievements</span>
+            Our <span className="text-[#D68F00]">Achievements</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base md:text-lg">
             Numbers that showcase our commitment to excellence in car rental
@@ -72,7 +72,7 @@ Each smile is proof of our customer-first approach.`,
               <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 sm:p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
                 <div className="flex justify-end mb-4">
                   <div className="h-12 w-12 flex justify-center items-center bg-[#FFEE02] rounded-full shadow-lg transition-all duration-300 group-hover:bg-white">
-                    <span className="text-black group-hover:text-[#FFEE02]">
+                    <span className="text-black group-hover:text-[#D68F00]">
                       {stat.icon}
                     </span>
                   </div>

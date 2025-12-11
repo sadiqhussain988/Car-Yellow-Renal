@@ -109,7 +109,7 @@ const Navbar = () => {
           {userProfile && (
             <div className="relative">
               <div
-                className="w-10 h-10 flex items-center justify-center bg-[#FFEE02] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
+                className="w-10 h-10 flex items-center justify-center bg-[#FAC200] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 {userProfile.profilePic ? (
@@ -189,10 +189,10 @@ const Navbar = () => {
 
           {!userProfile ? (
             <>
-              <Link to="/sign-up" className="text-[#FFEE02] font-bold border border-[#FFEE02] text-center py-2 rounded-md hover:bg-[#FFEE02] hover:text-white transition" onClick={closeAll}>
+              <Link to="/sign-up" className="text-[#FAC200] font-bold border border-[#FAC200] text-center py-2 rounded-md hover:bg-[#FAC200] hover:text-white transition" onClick={closeAll}>
                 Sign up
               </Link>
-              <Link to="/login" className="bg-[#FFEE02] font-bold text-black text-center py-2 rounded-md" onClick={closeAll}>
+              <Link to="/login" className="bg-[#FAC200] font-bold text-black text-center py-2 rounded-md" onClick={closeAll}>
                 Login
               </Link>
             </>

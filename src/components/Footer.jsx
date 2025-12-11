@@ -32,7 +32,7 @@ const Footer = () => {
         {/* Call for Taxi */}
         <div className="w-full md:w-[30%] relative">
           <div
-            className="max-w-[300px] h-[60px] md:h-[70px] bg-[#FFEE02]"
+            className="max-w-[300px] h-[60px] md:h-[70px] bg-[#b88621]"
             style={{ clipPath: "polygon(20% 3%, 100% 0, 100% 100%, 0% 100%)" }}
           ></div>
           <div className="text-black flex items-center absolute top-2 right-14 md:top-3 md:right-8 lg:right-16 xl:right-20 2xl:right-24 max-w-[250px]">
@@ -123,7 +123,7 @@ const Footer = () => {
             </motion.h3>
             <div className="relative mt-2">
               <hr className="w-[90%] border-gray-500" />
-              <hr className="w-[30%] bg-[#FFEE02] h-1 rounded-full mt-[-2px]" />
+              <hr className="w-[30%] bg-[#ba8722] h-1 rounded-full mt-[-2px]" />
             </div>
             <div className="flex flex-col gap-3 mt-2">
               {["Home", "Services", "About-us", "Contact"].map((item, index) => (
@@ -131,7 +131,7 @@ const Footer = () => {
                   <LuChevronsLeft className="mt-0.5" />
                   <Link
                     to={`/${item ? item.toLowerCase().replace(" ", "-") : "about-us"}`}
-                    className="relative text-white transition-all duration-300 ease-in-out after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#FFEE02] after:transition-all after:duration-300 hover:after:w-full rounded-full"
+                    className="relative text-white transition-all duration-300 ease-in-out after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#c68a12] after:transition-all after:duration-300 hover:after:w-full rounded-full"
                   >
                     {item}
                   </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
             </motion.h3>
             <div className="relative mt-2">
               <hr className="w-[90%] border-gray-500" />
-              <hr className="w-[30%] bg-[#FFEE02] h-1 rounded-full mt-[-2px]" />
+              <hr className="w-[30%] bg-[#bc8924] h-1 rounded-full mt-[-2px]" />
             </div>
             <motion.p
               className="my-2 text-sm text-gray-400"
@@ -191,7 +191,7 @@ const Footer = () => {
         >
           © Copyright Reserved By Linkway Rides 2025
         </motion.p>
-        <div className="text-white items-center cursor-pointer flex gap-1 hover:text-[#FFEE02] mt-2 md:mt-0">
+        <div className="text-white items-center cursor-pointer flex gap-1 hover:text-[#cc8f16] mt-2 md:mt-0">
           <FaFacebook className="text-white" />
           <p>Facebook</p>
         </div>

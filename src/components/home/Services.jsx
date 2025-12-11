@@ -35,16 +35,16 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-12">
-          <p className="text-lg text-amber-500 font-semibold tracking-wide animate-pulse">
+          <p className="text-2xl text-amber-500 font-semibold tracking-wide animate-pulse">
             OUR SERVICES
           </p>
           <h1 className="text-2xl md:text-5xl font-bold w-full md:w-[60%] mx-auto leading-tight text-gray-900 relative inline-block">
-            Premium Corporate Transport Solutions Across the UK
+            Premium Corporate <span className="text-[#D68F00]">Transport Solutions Across the UK</span>
           </h1>
           <p className="mt-4 text-gray-600 text-base md:text-lg w-full md:w-[70%] mx-auto">
             Reliable, comfortable, and professional transport services for businesses, clients, and corporate events. Choose the right vehicle for your needs.
           </p>
-          <div className="w-20 h-1 bg-[#FFEE02] mx-auto mt-6 rounded-full"></div>
+          <div className="w-20 h-1 bg-[#D68F00] mx-auto mt-6 rounded-full"></div>
         </div>
 
         {/* Services Grid */}
@@ -55,7 +55,7 @@ const Services = () => {
               className="group relative bg-white rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-md hover:shadow-2xl border border-gray-200 h-[500px] sm:h-[520px] md:h-[560px] flex flex-col"
             >
               {/* Gradient Line */}
-              <div className="relative h-1.5 bg-gradient-to-r from-[#FFEE02] to-black"></div>
+              <div className="relative h-1.5 bg-gradient-to-r from-[#D68F00] to-black"></div>
 
               {/* Image Section */}
               <div className="relative overflow-hidden h-44 sm:h-52 md:h-56">
@@ -75,7 +75,7 @@ const Services = () => {
                     <h2 className="text-xl font-bold text-gray-900 group-hover:text-black transition-colors duration-300">
                       {data.title}
                     </h2>
-                    <div className="w-8 h-8 bg-[#FFEE02] rounded-full flex items-center justify-center transform group-hover:rotate-90 transition-transform duration-500">
+                    <div className="w-8 h-8 bg-[#D68F00] rounded-full flex items-center justify-center transform group-hover:rotate-90 transition-transform duration-500">
                       <div className="w-2 h-2 bg-black rounded-full"></div>
                     </div>
                   </div>
