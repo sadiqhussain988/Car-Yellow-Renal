@@ -3,45 +3,43 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Button from "../../Button";
+
 const Hero = () => {
   const slides = [
-  {
-    id: 1,
-    title: "City-to-City Rides, Seamless Connections",
-    whiteWords: ["City-to-City"],
-    subtitle: "Professional B2B Long-Distance Transportation",
-    description:
-      "Travel between major cities with comfort, reliability, and professional chauffeurs. Perfect for business trips, corporate routing, and executive movement.",
-    image:
-      "https://images.ctfassets.net/ov8o7v78mnye/4k07hkseEOyBAOdkoEnLYu/7eda7d4be70ba875f0b41946e7ec52d4/Hero_01__2_.jpg", 
-    link: "/services/city-to-city",
-  },
-
-  {
-    id: 2,
-    title: "The Better Way Between Cities",
-    whiteWords: ["Better", "Cities"],
-    subtitle: "Skip Flights  Skip Trains  Go Direct",
-    description:
-      "Say goodbye to airport lines and train delays. Enjoy door-to-door long-distance travel with flexible scheduling and no luggage restrictions.",
-    image:
-      "https://ridesharks.com/wp-content/uploads/2024/10/city-to-city-rides-landing-page-.jpg",
-    link: "/services/city-to-city",
-  },
-
-  {
-    id: 3,
-    title: "Comfort That Moves With You",
-    whiteWords: ["Comfort"],
-    subtitle: "Premium Cars  Trained Chauffeurs  B2B Focused",
-    description:
-      "Enjoy spacious business-class vehicles with Wi-Fi, bottled water, real-time tracking, and corporate billing options.",
-    image:
-      "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp",
-    link: "/services/city-to-city",
-  },
-];
-
+    {
+      id: 1,
+      title: "Limousine Service, Ultimate Luxury",
+      whiteWords: ["Limousine Service"],
+      subtitle: "VIP Experience Professional Chauffeurs",
+      description:
+        "Arrive in style with high end limousines and professional chauffeurs. Perfect for corporate events, weddings, and VIP transfers.",
+      image:
+        "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1200", // Exterior of black limousine
+      link: "/services/limousine-service",
+    },
+    {
+      id: 2,
+      title: "Executive Comfort, Every Ride",
+      whiteWords: ["Executive Comfort"],
+      subtitle: "Luxury Vehicles Tailored Service",
+      description:
+        "Travel in fully equipped luxury vehicles with WiFi, refreshments, and attentive chauffeurs. Experience comfort, privacy, and punctuality.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5JFVYGZ0MblGCA9ToCT4F52kB7EBjqGEYag&s", // Inside limousine with seating
+      link: "/services/limousine-service",
+    },
+    {
+      id: 3,
+      title: "Impress & Arrive On Time",
+      whiteWords: ["Impress", "On Time"],
+      subtitle: "Professional Drivers Elegant Fleet",
+      description:
+        "Perfect for business meetings, VIP clients, or special occasions. Our limousines provide a statement of professionalism and luxury.",
+      image:
+        "https://images.pexels.com/photos/1704122/pexels-photo-1704122.jpeg?auto=compress&cs=tinysrgb&w=1200", // Chauffeur opening door for client
+      link: "/services/limousine-service",
+    },
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -64,14 +62,12 @@ const Hero = () => {
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-60" : "opacity-0"
           }`}
-        style={{
-  backgroundImage: `url(${slide.image})`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundAttachment: "scroll", 
-}}
-
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
         />
       ))}
 
@@ -102,9 +98,7 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-300 mb-4">
-            {currentSlide.subtitle}
-          </p>
+          <p className="text-lg md:text-xl text-gray-300 mb-4">{currentSlide.subtitle}</p>
 
           {/* Description */}
           <p className="text-md md:text-lg text-gray-200 leading-relaxed mb-8">
@@ -113,7 +107,7 @@ const Hero = () => {
 
           {/* CTA */}
           <Link to={currentSlide.link}>
-         <Button text="Book Now" />
+            <Button text="Book Now" />
           </Link>
         </div>
 

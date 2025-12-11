@@ -7,40 +7,39 @@ const Hero = () => {
   const slides = [
   {
     id: 1,
-    title: "City-to-City Rides, Seamless Connections",
-    whiteWords: ["City-to-City"],
-    subtitle: "Professional B2B Long-Distance Transportation",
+    title: "Chauffeur Hailing, On Demand Luxury",
+    whiteWords: ["Chauffeur Hailing"],
+    subtitle: "Professional Drivers • Premium Vehicles",
     description:
-      "Travel between major cities with comfort, reliability, and professional chauffeurs. Perfect for business trips, corporate routing, and executive movement.",
+      "Book professional chauffeurs on demand for business meetings, airport transfers, or executive client pickups. Enjoy punctual, reliable, and premium service.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/4k07hkseEOyBAOdkoEnLYu/7eda7d4be70ba875f0b41946e7ec52d4/Hero_01__2_.jpg", 
-    link: "/services/city-to-city",
+       "https://ridesharks.com/wp-content/uploads/2024/10/city-to-city-rides-landing-page-.jpg", // Luxury car on city street
+    link: "/services/chauffeur-hailing",
   },
-
   {
     id: 2,
-    title: "The Better Way Between Cities",
-    whiteWords: ["Better", "Cities"],
-    subtitle: "Skip Flights  Skip Trains  Go Direct",
+    title: "Your Time, Your Schedule",
+    whiteWords: ["Time", "Schedule"],
+    subtitle: "Flexible & Reliable",
     description:
-      "Say goodbye to airport lines and train delays. Enjoy door-to-door long-distance travel with flexible scheduling and no luggage restrictions.",
+      "Choose the exact pickup time and location. Our chauffeurs adapt to your business needs, ensuring seamless travel with no delays or stress.",
     image:
-      "https://ridesharks.com/wp-content/uploads/2024/10/city-to-city-rides-landing-page-.jpg",
-    link: "/services/city-to-city",
+     "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp", // Chauffeur opening car door
+    link: "/services/chauffeur-hailing",
   },
-
   {
     id: 3,
-    title: "Comfort That Moves With You",
-    whiteWords: ["Comfort"],
-    subtitle: "Premium Cars  Trained Chauffeurs  B2B Focused",
+    title: "Executive Comfort, Every Ride",
+    whiteWords: ["Executive Comfort"],
+    subtitle: "Luxury Cars  Trained Chauffeurs",
     description:
-      "Enjoy spacious business-class vehicles with Wi-Fi, bottled water, real-time tracking, and corporate billing options.",
+      "Travel in style with high-end vehicles, WiFi, and attentive service. Perfect for corporate clients, VIPs, and business executives.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp",
-    link: "/services/city-to-city",
+      "https://imgix.bustle.com/uploads/image/2025/4/23/82698529/share.jpg", // Inside luxury car, business style
+    link: "/services/chauffeur-hailing",
   },
 ];
+
 
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,14 +63,13 @@ const Hero = () => {
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-60" : "opacity-0"
           }`}
-        style={{
-  backgroundImage: `url(${slide.image})`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundAttachment: "scroll", 
-}}
-
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "scroll",
+          }}
         />
       ))}
 
@@ -113,7 +111,7 @@ const Hero = () => {
 
           {/* CTA */}
           <Link to={currentSlide.link}>
-         <Button text="Book Now" />
+            <Button text="Book Now" />
           </Link>
         </div>
 

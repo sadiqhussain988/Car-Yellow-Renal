@@ -20,18 +20,18 @@ const MobileBanner = () => {
 
             {/* Main Heading */}
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-5 leading-tight">
-              Effortless Travel
-              <span className="block text-[#F3B800] mt-2">At Your Fingertips</span>
+              Flexible Hourly
+              <span className="block text-[#F3B800] mt-2">Chauffeur Services</span>
             </h2>
 
             {/* Description */}
             <p className="text-gray-700 text-lg lg:text-xl max-w-2xl lg:pl-1 mb-2">
-              Book, track, and manage your journey seamlessly with the Blacklane app.
+              Book a professional chauffeur by the hour for meetings, events, or city tours. Travel at your pace, stress-free.
             </p>
 
             {/* Sub features */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-4 mt-6">
-              {['Instant Booking', 'Live Tracking', 'Secure Payment', '24/7 Support'].map((feature, index) => (
+              {['Flexible Hours', 'Premium Vehicles', 'Professional Chauffeurs', '24/7 Availability'].map((feature, index) => (
                 <div key={index} className="flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-lg">
                   <svg className="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -44,13 +44,13 @@ const MobileBanner = () => {
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row items-center gap-6 lg:gap-8">
-            {/* QR Code Container */}
+            {/* QR Code */}
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
               <div className="relative bg-white p-3 rounded-xl shadow-lg">
                 <img
                   src="//images.ctfassets.net/ov8o7v78mnye/4qZi5AXwLS3ciw4lUtd4DC/68e6b66dbacbe330be3bac30cb6e7d0a/app_qrcode.svg"
-                  alt="Scan to download Blacklane App"
+                  alt="Scan to download Hourly Hire App"
                   className="w-28 h-28"
                 />
                 <p className="text-xs text-gray-600 mt-2">Scan to download</p>
@@ -59,9 +59,7 @@ const MobileBanner = () => {
 
             {/* App Store Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-             
-<Button text="Download on the App Store" />
-            
+              <Button text="Download on the App Store" />
               <Button text="Get it on Google Play" />
             </div>
           </div>
@@ -69,23 +67,21 @@ const MobileBanner = () => {
 
         {/* Right Image */}
         <div className="flex-1 mt-10 lg:mt-0 flex justify-center relative">
-          {/* Floating device mockup */}
           <div className="relative">
             <div className="absolute -inset-4 bg-[#FFEE02] rounded-[3rem] blur-xl opacity-20"></div>
             <div className="relative">
               <img
                 src="https://images.ctfassets.net/ov8o7v78mnye/4nd4iEDEP4NunG4HHzJzRw/2b658ff83396e36fb3b274c313f0e471/mobile-banner-image.png"
-                alt="Blacklane App Interface"
+                alt="Hourly Hire App Interface"
                 className="max-w-xs sm:max-w-sm lg:max-w-md transform hover:scale-105 transition-transform duration-500 rounded-2xl shadow-xl"
               />
-              {/* Floating elements */}
               <div className="absolute -top-3 -right-3 bg-white px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2 animate-bounce">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                 <span className="text-xs font-semibold">Live Tracking</span>
               </div>
               <div className="absolute -bottom-3 -left-3 bg-white px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2 animate-bounce" style={{ animationDelay: '0.2s' }}>
                 <div className="w-2 h-2 bg-[#FFEE02] rounded-full"></div>
-                <span className="text-xs font-semibold">Driver Arriving</span>
+                <span className="text-xs font-semibold">Chauffeur Arriving</span>
               </div>
             </div>
           </div>

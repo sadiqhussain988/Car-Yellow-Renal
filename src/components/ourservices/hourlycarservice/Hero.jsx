@@ -4,46 +4,43 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Button from "../../Button";
 const Hero = () => {
-  const slides = [
+ const slides = [
   {
     id: 1,
-    title: "City-to-City Rides, Seamless Connections",
-    whiteWords: ["City-to-City"],
-    subtitle: "Professional B2B Long-Distance Transportation",
+    title: "Hourly Hire, Flexible & Reliable",
+    whiteWords: ["Hourly Hire"],
+    subtitle: "Professional Drivers  On Demand Service",
     description:
-      "Travel between major cities with comfort, reliability, and professional chauffeurs. Perfect for business trips, corporate routing, and executive movement.",
+      "Book a chauffeur by the hour for meetings, events, or city travel. Enjoy full control over pickup times, routes, and stops with premium service.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/4k07hkseEOyBAOdkoEnLYu/7eda7d4be70ba875f0b41946e7ec52d4/Hero_01__2_.jpg", 
-    link: "/services/city-to-city",
+      "https://i.ytimg.com/vi/3pb5ywhCnBU/mqdefault.jpg", // Chauffeur opening car door
+    link: "/services/hourly-car-service",
   },
-
   {
     id: 2,
-    title: "The Better Way Between Cities",
-    whiteWords: ["Better", "Cities"],
-    subtitle: "Skip Flights  Skip Trains  Go Direct",
+    title: "Your Time, Your Schedule",
+    whiteWords: ["Time", "Schedule"],
+    subtitle: "Flexibility for Corporate & Personal Travel",
     description:
-      "Say goodbye to airport lines and train delays. Enjoy door-to-door long-distance travel with flexible scheduling and no luggage restrictions.",
+      "Hire a professional driver for as long as you need. Perfect for business appointments, city tours, or VIP client transport.",
     image:
-      "https://ridesharks.com/wp-content/uploads/2024/10/city-to-city-rides-landing-page-.jpg",
-    link: "/services/city-to-city",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZU_z29AUH08HlLiKYDHyw5FEs0YWLpNqNHQ&s", // Executive inside luxury car
+    link: "/services/hourly-car-service",
   },
-
   {
     id: 3,
-    title: "Comfort That Moves With You",
-    whiteWords: ["Comfort"],
-    subtitle: "Premium Cars  Trained Chauffeurs  B2B Focused",
+    title: "Luxury on Demand, Every Hour",
+    whiteWords: ["Luxury", "Demand"],
+    subtitle: "Comfortable Vehicles Attentive Service",
     description:
-      "Enjoy spacious business-class vehicles with Wi-Fi, bottled water, real-time tracking, and corporate billing options.",
+      "Travel in style with high-end vehicles, WiFi, and professional chauffeurs. Pay for the hours you use, with no hidden fees or restrictions.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp",
-    link: "/services/city-to-city",
+      "https://img.sm360.ca/ir/w640h333c/images/newcar/ca/2024/mercedes-benz/classe-e-berline/450-4matic/sedan/interiorColors/2024_mercedes-benz_classe-e_sedan_2-450-4matic_int_201_003.jpg", // Chauffeur driving executive car in city
+    link: "/services/hourly-car-service",
   },
 ];
 
-
-  const [currentIndex, setCurrentIndex] = useState(0);
+ const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 800, once: false, offset: 100 });
@@ -64,14 +61,13 @@ const Hero = () => {
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-60" : "opacity-0"
           }`}
-        style={{
-  backgroundImage: `url(${slide.image})`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundAttachment: "scroll", 
-}}
-
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "scroll",
+          }}
         />
       ))}
 
@@ -113,7 +109,7 @@ const Hero = () => {
 
           {/* CTA */}
           <Link to={currentSlide.link}>
-         <Button text="Book Now" />
+            <Button text="Book Now" />
           </Link>
         </div>
 

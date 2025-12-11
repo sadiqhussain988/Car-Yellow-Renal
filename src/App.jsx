@@ -35,6 +35,10 @@ import AdminBlogs from "./pages/dashboard/AdminBlogs";
 import HeaderMail from "./pages/HeaderMail";
 import OrderSummary from "./components/services/OrderSummary";
 import CityToCity from "./pages/City-to-City";
+import ChauffeurHailing from "./pages/ChauffeurHailing";
+import AirportTransfers from "./pages/AirportTransfers";
+import Hourly from "./pages/Hourly hire";
+import LimousineService from "./pages/LimousineService";
 
 const MainLayout = () => {
   return (
@@ -84,6 +88,10 @@ const router = createBrowserRouter([
       { path: "/blogs", element: <Blogs /> },
       { path: "/blog/:id", element: <BlogDetails /> },
       { path: "/city-to-city", element: <CityToCity /> },
+      { path: "/chauffeur-hailing", element: <ChauffeurHailing /> },
+      { path: "/airport-transfer", element: <AirportTransfers /> },
+      { path: "/hourly-car-service", element: <Hourly /> },
+      { path: "/limousine-service", element: <LimousineService /> },
     ],
   },
   { path: "/login", element: <LoginPage /> },

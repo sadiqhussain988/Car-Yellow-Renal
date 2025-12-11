@@ -7,43 +7,39 @@ const Hero = () => {
   const slides = [
   {
     id: 1,
-    title: "City-to-City Rides, Seamless Connections",
-    whiteWords: ["City-to-City"],
-    subtitle: "Professional B2B Long-Distance Transportation",
+    title: "Airport Transfers, On Time Every Time",
+    whiteWords: ["Airport Transfers"],
+    subtitle: "Professional Drivers Hassle Free Pickup",
     description:
-      "Travel between major cities with comfort, reliability, and professional chauffeurs. Perfect for business trips, corporate routing, and executive movement.",
+      "Reliable airport pickups and drop offs for business travelers, VIPs, and corporate clients. Enjoy prompt service, luggage assistance, and professional chauffeurs.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/4k07hkseEOyBAOdkoEnLYu/7eda7d4be70ba875f0b41946e7ec52d4/Hero_01__2_.jpg", 
-    link: "/services/city-to-city",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMvZ7gVt8Q1cIP7wSo3NsIrx8MKTi9XzWHGg&s", // Chauffeur assisting passenger with luggage
+    link: "/services/airport-transfer",
   },
-
   {
     id: 2,
-    title: "The Better Way Between Cities",
-    whiteWords: ["Better", "Cities"],
-    subtitle: "Skip Flights  Skip Trains  Go Direct",
+    title: "Seamless Airport Experience",
+    whiteWords: ["Seamless", "Airport"],
+    subtitle: "Skip the Lines Travel in Comfort",
     description:
-      "Say goodbye to airport lines and train delays. Enjoy door-to-door long-distance travel with flexible scheduling and no luggage restrictions.",
+      "Avoid the hassle of waiting in taxis or ride-hailing queues. Our chauffeurs track your flight and adjust pickup times for smooth arrivals and departures.",
     image:
-      "https://ridesharks.com/wp-content/uploads/2024/10/city-to-city-rides-landing-page-.jpg",
-    link: "/services/city-to-city",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfJhMogHGTW7WVlU2PCPYclbumblII-Y05g&s", // Executive car parked at airport terminal
+    link: "/services/airport-transfer",
   },
-
   {
     id: 3,
-    title: "Comfort That Moves With You",
-    whiteWords: ["Comfort"],
-    subtitle: "Premium Cars  Trained Chauffeurs  B2B Focused",
+    title: "Luxury and Efficiency, Every Trip",
+    whiteWords: ["Luxury", "Efficiency"],
+    subtitle: "Premium Cars Professional Chauffeurs",
     description:
-      "Enjoy spacious business-class vehicles with Wi-Fi, bottled water, real-time tracking, and corporate billing options.",
+      "Travel in executive cars with WiFi, refreshments, and attentive service. Perfect for corporate clients, business travelers, or VIP passengers.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp",
-    link: "/services/city-to-city",
+      "https://media.theeverygirl.com/wp-content/uploads/2024/04/the-everygirl-best-places-for-first-international-trip-feature.jpg", // Inside luxury vehicle with airport view
+    link: "/services/airport-transfer",
   },
 ];
-
-
-  const [currentIndex, setCurrentIndex] = useState(0);
+ const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 800, once: false, offset: 100 });
@@ -64,14 +60,13 @@ const Hero = () => {
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-60" : "opacity-0"
           }`}
-        style={{
-  backgroundImage: `url(${slide.image})`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundAttachment: "scroll", 
-}}
-
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "scroll",
+          }}
         />
       ))}
 
@@ -113,7 +108,7 @@ const Hero = () => {
 
           {/* CTA */}
           <Link to={currentSlide.link}>
-         <Button text="Book Now" />
+            <Button text="Book Now" />
           </Link>
         </div>
 

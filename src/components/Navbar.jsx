@@ -10,11 +10,10 @@ import Button from "./Button";
 
 const serviceLinks = [
   { name: "City-to-City rides", path: "/city-to-city" },
-  { name: "Chauffeur hailing", path: "/chauffeur-hailing" },
-  { name: "Airport transfers", path: "/airport-transfer" },
-  { name: "Hourly hire", path: "/hourly-car-service" },
-  { name: "Chauffeur service", path: "/chauffeur-service" },
-  { name: "Limousine service", path: "/limousine-service" },
+  { name: "Chauffeur Hailing", path: "/chauffeur-hailing" },
+  { name: "Airport Transfers", path: "/airport-transfer" },
+  { name: "Hourly Hire", path: "/hourly-car-service" },
+   { name: "Limousine Service", path: "/limousine-service" },
 ];
 
 const navItemClass = "relative hover:text-[#FFEE02] transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#FFEE02] after:transition-all after:duration-300 hover:after:w-full";
