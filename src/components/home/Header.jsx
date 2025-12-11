@@ -9,15 +9,14 @@ const Header = () => {
  const slides = [
   {
     image:
-      "https://cdn.pixabay.com/photo/2020/11/08/14/18/car-5723905_1280.jpg",
+      "https://boosterperformance.com/uploads/p/p/Mercedes-Vito-W639-2010-2014-Chip-Tuning-116-CDI-163hp_1.jpg?v=1727562193",
     title: "Corporate Transport Solutions",
     subtitle: "Reliable. Scalable. Professional.",
     description:
-      "Delivering dependable coach and minibus services for companies requiring consistent, high-quality transport for teams, clients, and operational logistics across the UK.",
-  },
+"Providing reliable and executive-grade Mercedes Vito transport solutions for businesses seeking consistent, high-quality mobility for teams, clients, and operational logistics across the UK"  },
   {
     image:
-      "https://cdn.pixabay.com/photo/2023/07/29/16/42/car-8157299_1280.jpg",
+      "https://i.pinimg.com/1200x/35/7c/54/357c54b83b935748cf756d018dadf1f4.jpg",
     title: "Event & Conference Transport",
     subtitle: "Streamlined Business Mobility",
     description:
@@ -25,20 +24,20 @@ const Header = () => {
   },
   {
     image:
-      "https://cdn.pixabay.com/photo/2024/06/11/13/30/ai-generated-8823151_1280.jpg",
+      "https://i.pinimg.com/1200x/de/e5/95/dee595d9c2c6d66a0de390def7b33d3b.jpg",
     title: "Executive Airport Transfers",
     subtitle: "Efficient Travel for Teams & Clients",
     description:
       "Premium airport transfers for business travellers, ensuring punctual departures and reliable pickups with high-comfort vehicles suitable for executives and VIP clients.",
   },
-  {
-    image:
-      "https://cdn.pixabay.com/photo/2022/01/08/20/46/transport-6924808_1280.jpg",
-    title: "Long-Term Corporate Contracts",
-    subtitle: "Workforce Transport You Can Trust",
-    description:
-      "Cost-effective, scheduled staff transport and corporate shuttle solutions built for companies needing consistent, high-capacity and reliable mobility every day.",
-  },
+  // {
+  //   image:
+  //     "https://cdn.pixabay.com/photo/2022/01/08/20/46/transport-6924808_1280.jpg",
+  //   title: "Long-Term Corporate Contracts",
+  //   subtitle: "Workforce Transport You Can Trust",
+  //   description:
+  //     "Cost-effective, scheduled staff transport and corporate shuttle solutions built for companies needing consistent, high-capacity and reliable mobility every day.",
+  // },
 ];
 
 

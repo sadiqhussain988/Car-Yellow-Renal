@@ -3,58 +3,54 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
- 
-  const faqs = [
-  {
-    question: "How can I book a coach, minibus, or van?",
-    answer:
-      "Booking with us is simple and convenient. You can request a quote or make a reservation directly through our website by selecting your journey details, vehicle type, and travel date. Once confirmed, you’ll receive your booking details along with driver information via email or SMS. Our team is also available by phone for personalized assistance.",
-  },
-  {
-    question: "Do you provide transport for weddings and events?",
-    answer:
-      "Yes, we specialize in private hire for weddings, corporate events, tours, and other occasions. Whether you need a luxury coach for guests or multiple minibuses for group transfers, we ensure a punctual, professional, and comfortable experience for every journey.",
-  },
-  {
-    question: "What areas across the UK do you cover?",
-    answer:
-      "We offer nationwide coverage across the United Kingdom — including London, Manchester, Birmingham, Edinburgh, Glasgow, and beyond. No matter where your journey begins or ends, we’ll ensure reliable and timely transport service anywhere in the UK.",
-  },
 
-  {
-    question: "Do you offer airport transfers?",
-    answer:
-      "Yes, we provide reliable airport transfers to and from all major UK airports including Heathrow, Gatwick, Manchester, and Edinburgh. Our drivers monitor flight times to ensure on-time pickup and drop-off, even in case of delays.",
-  },
- 
-  {
-    question: "Do you offer transport for schools or regular group travel?",
-    answer:
-      "Yes, we provide safe and dependable transport for schools, colleges, and organizations. Whether it’s daily commutes, sports trips, or educational tours, our vehicles are well-maintained, and all drivers follow strict safety protocols.",
-  },
-];
+  const faqs = [
+    {
+      question: "How can my company book a vehicle?",
+      answer:
+        "Booking is simple for businesses. Select your preferred vehicle type — Mercedes Vito, C-Class, or E-Class — provide journey details, and submit your request online. Once confirmed, you’ll receive a booking summary along with driver details. Our corporate support team is also available for assistance by phone or email.",
+    },
+    {
+      question: "Do you provide transport for corporate events and client visits?",
+      answer:
+        "Yes, we offer professional transport solutions for client meetings, conferences, corporate events, and executive transfers. Our premium vehicles ensure comfort, punctuality, and a polished experience that reflects your company’s professionalism.",
+    },
+    {
+      question: "Which locations do you cover for corporate transport?",
+      answer:
+        "We provide nationwide B2B transport across the UK, including London, Manchester, Birmingham, Edinburgh, Glasgow, and beyond. Wherever your team or clients need to travel, we ensure reliable, timely, and professional service.",
+    },
+    {
+      question: "Do you offer airport transfers for business clients?",
+      answer:
+        "Yes, we provide reliable airport transfers for corporate travelers to and from all major UK airports including Heathrow, Gatwick, Manchester, and Edinburgh. Drivers monitor flight times to ensure timely pickups and drop-offs.",
+    },
+    {
+      question: "Do you provide transport for schools or regular group travel?",
+      answer:
+        "Yes, we offer safe and dependable transport for schools, colleges, and organizations. Our vehicles are well-maintained, and drivers follow strict safety protocols for daily commutes, sports trips, and educational tours.",
+    },
+  ];
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Define variants for the answer container
   const answerVariants = {
-    open: { 
-      opacity: 1, 
+    open: {
+      opacity: 1,
       height: "auto",
-      transition: { duration: 0.4, ease: "easeInOut" }
+      transition: { duration: 0.4, ease: "easeInOut" },
     },
-    collapsed: { 
-      opacity: 0, 
+    collapsed: {
+      opacity: 0,
       height: 0,
-      transition: { duration: 0.4, ease: "easeInOut" }
+      transition: { duration: 0.4, ease: "easeInOut" },
     },
   };
 
   return (
     <div className="bg-gradient-to-br from-white to-gray-50 py-10 px-4 overflow-x-hidden font-sans">
-      <script src="https://cdn.tailwindcss.com"></script>
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 px-4">
@@ -77,7 +73,7 @@ const Faqs = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            <span className="bg-gradient-to-r 	from-black to-gray-800 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent">
               Frequently Asked
             </span>
             <br />
@@ -92,8 +88,7 @@ const Faqs = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Find quick answers to common questions about our taxi services,
-            bookings, and policies.
+            Find quick answers to common questions about our corporate transport services.
           </motion.p>
         </div>
 
@@ -108,57 +103,55 @@ const Faqs = () => {
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
-                // --- FIX: Move onClick to the parent motion.div
-                onClick={() => toggleFAQ(index)} 
+                onClick={() => toggleFAQ(index)}
                 layout
-                className={`relative overflow-hidden rounded-2xl border-2 transition-all duration-500 cursor-pointer ${openIndex === index
+                className={`relative overflow-hidden rounded-2xl border-2 transition-all duration-500 cursor-pointer ${
+                  openIndex === index
                     ? "border-[#FFEE02] bg-white shadow-2xl"
                     : "border-gray-200 bg-white hover:border-gray-300 hover:shadow-lg"
-                  }`}
+                }`}
                 whileHover={{ y: -2 }}
               >
                 {/* Background Pattern */}
                 <div
-                  className={`absolute inset-0 opacity-0 transition-opacity duration-500 ${openIndex === index ? "opacity-5" : ""
-                    }`}
+                  className={`absolute inset-0 opacity-0 transition-opacity duration-500 ${
+                    openIndex === index ? "opacity-5" : ""
+                  }`}
                 >
                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFEE02] rounded-full -translate-y-16 translate-x-16"></div>
                 </div>
 
-                {/* --- FIX: Changed from <button> to <div> since the parent handles the click */}
-                <div
-                  // Removed onClick from here
-                  className="w-full p-6 text-left flex items-center justify-between group"
-                >
+                <div className="w-full p-6 text-left flex items-center justify-between group">
                   <div className="flex items-start gap-4">
-                    {/* Number Indicator */}
                     <div
-                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${openIndex === index
+                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
+                        openIndex === index
                           ? "bg-[#FFEE02] text-black scale-110"
                           : "bg-gray-100 text-gray-600 group-hover:bg-[#FFEE02] group-hover:text-black"
-                        }`}
+                      }`}
                     >
                       {index + 1}
                     </div>
 
                     <h3
-                      className={`text-lg font-semibold pr-8 transition-colors duration-300 ${openIndex === index
+                      className={`text-lg font-semibold pr-8 transition-colors duration-300 ${
+                        openIndex === index
                           ? "text-black"
                           : "text-gray-800 group-hover:text-black"
-                        }`}
+                      }`}
                     >
                       {faq.question}
                     </h3>
                   </div>
 
-                  {/* Animated Icon */}
                   <motion.div
                     animate={{ rotate: openIndex === index ? 45 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${openIndex === index
+                    className={`flex-shrink-0 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
+                      openIndex === index
                         ? "border-[#FFEE02] bg-[#FFEE02] text-black"
                         : "border-gray-300 text-gray-400 group-hover:border-[#FFEE02] group-hover:text-[#FFEE02]"
-                      }`}
+                    }`}
                   >
                     <svg
                       className="w-4 h-4"
@@ -176,11 +169,10 @@ const Faqs = () => {
                   </motion.div>
                 </div>
 
-                {/* Answer Animation */}
                 <AnimatePresence initial={false}>
                   {openIndex === index && (
                     <motion.div
-                      key={`answer-${index}`} // Unique key for AnimatePresence is required
+                      key={`answer-${index}`}
                       initial="collapsed"
                       animate="open"
                       exit="collapsed"
@@ -193,8 +185,6 @@ const Faqs = () => {
                     </motion.div>
                   )}
                 </AnimatePresence>
-
-
               </motion.div>
             ))}
           </motion.div>
@@ -206,10 +196,8 @@ const Faqs = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative h-[600px] flex items-center justify-center"
           >
-            {/* Main Floating Card */}
             <div className="relative z-10 w-80 h-96 bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-100">
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#FFEE02] to-amber-300"></div>
-
               <div className="p-6 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#FFEE02] rounded-full flex items-center justify-center">
@@ -252,11 +240,9 @@ const Faqs = () => {
               </div>
             </div>
 
-            {/* Background Elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFEE02] rounded-full opacity-10 -translate-y-20 translate-x-20"></div>
             <div className="absolute bottom-40 left-0 w-38 h-38 bg-black rounded-full opacity-5 translate-y-20 -translate-x-20"></div>
 
-            {/* Floating Elements */}
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}

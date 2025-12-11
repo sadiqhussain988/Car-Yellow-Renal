@@ -8,25 +8,25 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const services = [
     {
-      title: "Coach & Minibus Hire",
-      subtitle: "Online Booking",
+      title: "Mercedes Fleet Hire",
+      subtitle: "Premium Corporate Vehicles",
       description:
-        "Comfortable and reliable coach and minibus hire across the UK, ideal for group tours, weddings, and long-distance travel.",
-      image: service5,
+        "Choose from our premium Mercedes Vito, C-Class, and E-Class vehicles for corporate transfers, client visits, or executive travel across the UK. Comfort, style, and professionalism guaranteed.",
+      image: "https://i.pinimg.com/1200x/70/97/fb/7097fbc59faf8ec5ab73e6e43f8c059e.jpg",
     },
     {
-      title: "Airport & Corporate Transfers",
-      subtitle: "Online Booking",
+      title: "Airport & Executive Transfers",
+      subtitle: "Seamless Travel",
       description:
-        "Professional transfer services to and from all major UK airports with punctual, comfortable, and stress-free travel.",
-      image: service6,
+        "Reliable and punctual airport transfers for business travelers. Our team ensures smooth, stress-free journeys to and from all major UK airports, including Heathrow, Gatwick, Manchester, and Edinburgh.",
+      image: "https://www.carscoops.com/wp-content/uploads/2021/04/2021-mercedes-benz-c-class-l-long-wheelbase-china-00.jpg",
     },
     {
-      title: "School & Event Transport",
-      subtitle: "Online Booking",
+      title: "Corporate & Event Transport",
+      subtitle: "Group & Event Solutions",
       description:
-        "Safe and dependable transport solutions for schools, sports events, and private functions across the UK.",
-      image: service7,
+        "Professional transport services for corporate events, conferences, team outings, and private functions. Safe, on-time, and fully managed transport for groups of any size.",
+      image: "https://c8.alamy.com/comp/W4B5M7/brussels-belgium-jan-2019-mercedes-vito-brussels-motor-show-produced-by-mercedes-benz-light-commercial-vehicle-as-cargo-van-pickup-truck-W4B5M7.jpg",
     },
   ];
 
@@ -38,12 +38,11 @@ const Services = () => {
           <p className="text-lg text-amber-500 font-semibold tracking-wide animate-pulse">
             OUR SERVICES
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold w-full md:w-[60%] mx-auto leading-tight text-gray-900 relative inline-block">
-            Reliable Coach, Minibus & Van Hire Across the UK
+          <h1 className="text-2xl md:text-5xl font-bold w-full md:w-[60%] mx-auto leading-tight text-gray-900 relative inline-block">
+            Premium Corporate Transport Solutions Across the UK
           </h1>
           <p className="mt-4 text-gray-600 text-base md:text-lg w-full md:w-[70%] mx-auto">
-            Private and group transport solutions for weddings, tours, schools,
-            corporate events, airport transfers, and more.
+            Reliable, comfortable, and professional transport services for businesses, clients, and corporate events. Choose the right vehicle for your needs.
           </p>
           <div className="w-20 h-1 bg-[#FFEE02] mx-auto mt-6 rounded-full"></div>
         </div>

@@ -93,11 +93,11 @@ export default function FairDeal() {
 
               {/* Floating Secondary Image */}
               <motion.div className="absolute -bottom-10 -left-5 w-2/3 sm:w-1/2 hidden sm:block" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-                <img
+                {/* <img
                   src="https://cdn.pixabay.com/photo/2021/01/12/14/58/audi-5911690_1280.jpg"
                   alt="Luxury Vehicle Interior"
                   className="rounded-2xl border-2 border-[#FFEE02] shadow-xl"
-                />
+                /> */}
               </motion.div>
             </div>
           </motion.div>

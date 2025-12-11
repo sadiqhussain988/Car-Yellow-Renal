@@ -3,9 +3,9 @@ import { FaCar, FaRoad, FaSmile } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 // Background images
-import image1 from "../../assets/home/Audi.png";
-import image2 from "../../assets/home/p1.png";
-import image4 from "../../assets/home/lambo.png";
+// import image1 from "../../assets/home/Audi.png";
+// import image2 from "../../assets/home/p1.png";
+// import image4 from "../../assets/home/lambo.png";
 
 const CarRentalStats = () => {
   const stats = [
@@ -15,7 +15,7 @@ const CarRentalStats = () => {
       label: "Years in Service",
       description: `A decade of unmatched dedication in the car rental industry. 
 We’ve built trust with thousands of clients nationwide.`,
-      image: image1,
+      image: "https://d2e5b8shawuel2.cloudfront.net/vehicle/309096/hra/original.jpg",
     },
     {
       icon: <FaRoad size={20} />,
@@ -23,7 +23,7 @@ We’ve built trust with thousands of clients nationwide.`,
       label: "Trips Completed",
       description: `Over fifty thousand trips successfully completed. 
 Every road, every mile, handled with precision.`,
-      image: image2,
+      image: "https://img-ik.cars.co.za/news-site-za/images/2022/02/Mercedes-Benz-C-Class-Local-4.jpg?tr=w-1200,h-800",
     },
     {
       icon: <FaSmile size={20} />,
@@ -31,7 +31,7 @@ Every road, every mile, handled with precision.`,
       label: "Happy Customers",
       description: `Thousands of customers choose us with confidence. 
 Each smile is proof of our customer-first approach.`,
-      image: image4,
+      image: "https://media.ed.edmunds-media.com/mercedes-benz/e-class/2025/oem/2025_mercedes-benz_e-class_sedan_amg-e-53-hybrid_fq_oem_1_1600.jpg",
     },
   ];
 
