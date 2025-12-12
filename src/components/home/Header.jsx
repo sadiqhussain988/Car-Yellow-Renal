@@ -7,13 +7,13 @@ const Header = () => {
  const slides = [
   {
     id: 1,
-    title: "Corporate Transport Solutions",
+    title: "Executive Airport Transfers",
     whiteWords: ["Corporate", "Solutions"],
     subtitle: "Reliable Mobility for Businesses",
     description:
       "We provide executive-grade Mercedes Vito transport solutions designed for companies seeking consistent, professional mobility for teams, clients, and operational logistics.",
     image:
-      "https://blenderartists.org/uploads/default/optimized/4X/5/6/9/5698b29d1c4d3e3ef3ab0a97be4d9895dcb2bad5_2_690x431.jpeg",
+      "https://cdn.pixabay.com/photo/2024/04/27/05/59/ai-generated-8723087_1280.jpg",
     link: "/services/corporate-transport",
   },
   {
@@ -24,18 +24,18 @@ const Header = () => {
     description:
       "End-to-end transport solutions for corporate events, conferences, and exhibitions, ensuring staff, speakers, and VIP clients arrive punctually and comfortably.",
     image:
-      "https://cache1.pakwheels.com/ad_pictures/1326/mercedes-benz-e-class-e-180-amg-2022-132694952.webp",
+      "https://cdn.pixabay.com/photo/2024/05/18/01/09/ai-generated-8769301_1280.jpg",
     link: "/services/event-transport",
   },
   {
     id: 3,
-    title: "Executive Airport Transfers",
+    title: "Corporate Transport Solutions",
     whiteWords: ["Executive", "Transfers"],
     subtitle: "Professional Travel for Business Teams",
     description:
       "Premium airport transfer services for corporate clients, guaranteeing timely pickups, punctual departures, and high-comfort vehicles for executives and teams.",
     image:
-      "https://i.pinimg.com/1200x/de/e5/95/dee595d9c2c6d66a0de390def7b33d3b.jpg",
+      "https://cdn.pixabay.com/photo/2024/06/11/13/30/ai-generated-8823151_1280.jpg",
     link: "/services/airport-transfers",
   },
 ];

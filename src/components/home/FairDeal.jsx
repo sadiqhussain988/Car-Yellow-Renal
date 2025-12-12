@@ -44,7 +44,7 @@ export default function FairDeal() {
   const zoomInUp = { hidden: { opacity: 0, scale: 0.8, y: 20 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6 } } };
 
   return (
-    <section className="relative w-full py-12 bg-gradient-to-br from-white via-gray-50 to-gray-100 overflow-hidden">
+    <section className="relative w-full py-6 bg-gradient-to-br from-white via-gray-50 to-gray-100 overflow-hidden">
       {/* Background Circles */}
       <div className="absolute -top-16 -left-16 w-40 h-40 bg-[#FFEE02]/20 rounded-full blur-2xl"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#FFEE02]/10 rounded-full blur-3xl"></div>
@@ -72,7 +72,7 @@ export default function FairDeal() {
             <div className="relative group">
               <div className="rounded-3xl overflow-hidden shadow-2xl relative">
                 <motion.img
-                  src="https://cdn.pixabay.com/photo/2017/05/03/14/24/audi-2281218_1280.jpg"
+                  src="https://cdn.pixabay.com/photo/2016/07/09/21/47/car-1506922_1280.jpg"
                   alt="Professional Transport Service"
                   className="w-full h-[380px] sm:h-[450px] lg:h-[500px] object-cover rounded-3xl transition-transform duration-700 group-hover:scale-105"
                   whileHover={{ scale: 1.05 }}
@@ -118,7 +118,7 @@ export default function FairDeal() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 + i * 0.1 }}
                 >
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#D68F00] rounded-xl flex items-center justify-center text-black">{item.icon}</div>
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#D68F00] rounded-xl flex items-center justify-center text-white">{item.icon}</div>
                   <p className="text-gray-800 text-sm sm:text-base leading-relaxed font-medium">{item.text}</p>
                 </motion.div>
               ))}

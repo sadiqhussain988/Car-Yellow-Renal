@@ -8,7 +8,7 @@ import Testimonials from '../components/home/Testimonials'
 import CarRentalStats from "../components/home/CarRentalStats";
 import PopularDestination from "../components/home/PopularDestination";
 import FairDeal from "../components/home/FairDeal";
-// import Working from "../components/home/Working";
+import Working from "../components/home/Working";
 // import WhyUs from "../components/home/WhyUs";
 // import Download from "../components/home/Download";
 
@@ -17,6 +17,7 @@ const Home = () => {
     <div className="overflow-x-hidden">
       <Header />
       <TrustedCabService />
+      <Working />
       <PopularDestination/>
       <FairDeal/>
       <CarRentalStats />
@@ -29,7 +30,6 @@ const Home = () => {
 
 
 
-      {/* <Working /> */}
       {/* <WhyUs /> */}
       {/* <Download /> */}
     </div>
