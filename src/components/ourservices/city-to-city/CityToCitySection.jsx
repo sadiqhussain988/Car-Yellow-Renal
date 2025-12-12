@@ -9,6 +9,7 @@ import {
 import { MdEventSeat } from "react-icons/md";
 import image from "../../../../public/testimonial/city-to-city.png"
 import Button from "../../Button";
+import { Link } from "react-router-dom";
 
 // Online image that always loads
 const cityImage =
@@ -123,9 +124,9 @@ const CityToCitySection = () => {
             <p className="text-gray-600 text-sm mb-4">
               Compare travel time, comfort, and efficiency in one click.
             </p>
-            <Button text="
-              Book Your Ride Now"
-            />
+            <Link to="/services">
+            <Button text="Book Your Ride Now" />
+            </Link>
           </div>
         </div>
       </div>

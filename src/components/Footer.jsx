@@ -32,7 +32,7 @@ const Footer = () => {
         {/* Call for Taxi */}
         <div className="w-full md:w-[30%] relative">
           <div
-            className="max-w-[300px] h-[60px] md:h-[70px] bg-[#b88621]"
+            className="max-w-[300px] h-[60px] md:h-[70px] bg-[#F5B533]"
             style={{ clipPath: "polygon(20% 3%, 100% 0, 100% 100%, 0% 100%)" }}
           ></div>
           <div className="text-black flex items-center absolute top-2 right-14 md:top-3 md:right-8 lg:right-16 xl:right-20 2xl:right-24 max-w-[250px]">
@@ -102,7 +102,7 @@ const Footer = () => {
                   className="w-8 h-8 flex items-center justify-center relative overflow-hidden border border-black/15 rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
                 >
                   <Icon className="text-gray-900 relative z-10 transition-all duration-300 group-hover:text-white text-sm" />
-                  <div className="absolute top-full left-0 w-full h-full rounded-full bg-blue-500 z-0 transition-all duration-500 group-hover:top-0"></div>
+                  <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#F5B533] z-0 transition-all duration-500 group-hover:top-0"></div>
                 </button>
               )
             )}

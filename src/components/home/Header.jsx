@@ -131,7 +131,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <Link to={currentSlide.link}>
+            <Link to="/services">
               <Button text="Discover More" />
             </Link>
           </motion.div>

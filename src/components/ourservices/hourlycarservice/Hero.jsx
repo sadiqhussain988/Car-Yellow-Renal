@@ -108,7 +108,7 @@ const Hero = () => {
           </p>
 
           {/* CTA */}
-          <Link to={currentSlide.link}>
+           <Link to="/services">
             <Button text="Book Now" />
           </Link>
         </div>

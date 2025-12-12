@@ -98,7 +98,9 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-300 mb-4">{currentSlide.subtitle}</p>
+          <p className="text-lg md:text-xl text-gray-300 mb-4">
+            {currentSlide.subtitle}
+          </p>
 
           {/* Description */}
           <p className="text-md md:text-lg text-gray-200 leading-relaxed mb-8">
@@ -106,7 +108,8 @@ const Hero = () => {
           </p>
 
           {/* CTA */}
-          <Link to={currentSlide.link}>
+          <Link to="/services">
+            {" "}
             <Button text="Book Now" />
           </Link>
         </div>

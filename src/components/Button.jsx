@@ -33,7 +33,7 @@ const Button = ({
       <button onClick={onClick}>
         <span class="relative inline-flex items-center cursor-pointer justify-center px-8 border border-white py-3 overflow-hidden font-mono font-medium tracking-tighter text-white bg-black rounded-lg group">
           {/* Expanding circle effect - changed to yellow */}
-          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#FAC200] rounded-md group-hover:w-56 group-hover:h-56"></span>
+          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#F5B533] rounded-md group-hover:w-56 group-hover:h-56"></span>
 
           {/* Gradient overlay - updated to black/white theme */}
           <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-900"></span>

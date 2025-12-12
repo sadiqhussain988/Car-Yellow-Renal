@@ -108,7 +108,9 @@ const HourlyHireSection = () => {
             <p className="text-gray-600 text-sm mb-4">
               Flexible, premium service at your convenience. Perfect for meetings, events, or sightseeing.
             </p>
+             <Link to="/services">
             <Button text="Book Your Ride Now" />
+            </Link>
           </div>
         </div>
       </div>

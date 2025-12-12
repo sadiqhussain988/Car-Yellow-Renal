@@ -108,7 +108,9 @@ const LimousineServiceSection = () => {
             <p className="text-gray-600 text-sm mb-4">
               Reserve a premium vehicle with a professional chauffeur for any occasion.
             </p>
+            <Link to="/services">
             <Button text="Book Your Ride Now" />
+            </Link>
           </div>
         </div>
       </div>

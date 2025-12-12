@@ -9,14 +9,14 @@ import logo from "../assets/companyLogo.png";
 import Button from "./Button";
 
 const serviceLinks = [
-  { name: "City-to-City rides", path: "/city-to-city" },
-  { name: "Chauffeur Hailing", path: "/chauffeur-hailing" },
-  { name: "Airport Transfers", path: "/airport-transfer" },
-  { name: "Hourly Hire", path: "/hourly-car-service" },
-   { name: "Limousine Service", path: "/limousine-service" },
+  { name: "Corporate Employee Transportation", path: "/city-to-city" },
+  { name: "Long-Term Fleet Leasing for Businesses", path: "/chauffeur-hailing" },
+  { name: "Travel Agency & Hotel Partnerships", path: "/airport-transfer" },
+  { name: "Airport Transfers for Corporates & Airlines", path: "/hourly-car-service" },
+   { name: "Large-Scale Event Transportation Management", path: "/limousine-service" },
 ];
 
-const navItemClass = "relative hover:text-[#FFEE02] transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#FFEE02] after:transition-all after:duration-300 hover:after:w-full";
+const navItemClass = "relative hover:text-[#F5B533] transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F5B533] after:transition-all after:duration-300 hover:after:w-full";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -77,7 +77,7 @@ const Navbar = () => {
                   <Link
                     key={service.name}
                     to={service.path}
-                    className="block px-4 py-2 hover:bg-[#f7f3f3] hover:text-[#060606] transition-colors"
+                    className="block px-4 py-2 hover:bg-[#c0bbbb] hover:text-[#060606] transition-colors"
                     onClick={closeAll}
                   >
                     {service.name}
@@ -109,7 +109,7 @@ const Navbar = () => {
           {userProfile && (
             <div className="relative">
               <div
-                className="w-10 h-10 flex items-center justify-center bg-[#FAC200] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
+                className="w-10 h-10 flex items-center justify-center bg-[#F5B533] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 {userProfile.profilePic ? (

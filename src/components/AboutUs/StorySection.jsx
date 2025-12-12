@@ -16,7 +16,7 @@ export default function StorySection() {
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
             {/* Replace the image URL below with your real one */}
             <img
-              src="https://images.hgmsites.net/med/2019-jaguar-xf-sedan-20d-premium-rwd-angular-front-exterior-view_100707871_m.jpg"
+              src="https://thumbs.dreamstime.com/b/black-mercedes-benz-v-class-front-view-minivan-row-parking-lot-russia-saint-petersburg-march-black-mercedes-benz-v-class-183436561.jpg"
               alt="Linkway Rides Fleet"
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />

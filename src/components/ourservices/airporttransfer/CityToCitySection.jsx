@@ -9,6 +9,7 @@ import {
 import { MdEventSeat } from "react-icons/md";
 import image from "../../../../public/testimonial/city-to-city.png";
 import Button from "../../Button";
+import { Link } from "react-router-dom";
 
 const airportImage = image;
 
@@ -107,7 +108,9 @@ const AirportTransfersSection = () => {
           <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
             <h3 className="font-bold text-black mb-2">Ready for a Smooth Ride?</h3>
             <p className="text-gray-600 text-sm mb-4">Book your airport transfer with a professional chauffeur today.</p>
+            <Link to="/services">
             <Button text="Book Your Ride Now" />
+            </Link>
           </div>
         </div>
       </div>
