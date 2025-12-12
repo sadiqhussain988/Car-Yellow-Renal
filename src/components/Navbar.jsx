@@ -13,7 +13,7 @@ const serviceLinks = [
   { name: "Long Term Fleet Leasing for Businesses", path: "/chauffeur-hailing" },
   { name: "Travel Agency & Hotel Partnerships", path: "/airport-transfer" },
   { name: "Airport Transfers for Corporates & Airlines", path: "/hourly-car-service" },
-   { name: "Large-Scale Event Transportation Management", path: "/limousine-service" },
+  { name: "Large-Scale Event Management", path: "/limousine-service" },
 ];
 
 const navItemClass = "relative hover:text-[#F5B533] transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F5B533] after:transition-all after:duration-300 hover:after:w-full";
@@ -60,13 +60,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black px-4 z-50 w-full max-w-[1440px] fixed">
-      <div className="container mx-auto py-2 flex justify-between items-center">
+      <div className=" mx-auto py-2 flex justify-between items-center">
+        {/* Logo */}
         <Link to="/" onClick={closeAll}>
           <img src={logo} alt="Company Logo" className="w-20" />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8 text-white font-medium">
+        {/* Desktop Navigation - Right Aligned */}
+        <div className="hidden md:flex items-center ml-auto gap-6 text-white font-medium">
           <Link to="/" className={navItemClass}>Home</Link>
           
           <div className="relative" onMouseEnter={handleServicesMouseEnter} onMouseLeave={handleServicesMouseLeave}>
@@ -92,58 +93,58 @@ const Navbar = () => {
               {path.slice(1).replace("-", " ").replace("us", "Us")}
             </Link>
           ))}
-        </div>
 
-        {/* Right Section */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link to="/services">
-            <Button textHover="black" text="Book Now" />
-          </Link>
-
-          {!userProfile && (
-            <Link to="/login">
-              <Button textHover="black" text="Login" />
+          {/* Buttons & User */}
+          <div className="flex items-center gap-4">
+            <Link to="/services">
+              <Button textHover="black" text="Book Now" />
             </Link>
-          )}
 
-          {userProfile && (
-            <div className="relative">
-              <div
-                className="w-10 h-10 flex items-center justify-center bg-[#F5B533] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-              >
-                {userProfile.profilePic ? (
-                  <img src={userProfile.profilePic} alt="User Avatar" className="w-full h-full object-cover" />
-                ) : (
-                  <span>{userInitial}</span>
+            {!userProfile && (
+              <Link to="/login">
+                <Button textHover="black" text="Login" />
+              </Link>
+            )}
+
+            {userProfile && (
+              <div className="relative">
+                <div
+                  className="w-10 h-10 flex items-center justify-center bg-[#F5B533] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                >
+                  {userProfile.profilePic ? (
+                    <img src={userProfile.profilePic} alt="User Avatar" className="w-full h-full object-cover" />
+                  ) : (
+                    <span>{userInitial}</span>
+                  )}
+                </div>
+
+                {dropdownOpen && (
+                  <div className="absolute right-0 mt-2 w-40 bg-white text-black border rounded-lg shadow-lg z-50">
+                    <ul className="py-2">
+                      {userProfile.role === "Admin" && (
+                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => navigate("/dashboard")}>
+                          Dashboard
+                        </li>
+                      )}
+                      {["/my-profile", "/my-orders"].map((path) => (
+                        <li
+                          key={path}
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                          onClick={() => navigate(path)}
+                        >
+                          {path.slice(1).replace("-", " ")}
+                        </li>
+                      ))}
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={handleLogout}>
+                        Logout
+                      </li>
+                    </ul>
+                  </div>
                 )}
               </div>
-
-              {dropdownOpen && (
-                <div className="absolute right-0 mt-2 w-40 bg-white text-black border rounded-lg shadow-lg z-50">
-                  <ul className="py-2">
-                    {userProfile.role === "Admin" && (
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => navigate("/dashboard")}>
-                        Dashboard
-                      </li>
-                    )}
-                    {["/my-profile", "/my-orders"].map((path) => (
-                      <li
-                        key={path}
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => navigate(path)}
-                      >
-                        {path.slice(1).replace("-", " ")}
-                      </li>
-                    ))}
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={handleLogout}>
-                      Logout
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* Mobile Menu Icon */}
