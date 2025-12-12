@@ -14,7 +14,7 @@ const Hero = () => {
       description:
         "Manage transportation for conferences, concerts, and corporate events with professional drivers and coordinated vehicle fleets. Ensure punctuality and comfort for all attendees.",
       image:
-        "https://cdn.pixabay.com/photo/2024/06/11/13/30/ai-generated-8823151_1280.jpg", // Event shuttle buses or fleet
+        "https://images.ctfassets.net/ov8o7v78mnye/1qi5aJOpeVFSTrDdktsQZJ/f9338693b5e0f388581678910eabbef7/Business.jpg", // Event shuttle buses or fleet
       link: "/services/event-transportation",
     },
     {
@@ -25,7 +25,7 @@ const Hero = () => {
       description:
         "Offer your attendees premium transportation options with coordinated schedules, luxury vehicles, and professional chauffeurs for a seamless experience.",
       image:
-        "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1200", // VIP guest being picked up
+        "https://images.ctfassets.net/ov8o7v78mnye/5ukDCmGk3pJNq48IAoPz1b/8bf2038de6ceb379aba9cf4ee824838e/first-class.webp", // VIP guest being picked up
       link: "/services/event-transportation",
     },
     {
@@ -36,7 +36,7 @@ const Hero = () => {
       description:
         "Coordinate buses, vans, and executive cars for large groups. Optimize routes, manage timing, and provide real-time support for successful event transportation.",
       image:
-        "https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200", // Fleet of vehicles at an event
+        "https://images.ctfassets.net/ov8o7v78mnye/3adipFMgNojPGUh2aqHeEN/d911b00e6a8adc22b4f529cc2a150021/electric-class.webp", // Fleet of vehicles at an event
       link: "/services/event-transportation",
     },
   ];

@@ -74,7 +74,7 @@ const MobileBanner = () => {
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
               <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
+                src="https://images.ctfassets.net/ov8o7v78mnye/1TkzZQS0ECSdewiwzHTYWp/e1c47dad3ded7abb0079441dc7c19e22/01_CHF.jpg?w=1280&f=center&q=85&fm=webp"
                 alt="Business Partnership Rides"
                 className="w-full max-w-[420px] rounded-2xl scale-100 group-hover:scale-105 transition-transform duration-500"
               />

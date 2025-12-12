@@ -88,7 +88,7 @@ const FAQPage = () => {
         {/* IMAGE */}
         <div className="overflow-hidden rounded-2xl">
           <img
-            src="https://cdn.prod.website-files.com/61fc302889864b68615ef7fa/655de882147545f32f7f34ac_paris-chauffeur-service-hire-dbsexperience.webp"
+            src="https://cdn.pixabay.com/photo/2024/04/27/05/59/ai-generated-8723087_1280.jpg"
             alt="Corporate Airport Transfers"
             className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:brightness-105"
           />

@@ -3,91 +3,83 @@ import Button from "../../Button";
 
 const MobileBanner = () => {
   return (
-    <div className="bg-white shadow-md relative overflow-hidden" id="mobile-banner">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-blue-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-50 rounded-full translate-x-1/3 translate-y-1/3 opacity-50"></div>
+    <div className="relative overflow-hidden" id="mobile-banner">
+      
+      {/* Soft Glow Blur Orbs */}
+      <div className="absolute left-10 w-96 h-96 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-[150px]"></div>
 
-      <section className="container mx-auto px-4 py-8 lg:py-12 flex flex-col lg:flex-row items-center relative z-10">
-        {/* Left Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <div className="mb-8 lg:mb-10">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-black px-4 py-2 rounded-full mb-4 lg:mb-6">
-              <div className="w-2 h-2 bg-[#FFEE02] rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-[#FFEE02]">Available Now</span>
-            </div>
+      <section className="container mx-auto px-6 py-10 lg:py-16 flex flex-col items-center relative z-10 gap-10">
+        
+        {/* TOP SECTION TITLE */}
+        <div className="text-center text-black">
+          <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight drop-shadow-xl">
+            Experience Premium  
+            <span className="block text-yellow-400 mt-1">
+              Chauffeur Services
+            </span>
+          </h2>
 
-            {/* Main Heading */}
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-5 leading-tight">
-              Premium Chauffeur
-              <span className="block text-[#F3B800] mt-2">Hailing At Your Fingertips</span>
-            </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mt-3 mx-auto leading-relaxed">
+            Travel with luxury, comfort, and precision. Enjoy professional, reliable,
+            business-class rides with real-time tracking and executive service.
+          </p>
+        </div>
 
-            {/* Description */}
-            <p className="text-gray-700 text-lg lg:text-xl max-w-2xl lg:pl-1 mb-2">
-              Book, track, and manage your rides seamlessly with our Chauffeur Hailing service.
+        {/* THREE PREMIUM FEATURE CARDS */}
+        <div className="w-full flex flex-col lg:flex-row justify-center gap-6 mt-4">
+          
+          {/* Card 1 */}
+          <div className="bg-white rounded-2xl shadow-xl p-8 w-full lg:w-1/3 border border-gray-100 hover:scale-105 transition-all duration-300">
+            <h3 className="text-xl font-bold text-black mb-2">Instant Booking</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Book your chauffeur instantly with one tap. Fast, simple, and reliable for all business needs.
             </p>
-
-            {/* Sub features */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-4 mt-6">
-              {['Instant Booking', 'Live Tracking', 'Safe & Reliable', '24/7 Support'].map((feature, index) => (
-                <div key={index} className="flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-lg">
-                  <svg className="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm font-medium text-gray-700">{feature}</span>
-                </div>
-              ))}
-            </div>
           </div>
 
-          {/* Actions */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 lg:gap-8">
-            {/* QR Code Container */}
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-              <div className="relative bg-white p-3 rounded-xl shadow-lg">
-                <img
-                  src="//images.ctfassets.net/ov8o7v78mnye/4qZi5AXwLS3ciw4lUtd4DC/68e6b66dbacbe330be3bac30cb6e7d0a/app_qrcode.svg"
-                  alt="Scan to download Chauffeur Hailing App"
-                  className="w-28 h-28"
-                />
-                <p className="text-xs text-gray-600 mt-2">Scan to download</p>
-              </div>
-            </div>
-
-            {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button text="Download on the App Store" />
-              <Button text="Get it on Google Play" />
-            </div>
+          {/* Card 2 */}
+          <div className="bg-white rounded-2xl shadow-xl p-8 w-full lg:w-1/3 border border-gray-100 hover:scale-105 transition-all duration-300">
+            <h3 className="text-xl font-bold text-black mb-2">Live Tracking</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Track your driver in real time with precise GPS and corporate-level accuracy.
+            </p>
           </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-2xl shadow-xl p-8 w-full lg:w-1/3 border border-gray-100 hover:scale-105 transition-all duration-300">
+            <h3 className="text-xl font-bold text-black mb-2">Business Class</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Executive vehicles, trained chauffeurs, and a first-class B2B travel experience.
+            </p>
+          </div>
+
         </div>
 
-        {/* Right Image */}
-        <div className="flex-1 mt-10 lg:mt-0 flex justify-center relative">
-          {/* Floating device mockup */}
-          <div className="relative">
-            <div className="absolute -inset-4 bg-[#FFEE02] rounded-[3rem] blur-xl opacity-20"></div>
-            <div className="relative">
+        {/* QR + App Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-8 mt-10">
+
+          {/* QR Card */}
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-yellow-500/20 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition"></div>
+            <div className="relative bg-white/10 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white/10">
               <img
-                src="https://images.ctfassets.net/ov8o7v78mnye/4nd4iEDEP4NunG4HHzJzRw/2b658ff83396e36fb3b274c313f0e471/mobile-banner-image.png"
-                alt="Chauffeur Hailing App Interface"
-                className="max-w-xs sm:max-w-sm lg:max-w-md transform hover:scale-105 transition-transform duration-500 rounded-2xl shadow-xl"
+                src="//images.ctfassets.net/ov8o7v78mnye/4qZi5AXwLS3ciw4lUtd4DC/68e6b66dbacbe330be3bac30cb6e7d0a/app_qrcode.svg"
+                alt="QR Code"
+                className="w-28 h-28"
               />
-              {/* Floating elements */}
-              <div className="absolute -top-3 -right-3 bg-white px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2 animate-bounce">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span className="text-xs font-semibold">Live Tracking</span>
-              </div>
-              <div className="absolute -bottom-3 -left-3 bg-white px-3 py-1.5 rounded-full shadow-lg flex items-center gap-2 animate-bounce" style={{ animationDelay: '0.2s' }}>
-                <div className="w-2 h-2 bg-[#FFEE02] rounded-full"></div>
-                <span className="text-xs font-semibold">Driver Arriving</span>
-              </div>
+              <p className="text-xs text-gray-300 mt-2 text-center">
+                Scan to download
+              </p>
             </div>
           </div>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button text="Download on the App Store" />
+            <Button text="Get it on Google Play" />
+          </div>
+
         </div>
+
       </section>
     </div>
   );

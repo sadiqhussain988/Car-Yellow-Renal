@@ -1,36 +1,36 @@
 import React, { useState } from "react";
-import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "What is a City-to-City ride?",
+    question: "What corporate services do you provide?",
     answer:
-      "City-to-City rides are long-distance transfers between cities with a professional chauffeur, fixed pricing, and premium comfort.",
+      "We offer dedicated employee transportation with scheduled pickups, route optimization, corporate fleet branding, and real-time tracking for businesses of all sizes.",
   },
   {
-    question: "How far in advance should I book?",
+    question: "How do we set up a corporate account?",
     answer:
-      "We recommend booking 2–24 hours in advance, although last-minute bookings are often possible.",
+      "Simply contact our sales team. We will create a centralized account for your organization with customizable access, billing, and reporting options.",
   },
   {
-    question: "Are prices fixed or metered?",
+    question: "Can we schedule rides for multiple employees?",
     answer:
-      "All prices are transparent and fixed at booking. No surge, traffic or hidden fees.",
+      "Yes, our platform allows bulk scheduling for employees, including recurring rides, multiple routes, and flexible adjustments.",
   },
   {
-    question: "Do you support corporate accounts?",
+    question: "Are the rides secure and compliant?",
     answer:
-      "Yes, we offer centralized billing, team access, and expense reports for businesses.",
+      "Absolutely. All drivers undergo background checks, vehicles meet safety standards, and rides are monitored via real-time GPS for compliance.",
   },
   {
-    question: "Can I add multiple stops?",
+    question: "Do you provide analytics for employee transportation?",
     answer:
-      "Yes, additional stops can be added while booking or during the ride.",
+      "Yes, our corporate dashboard provides detailed insights into ride punctuality, employee usage, route efficiency, and cost reporting.",
   },
   {
-    question: "What vehicles are available?",
+    question: "Can we integrate with our internal HR or scheduling systems?",
     answer:
-      "Business sedans, SUVs, luxury cars, and executive vans—all modern and chauffeur-driven.",
+      "Our system supports API integration with HR platforms to automate bookings, manage employees, and sync schedules seamlessly.",
   },
 ];
 
@@ -42,66 +42,61 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-6">
-      {/* ---------- PAGE HEADER ---------- */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <h1 className="text-4xl font-bold text-black">
-          Frequently <span className="text-[#F4C224]">Asked Questions</span>
+    <div className="bg-gray-50 min-h-screen py-6 px-6">
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <h1 className="text-4xl font-extrabold text-gray-900">
+          Frequently <span className="text-[#F3B800]">Asked Questions</span>
         </h1>
         <p className="text-gray-600 mt-4">
-          Learn everything you need about City-to-City rides, pricing, bookings,
-          corporate travel, and premium services.
+          Learn everything you need about our corporate employee transportation services, compliance, analytics, and booking solutions.
         </p>
       </div>
 
-      {/* ---------- MAIN CONTENT (FAQ + IMAGE) ---------- */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-        {/* LEFT — FAQ LIST */}
-        <div className="flex flex-col justify-between h-full">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+        <div className="overflow-hidden rounded-2xl">
+          <img
+            src="https://images.ctfassets.net/ov8o7v78mnye/1bGHzDEQmkTXeycJoZnH3G/aef3e646c68a8258b1812f34a31fe1a0/SEO_EQS2.jpg?w=1280&f=center&q=85&fm=webp"
+            alt="Corporate Travel"
+            className="w-full h-full object-cover rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
+          />
+        </div>
+
+        {/* RIGHT — FAQ LIST */}
+        <div className="flex flex-col justify-start">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-[#F4C224] to-[#debe2e] border border-gray-200 
-                           rounded-2xl p-5 shadow-md hover:shadow-lg transition-all"
+                className="bg-white rounded-2xl p-6 shadow-md border border-gray-200 transition-all hover:shadow-xl"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center"
                 >
-                  <span className="text-lg font-semibold text-black">
+                  <span className="text-lg font-semibold text-gray-900 text-left">
                     {faq.question}
                   </span>
 
-                  {openIndex === index ? (
-                    <FiMinus className="text-xl cursor-pointer text-gray-900" />
-                  ) : (
-                    <FiPlus className="text-xl cursor-pointer text-gray-900" />
-                  )}
+                  <FiChevronDown
+                    className={`text-xl text-gray-900 transform transition-transform duration-300 ${
+                      openIndex === index ? "rotate-180" : "rotate-0"
+                    }`}
+                  />
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
+                  className={`overflow-hidden transition-all duration-500 ${
                     openIndex === index ? "max-h-40 mt-3" : "max-h-0"
                   }`}
                 >
-                  <p className="text-black leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* RIGHT — IMAGE SAME HEIGHT AS FAQ */}
-        <div className="overflow-hidden rounded-2xl">
-          <img
-            src="https://www.experis.com/-/media/project/manpowergroup/experis/experis-us/articles/all_financial_planning_bluewash_rgb_150.jpg"
-            alt="City travel"
-            className="w-full h-full object-cover rounded-2xl shadow-lg 
-               transition-all duration-500
-               hover:scale-110 hover:shadow-2xl hover:brightness-105"
-          />
-        </div>
       </div>
     </div>
   );

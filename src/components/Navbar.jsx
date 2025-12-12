@@ -10,7 +10,7 @@ import Button from "./Button";
 
 const serviceLinks = [
   { name: "Corporate Employee Transportation", path: "/city-to-city" },
-  { name: "Long-Term Fleet Leasing for Businesses", path: "/chauffeur-hailing" },
+  { name: "Long Term Fleet Leasing for Businesses", path: "/chauffeur-hailing" },
   { name: "Travel Agency & Hotel Partnerships", path: "/airport-transfer" },
   { name: "Airport Transfers for Corporates & Airlines", path: "/hourly-car-service" },
    { name: "Large-Scale Event Transportation Management", path: "/limousine-service" },

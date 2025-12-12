@@ -59,7 +59,7 @@ const MobileBanner = () => {
             <div className="absolute -inset-4 bg-[#FFEE02] rounded-[3rem] blur-xl opacity-20"></div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/14608917/pexels-photo-14608917.jpeg"
+                src="https://images.ctfassets.net/ov8o7v78mnye/4C5yGgWuysWEWgiosc6OoI/d5d8ad1e828c2713a6341a10522ad557/01_Reliable_L.webp?w=1280&f=center&q=85&fm=webp"
                 alt="Event Transportation Fleet"
                 className="max-w-xs sm:max-w-sm lg:max-w-md transform hover:scale-105 transition-transform duration-500 rounded-2xl shadow-xl"
               />
@@ -78,5 +78,4 @@ const MobileBanner = () => {
     </div>
   );
 };
-
 export default MobileBanner;

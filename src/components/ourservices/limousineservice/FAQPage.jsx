@@ -88,7 +88,7 @@ const FAQPage = () => {
         {/* IMAGE */}
         <div className="overflow-hidden rounded-2xl">
           <img
-            src="https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            src="https://i.pinimg.com/1200x/1c/fa/fe/1cfafee22e5c72a3eee1285f47d262f5.jpg"
             alt="Event Transportation"
             className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:brightness-105"
           />

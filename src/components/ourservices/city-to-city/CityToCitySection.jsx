@@ -1,168 +1,208 @@
 import React from "react";
 import {
   FiClock,
-  FiCalendar,
-  FiDollarSign,
+  FiShield,
+  FiBarChart2,
+  FiMapPin,
   FiRefreshCcw,
-  FiWifi,
+  FiUsers,
 } from "react-icons/fi";
-import { MdEventSeat } from "react-icons/md";
-import image from "../../../../public/testimonial/city-to-city.png"
+import carimage from "../../../assets/ServiceImage/city-city.png";
 import Button from "../../Button";
 import { Link } from "react-router-dom";
-
-// Online image that always loads
-const cityImage =
-  image;
 
 const CityToCitySection = () => {
   const features = [
     {
-      icon: <FiClock className="text-3xl text-[#F3B800]" />,
-      title: "Save Time",
+      icon: <FiClock />,
+      title: "Guaranteed On-Time Pickups",
       description:
-        "Door-to-door rides mean no waiting in lines or switching between transport modes.",
+        "Optimized routing and real-time tracking ensure your employees always arrive on time.",
     },
     {
-      icon: <FiCalendar className="text-3xl text-[#F3B800]" />,
-      title: "Set Your Schedule",
-      description: "Pick your pickup time and cancel until 1 hour before departure.",
+      icon: <FiShield />,
+      title: "Safety & Compliance Standards",
+      description:
+        "Strict driver background checks, compliance audits, and monthly safety inspections.",
     },
     {
-      icon: <MdEventSeat className="text-3xl text-[#F3B800]" />,
-      title: "Premium Comfort",
-      description: "Travel in spacious vehicles with CO₂-offset rides included.",
+      icon: <FiUsers />,
+      title: "Dedicated Corporate Fleet",
+      description:
+        "Exclusive organization-branded vehicles and customizable scheduling options.",
     },
     {
-      icon: <FiDollarSign className="text-3xl text-[#F3B800]" />,
-      title: "Transparent Pricing",
-      description: "Pay per car, not per seat. All taxes and tolls included upfront.",
+      icon: <FiMapPin />,
+      title: "Smart Route Optimization",
+      description:
+        "AI-powered route planning reduces travel time and overall commute cost.",
     },
     {
-      icon: <FiRefreshCcw className="text-3xl text-[#F3B800]" />,
-      title: "Reliable Service",
-      description: "No stress about strikes, delays, or crowded stations.",
+      icon: <FiBarChart2 />,
+      title: "Corporate Performance Dashboard",
+      description:
+        "Access ridership stats, punctuality reports, trip logs, and cost insights.",
     },
     {
-      icon: <FiWifi className="text-3xl text-[#F3B800]" />,
-      title: "Stay Connected",
-      description: "High-speed Wi-Fi available in most vehicles for productivity.",
+      icon: <FiRefreshCcw />,
+      title: "Scalable for All Workforce Sizes",
+      description:
+        "Whether 20 or 20,000 employees — we scale with your growing organization.",
     },
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12 bg-gray-50">
+    <section className="max-w-7xl mx-auto px-4 py-20 bg-gray-50">
 
-      {/* Header */}
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
-          City-to-City Travel
-          <span className="block text-[#F3B800] text-3xl md:text-4xl font-bold mt-2">
-            Redefined for the Modern Traveler
-          </span>
+      {/* Header Section */}
+      <div className="text-center mb-20">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+           B2B Reliable Transportation
         </h1>
 
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto mt-4 leading-relaxed">
-          Leave behind airport lines and crowded trains. Experience reliable,
-          comfortable, and fully flexible door-to-door transportation.
+        <p className="text-[#F3B800] text-2xl md:text-3xl font-bold mt-3">
+          Reliable, Safe & Intelligent Mobility Solutions
+        </p>
+
+        <p className="text-gray-600 text-lg max-w-3xl mx-auto mt-6 leading-relaxed">
+          Empower your workforce with seamless daily commutes backed by advanced
+          technology, safety assurance, and real-time analytics.
         </p>
       </div>
 
       {/* Main Grid */}
-      <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+      <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-        {/* Image + Stats */}
+        {/* Left - Image / Stats */}
         <div className="relative">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-200">
             <img
-              src={cityImage}
-              alt="City to City"
-              className="w-full h-[350px] md:h-[420px] object-cover rounded-xl"
+              src={carimage}
+              alt="Corporate Transportation"
+              className="w-full h-[400px] md:h-[480px] object-cover rounded-2xl"
             />
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">40%</div>
-                <div className="text-sm text-gray-600">Time Saved vs Air Travel</div>
+              <div className="bg-gray-100 p-5 rounded-xl shadow-sm border border-gray-200 text-center">
+                <div className="text-3xl font-extrabold text-[#F3B800]">98%</div>
+                <div className="text-sm text-gray-600">On-Time Arrival Rate</div>
               </div>
 
-              <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">100%</div>
-                <div className="text-sm text-gray-600">Door-to-Door Service</div>
+              <div className="bg-gray-100 p-5 rounded-xl shadow-sm border border-gray-200 text-center">
+                <div className="text-3xl font-extrabold text-[#F3B800]">100%</div>
+                <div className="text-sm text-gray-600">Safety Compliance</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Feature Highlights */}
+        {/* Right - Feature Cards */}
         <div>
-          <h2 className="text-2xl font-bold text-black mb-6">
-            Why Choose Our City-to-City Service?
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Why Top Organizations Trust Us
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             {features.slice(0, 3).map((feature, index) => (
               <div
                 key={index}
-                className="flex items-start p-4 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all"
+                className="
+                  group
+                  bg-white p-6 rounded-xl border border-gray-200 shadow-sm
+                  hover:shadow-lg transition-all duration-300 relative overflow-hidden
+                "
               >
-                <div className="mr-4">{feature.icon}</div>
-                <div>
-                  <h3 className="font-semibold text-black">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
+                {/* Hover Animated Line */}
+                <div className="
+                  absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#F3B800] to-black
+                  group-hover:w-full transition-all duration-500
+                "></div>
+
+                <div className="flex items-start">
+                  {/* Hover Icon Reveal */}
+                  <div className="
+                    text-3xl text-[#F3B800] mr-4 opacity-0 translate-x-[-10px]
+                    group-hover:opacity-100 group-hover:translate-x-0 
+                    transition-all duration-500
+                  ">
+                    {feature.icon}
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-gray-900">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <h3 className="font-bold text-black mb-2">
-              Ready to Experience Premium Travel?
+          {/* CTA Box */}
+          <div className="mt-10 p-7 bg-white rounded-2xl border border-gray-200 shadow-lg">
+            <h3 className="font-bold text-gray-900 mb-2 text-lg">
+              Transform Employee Mobility Today
             </h3>
             <p className="text-gray-600 text-sm mb-4">
-              Compare travel time, comfort, and efficiency in one click.
+              Explore customized solutions tailored to your workforce needs.
             </p>
             <Link to="/services">
-            <Button text="Book Your Ride Now" />
+              <Button text="Schedule Consultation" />
             </Link>
           </div>
         </div>
       </div>
 
-      {/* Full Feature Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-       {features.map((feature, index) => (
-  <div
-    key={index}
-    className="
-      bg-white p-7 rounded-2xl 
-      shadow-md border border-gray-200
-      hover:shadow-xl hover:-translate-y-2
-      transition-all duration-300
-      relative overflow-hidden
-    "
-  >
-    {/* gradient top bar */}
-    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FFEE02] to-black"></div>
+      {/* Full Features Section */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
 
-    {/* icon inside circle */}
-    <div className="w-14 h-14 flex items-center justify-center 
-        bg-gradient-to-r from-[#f9f9f7] to-[#f9f8f7] shadow  rounded-xl mb-4 text-3xl">
-      {feature.icon}
-    </div>
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="
+              group relative bg-white p-8 rounded-2xl shadow-md border border-gray-200
+              hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden
+            "
+          >
 
-    <h3 className="font-bold text-black text-xl mb-2">
-      {feature.title}
-    </h3>
-    <p className="text-gray-600 leading-relaxed">
-      {feature.description}
-    </p>
-  </div>
-))}
+            {/* Top Gradient Line */}
+            <div className="
+              absolute top-0 left-0 h-1 w-full 
+              bg-gradient-to-r from-[#FFEE02] to-black
+            "></div>
+
+            {/* Hidden Icon on Hover */}
+            <div className="
+              text-4xl text-[#F3B800] mb-4 opacity-0 translate-y-2 
+              group-hover:opacity-100 group-hover:translate-y-0 
+              transition-all duration-500
+            ">
+              {feature.icon}
+            </div>
+
+            <h3 className="font-bold text-gray-900 text-xl mb-2">
+              {feature.title}
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              {feature.description}
+            </p>
+
+            {/* Bottom Hover Line */}
+            <div className="
+              absolute bottom-0 left-0 h-1 w-0 
+              bg-gradient-to-r from-[#F3B800] to-black
+              group-hover:w-full transition-all duration-500
+            "></div>
+          </div>
+        ))}
 
       </div>
+
     </section>
   );
 };
