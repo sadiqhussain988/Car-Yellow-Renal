@@ -3,34 +3,34 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "What is Hourly Hire?",
+    question: "What are Corporate Airport Transfers?",
     answer:
-      "Hourly Hire allows you to book a professional chauffeur and vehicle for a set number of hours, perfect for meetings, events, or sightseeing.",
+      "Corporate Airport Transfers provide professional chauffeur-driven rides for employees, executives, or clients directly to and from the airport, ensuring punctuality and comfort.",
   },
   {
-    question: "How many hours can I book?",
+    question: "Can I schedule transfers in advance?",
     answer:
-      "You can book anywhere from 1 hour up to a full day, depending on your requirements.",
+      "Yes, you can book transfers in advance according to flight schedules or corporate requirements, with flexibility for changes if needed.",
   },
   {
-    question: "Are prices fixed or per hour?",
+    question: "Are the rates fixed or per passenger?",
     answer:
-      "Pricing is hourly and fixed at the time of booking. There are no hidden fees or surcharges.",
+      "Rates are transparent and fixed at the time of booking. Corporate billing ensures no hidden fees, tolls, or surcharges.",
   },
   {
-    question: "Can I add stops during my hire?",
+    question: "Can multiple passengers or stops be accommodated?",
     answer:
-      "Yes, you can request additional stops while your chauffeur is on route.",
+      "Yes, our executive vehicles can accommodate multiple passengers and stops as requested for your business needs.",
   },
   {
-    question: "Do you offer corporate hourly hire?",
+    question: "Do you provide corporate accounts?",
     answer:
-      "Yes, businesses can book chauffeurs by the hour with centralized billing and reporting.",
+      "Yes, businesses can set up corporate accounts for centralized billing, team access, and detailed travel reports.",
   },
   {
-    question: "What vehicles are available?",
+    question: "What types of vehicles are available?",
     answer:
-      "Luxury sedans, SUVs, executive vans, and other premium vehicles—all chauffeur-driven and maintained.",
+      "Luxury sedans, SUVs, and executive vans—all chauffeur-driven and maintained to the highest standards for corporate travel.",
   },
 ];
 
@@ -42,14 +42,14 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-6">
+    <div className="bg-gray-50 min-h-screen pb-12 px-6">
       {/* PAGE HEADER */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h1 className="text-4xl font-bold text-black">
           Frequently <span className="text-[#F3B800]">Asked Questions</span>
         </h1>
         <p className="text-gray-600 mt-4">
-          Learn everything about our Hourly Hire services, bookings, pricing, and premium chauffeurs.
+          Everything you need to know about our Corporate Airport Transfer services, bookings, pricing, and premium chauffeurs.
         </p>
       </div>
 
@@ -89,7 +89,7 @@ const FAQPage = () => {
         <div className="overflow-hidden rounded-2xl">
           <img
             src="https://cdn.prod.website-files.com/61fc302889864b68615ef7fa/655de882147545f32f7f34ac_paris-chauffeur-service-hire-dbsexperience.webp"
-            alt="Hourly Hire"
+            alt="Corporate Airport Transfers"
             className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:brightness-105"
           />
         </div>

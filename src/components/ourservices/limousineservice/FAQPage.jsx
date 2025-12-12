@@ -3,34 +3,34 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "What is Limousine Service?",
+    question: "What is Event Transportation Management?",
     answer:
-      "Our Limousine Service provides luxury, chauffeur-driven vehicles for VIP experiences, corporate travel, airport pickups, and special events.",
+      "Event Transportation Management provides coordinated transport solutions for large-scale events, including conferences, weddings, and corporate gatherings.",
   },
   {
-    question: "How do I book a limousine?",
+    question: "How do I book for an event?",
     answer:
-      "You can book online via our app or website. Choose your vehicle, pickup time, and duration.",
+      "You can request a quote online or contact our team to plan pickups, drop-offs, and vehicle allocation for your event.",
   },
   {
     question: "Are prices fixed or variable?",
     answer:
-      "All pricing is fixed at booking and includes taxes, tolls, and gratuity—no hidden fees.",
+      "All pricing is transparent and customized based on fleet size, distance, and service duration. No hidden fees.",
   },
   {
-    question: "Can I hire a limousine by the hour?",
+    question: "Can I hire multiple vehicles for the same event?",
     answer:
-      "Yes, we offer flexible hourly hire for events, city tours, and business meetings.",
+      "Yes, we manage fleets of sedans, vans, buses, and luxury vehicles to accommodate any number of guests.",
   },
   {
-    question: "What vehicles are available?",
+    question: "Do you provide on-site coordination?",
     answer:
-      "Luxury sedans, stretch limousines, SUVs, and executive vans—all maintained and chauffeur-driven.",
+      "Our professional coordinators manage all transportation logistics to ensure smooth operations during the event.",
   },
   {
-    question: "Do you offer corporate packages?",
+    question: "Is Wi-Fi and connectivity available?",
     answer:
-      "Yes, businesses can reserve limousines for corporate travel with dedicated billing and priority service.",
+      "Yes, most vehicles are equipped with Wi-Fi and charging ports for guests to stay connected during transit.",
   },
 ];
 
@@ -49,7 +49,7 @@ const FAQPage = () => {
           Frequently <span className="text-[#F3B800]">Asked Questions</span>
         </h1>
         <p className="text-gray-600 mt-4">
-          Learn everything about our Limousine Service, booking options, pricing, and premium experiences.
+          Learn everything about our Event Transportation Management services, booking options, fleet coordination, and premium event logistics.
         </p>
       </div>
 
@@ -88,8 +88,8 @@ const FAQPage = () => {
         {/* IMAGE */}
         <div className="overflow-hidden rounded-2xl">
           <img
-            src="https://img.freepik.com/free-photo/woman-getting-taxi-car_23-2149149625.jpg?semt=ais_hybrid&w=740&q=80"
-            alt="Limousine Service"
+            src="https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Event Transportation"
             className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:brightness-105"
           />
         </div>

@@ -9,40 +9,41 @@ import {
 import { MdEventSeat } from "react-icons/md";
 import image from "../../../../public/testimonial/city-to-city.png";
 import Button from "../../Button";
+import { Link } from "react-router-dom";
 
-const hourlyImage = image;
+const airportImage = image;
 
-const HourlyHireSection = () => {
+const CorporateAirportTransfers = () => {
   const features = [
     {
       icon: <FiClock className="text-3xl text-[#F3B800]" />,
-      title: "Flexible Hours",
-      description: "Book a chauffeur for as few or as many hours as you need.",
+      title: "On-Time Pickups",
+      description: "Ensure your staff and clients arrive on schedule, every time.",
     },
     {
       icon: <FiCalendar className="text-3xl text-[#F3B800]" />,
-      title: "Plan Your Day",
-      description: "Schedule pickups and stops as per your itinerary and adjust anytime.",
+      title: "Flexible Scheduling",
+      description: "Book in advance or adjust based on flight times and business needs.",
     },
     {
       icon: <MdEventSeat className="text-3xl text-[#F3B800]" />,
       title: "Premium Comfort",
-      description: "Travel in luxury vehicles with spacious seating and modern amenities.",
+      description: "Travel in executive vehicles with ample space and amenities.",
     },
     {
       icon: <FiDollarSign className="text-3xl text-[#F3B800]" />,
       title: "Transparent Pricing",
-      description: "Pay for hours, not per trip. All taxes, tolls, and gratuity included.",
+      description: "Corporate rates with all taxes, tolls, and fees included—no surprises.",
     },
     {
       icon: <FiRefreshCcw className="text-3xl text-[#F3B800]" />,
       title: "Reliable Service",
-      description: "Professional chauffeurs ensure punctuality throughout your hire period.",
+      description: "Professional chauffeurs track flights and adjust pickup timings.",
     },
     {
       icon: <FiWifi className="text-3xl text-[#F3B800]" />,
       title: "Stay Connected",
-      description: "Wi-Fi and charging available for productivity during your ride.",
+      description: "Wi-Fi and charging available in most vehicles for productivity on the go.",
     },
   ];
 
@@ -51,13 +52,13 @@ const HourlyHireSection = () => {
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
-          Hourly Hire
+          Corporate Airport Transfers
           <span className="block text-[#F3B800] text-3xl md:text-4xl font-bold mt-2">
-            Your Chauffeur, Your Schedule
+            Reliable Rides for Airlines & Businesses
           </span>
         </h1>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto mt-4 leading-relaxed">
-          Hire a professional chauffeur by the hour for business, events, or leisure. Flexible, reliable, and premium service.
+          Provide your employees and clients with seamless, professional airport transportation. Executive vehicles, priority dispatch, and corporate billing included.
         </p>
       </div>
 
@@ -67,18 +68,18 @@ const HourlyHireSection = () => {
         <div className="relative">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <img
-              src={hourlyImage}
-              alt="Hourly Hire"
+              src={airportImage}
+              alt="Corporate Airport Transfer"
               className="w-full h-[350px] md:h-[420px] object-cover rounded-xl"
             />
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">100%</div>
-                <div className="text-sm text-gray-600">Flexible Hours</div>
+                <div className="text-2xl font-bold text-[#F3B800]">99%</div>
+                <div className="text-sm text-gray-600">On-Time Arrivals</div>
               </div>
               <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">99%</div>
-                <div className="text-sm text-gray-600">On-Time Service</div>
+                <div className="text-2xl font-bold text-[#F3B800]">100%</div>
+                <div className="text-sm text-gray-600">Door-to-Door Convenience</div>
               </div>
             </div>
           </div>
@@ -87,7 +88,7 @@ const HourlyHireSection = () => {
         {/* Features + CTA */}
         <div>
           <h2 className="text-2xl font-bold text-black mb-6">
-            Why Choose Hourly Hire?
+            Why Choose Our Corporate Airport Transfers?
           </h2>
           <div className="space-y-4">
             {features.slice(0, 3).map((feature, index) => (
@@ -104,12 +105,12 @@ const HourlyHireSection = () => {
             ))}
           </div>
           <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <h3 className="font-bold text-black mb-2">Book Your Chauffeur by the Hour</h3>
+            <h3 className="font-bold text-black mb-2">Book Your Corporate Ride</h3>
             <p className="text-gray-600 text-sm mb-4">
-              Flexible, premium service at your convenience. Perfect for meetings, events, or sightseeing.
+              Seamless, executive transportation for your clients or staff. Reliable and professional service every time.
             </p>
-             <Link to="/services">
-            <Button text="Book Your Ride Now" />
+            <Link to="/services">
+              <Button text="Book Now" />
             </Link>
           </div>
         </div>
@@ -135,4 +136,4 @@ const HourlyHireSection = () => {
   );
 };
 
-export default HourlyHireSection;
+export default CorporateAirportTransfers;

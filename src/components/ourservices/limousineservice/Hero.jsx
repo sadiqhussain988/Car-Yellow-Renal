@@ -8,36 +8,36 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      title: "Limousine Service, Ultimate Luxury",
-      whiteWords: ["Limousine Service"],
-      subtitle: "VIP Experience Professional Chauffeurs",
+      title: "Large-Scale Event Transportation",
+      whiteWords: ["Large Scale Event"],
+      subtitle: "Efficient Planning, Seamless Execution",
       description:
-        "Arrive in style with high end limousines and professional chauffeurs. Perfect for corporate events, weddings, and VIP transfers.",
+        "Manage transportation for conferences, concerts, and corporate events with professional drivers and coordinated vehicle fleets. Ensure punctuality and comfort for all attendees.",
       image:
-        "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1200", // Exterior of black limousine
-      link: "/services/limousine-service",
+        "https://cdn.pixabay.com/photo/2024/06/11/13/30/ai-generated-8823151_1280.jpg", // Event shuttle buses or fleet
+      link: "/services/event-transportation",
     },
     {
       id: 2,
-      title: "Executive Comfort, Every Ride",
-      whiteWords: ["Executive Comfort"],
-      subtitle: "Luxury Vehicles Tailored Service",
+      title: "Corporate & VIP Event Transport",
+      whiteWords: ["Corporate", "VIP"],
+      subtitle: "Tailored Solutions for Every Guest",
       description:
-        "Travel in fully equipped luxury vehicles with WiFi, refreshments, and attentive chauffeurs. Experience comfort, privacy, and punctuality.",
+        "Offer your attendees premium transportation options with coordinated schedules, luxury vehicles, and professional chauffeurs for a seamless experience.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5JFVYGZ0MblGCA9ToCT4F52kB7EBjqGEYag&s", // Inside limousine with seating
-      link: "/services/limousine-service",
+        "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1200", // VIP guest being picked up
+      link: "/services/event-transportation",
     },
     {
       id: 3,
-      title: "Impress & Arrive On Time",
-      whiteWords: ["Impress", "On Time"],
-      subtitle: "Professional Drivers Elegant Fleet",
+      title: "Streamlined Group Mobility",
+      whiteWords: ["Streamlined", "Group"],
+      subtitle: "Reliable & Stress Free Transport",
       description:
-        "Perfect for business meetings, VIP clients, or special occasions. Our limousines provide a statement of professionalism and luxury.",
+        "Coordinate buses, vans, and executive cars for large groups. Optimize routes, manage timing, and provide real-time support for successful event transportation.",
       image:
-        "https://images.pexels.com/photos/1704122/pexels-photo-1704122.jpeg?auto=compress&cs=tinysrgb&w=1200", // Chauffeur opening door for client
-      link: "/services/limousine-service",
+        "https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200", // Fleet of vehicles at an event
+      link: "/services/event-transportation",
     },
   ];
 
@@ -98,18 +98,13 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-300 mb-4">
-            {currentSlide.subtitle}
-          </p>
+          <p className="text-lg md:text-xl text-gray-300 mb-4">{currentSlide.subtitle}</p>
 
           {/* Description */}
-          <p className="text-md md:text-lg text-gray-200 leading-relaxed mb-8">
-            {currentSlide.description}
-          </p>
+          <p className="text-md md:text-lg text-gray-200 leading-relaxed mb-8">{currentSlide.description}</p>
 
           {/* CTA */}
-          <Link to="/services">
-            {" "}
+          <Link to="/services/event-transportation">
             <Button text="Book Now" />
           </Link>
         </div>

@@ -4,41 +4,42 @@ import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Button";
 
 const Header = () => {
-  const slides = [
-    {
-      id: 1,
-      title: "Corporate Transport Solutions",
-      whiteWords: ["Corporate", "Solutions"],
-      subtitle: "Reliable. Scalable. Professional.",
-      description:
-        "Providing executive-grade Mercedes Vito transport solutions for businesses seeking consistent, high quality mobility for teams, clients, and operational logistics.",
-      image:
-        "https://blenderartists.org/uploads/default/optimized/4X/5/6/9/5698b29d1c4d3e3ef3ab0a97be4d9895dcb2bad5_2_690x431.jpeg",
-      link: "/services/corporate-transport",
-    },
-    {
-      id: 2,
-      title: "Event & Conference Transport",
-      whiteWords: ["Event", "Conference"],
-      subtitle: "Streamlined Business Mobility",
-      description:
-        "End-to-end logistics for corporate events, conferences, and exhibitions—ensuring staff and guests arrive on time and comfortably.",
-      image:
-        "https://cache1.pakwheels.com/ad_pictures/1326/mercedes-benz-e-class-e-180-amg-2022-132694952.webp",
-      link: "/services/event-transport",
-    },
-    {
-      id: 3,
-      title: "Executive Airport Transfers",
-      whiteWords: ["Executive", "Transfers"],
-      subtitle: "Efficient Travel for Teams & Clients",
-      description:
-        "Premium airport transfers for business travellers, ensuring punctual departures and reliable pickups with high comfort vehicles.",
-      image:
-        "https://i.pinimg.com/1200x/de/e5/95/dee595d9c2c6d66a0de390def7b33d3b.jpg",
-      link: "/services/airport-transfers",
-    },
-  ];
+ const slides = [
+  {
+    id: 1,
+    title: "Corporate Transport Solutions",
+    whiteWords: ["Corporate", "Solutions"],
+    subtitle: "Reliable Mobility for Businesses",
+    description:
+      "We provide executive-grade Mercedes Vito transport solutions designed for companies seeking consistent, professional mobility for teams, clients, and operational logistics.",
+    image:
+      "https://blenderartists.org/uploads/default/optimized/4X/5/6/9/5698b29d1c4d3e3ef3ab0a97be4d9895dcb2bad5_2_690x431.jpeg",
+    link: "/services/corporate-transport",
+  },
+  {
+    id: 2,
+    title: "Event & Conference Transport",
+    whiteWords: ["Event", "Conference"],
+    subtitle: "Seamless Logistics for Corporate Events",
+    description:
+      "End-to-end transport solutions for corporate events, conferences, and exhibitions, ensuring staff, speakers, and VIP clients arrive punctually and comfortably.",
+    image:
+      "https://cache1.pakwheels.com/ad_pictures/1326/mercedes-benz-e-class-e-180-amg-2022-132694952.webp",
+    link: "/services/event-transport",
+  },
+  {
+    id: 3,
+    title: "Executive Airport Transfers",
+    whiteWords: ["Executive", "Transfers"],
+    subtitle: "Professional Travel for Business Teams",
+    description:
+      "Premium airport transfer services for corporate clients, guaranteeing timely pickups, punctual departures, and high-comfort vehicles for executives and teams.",
+    image:
+      "https://i.pinimg.com/1200x/de/e5/95/dee595d9c2c6d66a0de390def7b33d3b.jpg",
+    link: "/services/airport-transfers",
+  },
+];
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -3,38 +3,38 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "What is an Airport Transfer?",
+    question: "How can my hotel or agency partner with Linked Way Rides?",
     answer:
-      "Airport Transfers provide professional chauffeur-driven rides directly to or from the airport with fixed pricing and premium comfort.",
+      "Sign up for our B2B program to provide seamless, chauffeur-driven airport transfers to your guests. Enjoy priority dispatch and dedicated account management.",
   },
   {
-    question: "How far in advance should I book?",
+    question: "Can we manage multiple guest transfers at once?",
     answer:
-      "We recommend booking 1–24 hours in advance depending on flight schedules, though last-minute bookings are possible.",
+      "Yes! Our platform allows travel agencies and hotels to book and manage multiple rides simultaneously with real-time tracking.",
   },
   {
-    question: "Are prices fixed or metered?",
+    question: "Do you offer corporate billing for partners?",
     answer:
-      "All prices are transparent and fixed at booking. No surge, traffic, or hidden fees.",
+      "Absolutely. Partners receive consolidated invoices, reporting, and simplified payment processes tailored for hotels and travel agencies.",
   },
   {
-    question: "Do you support corporate accounts?",
+    question: "What vehicles are available for partner bookings?",
     answer:
-      "Yes, corporate clients can enjoy centralized billing, team access, and detailed travel reports.",
+      "Linked Way Rides offers executive sedans, SUVs, luxury cars, and vans — all modern, chauffeur-driven, and ideal for VIP guests.",
   },
   {
-    question: "Can I add multiple stops?",
+    question: "Can transfers be customized for VIP guests?",
     answer:
-      "Yes, you can include extra stops during booking or while your chauffeur is on route.",
+      "Yes. We provide personalized services including flexible pickup/drop-off times, multiple stops, and special amenities for premium guests.",
   },
   {
-    question: "What vehicles are available?",
+    question: "How reliable is the service for guest arrivals?",
     answer:
-      "Business sedans, SUVs, luxury cars, and executive vans—all fully modern and chauffeur-driven.",
+      "Our professional chauffeurs monitor flights and adjust timings to ensure punctual, stress-free transfers for your guests every time.",
   },
 ];
 
-const FAQPage = () => {
+const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -42,25 +42,25 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-6">
-      {/* PAGE HEADER */}
+    <section className="bg-gray-50 py-16 px-6">
+      {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h1 className="text-4xl font-bold text-black">
-          Frequently <span className="text-[#F3B800]">Asked Questions</span>
-        </h1>
-        <p className="text-gray-600 mt-4">
-          Learn everything you need about our Airport Transfer services, bookings, pricing, and premium features.
+        <h2 className="text-4xl md:text-5xl font-bold text-black">
+          FAQs for <span className="text-[#F3B800]">Partner Hotels & Agencies</span>
+        </h2>
+        <p className="text-gray-600 mt-4 text-lg md:text-xl">
+          Everything you need to know about partnering with Linked Way Rides to provide seamless airport transfers to your guests.
         </p>
       </div>
 
-      {/* MAIN CONTENT */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-        {/* FAQ LIST */}
-        <div className="flex flex-col justify-between h-full space-y-4">
-          {faqs.map((faq, index) => (
+      {/* Content Grid */}
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        {/* FAQ List */}
+        <div className="flex flex-col space-y-4">
+           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-[#F3B800] to-[#debe2e] border border-gray-200 rounded-2xl p-5 shadow-md hover:shadow-lg transition-all"
+              className="bg-gradient-to-r from-[#F3B800] to-[#debe2e] border border-gray-200 rounded-2xl px-5 py-2 shadow-md hover:shadow-lg transition-all"
             >
               <button
                 onClick={() => toggleFAQ(index)}
@@ -85,17 +85,17 @@ const FAQPage = () => {
           ))}
         </div>
 
-        {/* IMAGE */}
-        <div className="overflow-hidden rounded-2xl">
+        {/* B2B Image */}
+        <div className="overflow-hidden rounded-2xl shadow-lg">
           <img
-            src="https://exciting-basket-1cebec2b8a.media.strapiapp.com/airport_5ad7c40c79.webp"
-            alt="Airport Transfer"
-            className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:brightness-105"
+            src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
+            alt="Partner Hotel & Agency Transfers"
+            className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-105 hover:brightness-105"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default FAQPage;
+export default FAQSection;
