@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Button from "../../Button";
 import image from "../../../../public/Link Way 01.png"
-import image2 from "../../../../public/link02.png"
+import image2 from "../../../../public/Link02.png"
 import image3 from "../../../../public/link04.png"
 
 const Hero = () => {
