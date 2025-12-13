@@ -11,8 +11,8 @@ import Button from "../../Button";
 import { Link } from "react-router-dom";
 import image1 from "../../../../public/Link Way 01.png"
 import image2 from "../../../../public/Link02.png"
-import image3 from "../../../../public/Link03.png"
-import image4 from "../../../../public/Link04.png"
+import image3 from "../../../../public/link03.png"
+import image4 from "../../../../public/link04.png"
 
 // Corporate Fleet Carousel Images
 const images = [
