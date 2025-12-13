@@ -4,7 +4,7 @@ import { FaHeadset, FaShieldAlt, FaCar, FaStar } from "react-icons/fa";
 import { IoLocationSharp, IoTime } from "react-icons/io5";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-import image from "../../../public/Link03.png"
+import image from "../../../public/link03.png"
 const features = [
   { icon: IoLocationSharp, text: "Live Tracking", color: "text-blue-500" },
   { icon: FaShieldAlt, text: "Safe & Secure", color: "text-green-500" },

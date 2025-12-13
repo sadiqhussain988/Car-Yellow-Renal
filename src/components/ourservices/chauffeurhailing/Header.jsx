@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Button";
-import image from "../../../../public/Link05.png";
+import image from "../../../../public/link05.png";
 
 const Hero = () => {
   // --- TEXT-ONLY CAROUSEL SLIDES ---
