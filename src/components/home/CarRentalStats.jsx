@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 // import image2 from "../../assets/home/p1.png";
 // import image4 from "../../assets/home/lambo.png";
 import image from "../../../public/Link02.png"
-import image2 from "../../../public/Link05.png"
-import image3 from "../../../public/Link04.png"
+import image2 from "../../../public/link05.png"
+import image3 from "../../../public/link04.png"
 
 const CarRentalStats = () => {
   const stats = [
