@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import image from '../../../public/link02.png'
+import image from '../../../public/Link02.png'
 import image1 from '../../../public/link04.png'
 import image3 from '../../../public/link05.png'
 
