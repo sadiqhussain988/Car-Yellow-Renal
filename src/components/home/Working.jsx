@@ -3,9 +3,9 @@ import Button from "../Button";
 import { Link } from "react-router-dom";
 import image2 from "../../../public/Link02.png"
 import image5 from "../../../public/Link Way 01.png"
-import image from "../../../public/Link03.png"
-import image4 from "../../../public/Link04.png"
-import image6 from "../../../public/Link05.png"
+import image from "../../../public/link03.png"
+import image4 from "../../../public/link04.png"
+import image6 from "../../../public/link05.png"
 
 const services = [
   {
