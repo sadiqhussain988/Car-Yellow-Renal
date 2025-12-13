@@ -2,20 +2,22 @@ import React from 'react';
 
 const Map = () => {
   return (
-    <div className="relative overflow-hidden rounded-xl shadow-xl my-12 mx-4 md:mx-8 lg:mx-5">
+    <div className="relative overflow-hidden mx-auto max-w-6xl rounded-5xl my-12 px-4 md:px-8 lg:px-5">
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FFEE02]/20 to-black/10 z-10 pointer-events-none rounded-xl"></div>
+      <div className="absolute inset-0  z-10 pointer-events-none rounded-5xl"></div>
 
       {/* Google Map Iframe */}
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244318.1849212446!2d-0.44195100000000003!3d51.5287718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb3e879bffd%3A0x7c6f62b5446f5aa4!2sUnited%20Kingdom!5e0!3m2!1sen!2s!4v1741933697589!5m2!1sen!2s"
-        height="450"
-        className="w-full border-0 rounded-xl"
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="United Kingdom Location Map"
-      ></iframe>
+      <div className="rounded-5xl overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+          width="100%"
+          height="480"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          title="United Kingdom Location Map"
+        ></iframe>
+      </div>
 
       {/* Location Label */}
       <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg shadow-md z-10">

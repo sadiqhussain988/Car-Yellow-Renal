@@ -4,10 +4,12 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 import { motion } from "framer-motion";
 import Button from "../Button";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { IoMdTime } from "react-icons/io";
+
 
 const ContactForm = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-24">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-15">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -24,7 +26,7 @@ const ContactForm = () => {
 
             <div className="relative z-10">
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-                Let’s Connect
+                Let’s <span className="bg-gradient-to-r from-[#FFEE02] to-[#F5A623] bg-clip-text text-transparent">Connect</span>
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-12">
                 We’d love to hear from you! Whether it’s a partnership, inquiry, or feedback, our team is ready to assist.
@@ -33,8 +35,8 @@ const ContactForm = () => {
               <div className="space-y-6">
                 <ContactItem icon={<MdEmail />} label="Email" text="info@linkwayrides.com" />
                 <ContactItem icon={<FiPhone />} label="Phone" text="+44 161 706 1110" />
-                <ContactItem icon={<MdLocationOn />} label="Location" text="2739 Saint Augustine Trl, Marietta, GA, USA" />
-                <ContactItem icon={<span className="text-2xl">🕒</span>} label="Hours" text="24/7 Available Service" />
+                <ContactItem icon={<MdLocationOn />} label="Location" text="2739 Saint Augustine Trl, Marietta, GA, UK" />
+                <ContactItem icon={<span className="text-2xl"><IoMdTime /></span>} label="Hours" text="24/7 Available Service" />
               </div>
 
               <div className="mt-12 pt-6 border-t border-gray-700">
@@ -63,7 +65,7 @@ const ContactForm = () => {
               className="relative z-10 bg-gray-900/80 text-white p-12 md:p-16 rounded-3xl"
             >
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-                Send Us a Message
+                Send Us a <span className="bg-gradient-to-r from-[#FFEE02] to-[#F5A623] bg-clip-text text-transparent">Message</span>
               </h1>
               <p className="text-lg mb-10 leading-relaxed">
                 Fill out the form below, and we’ll get back to you shortly. Your satisfaction is our top priority.
@@ -99,7 +101,7 @@ const InputField = ({ type, placeholder }) => (
     <input
       type={type}
       placeholder={placeholder}
-      className="w-full px-5 py-4 text-lg text-white bg-gray-800/40 border-b-2 border-gray-600 focus:border-[#FFEE02] outline-none rounded transition-all duration-300 placeholder-gray-300"
+      className="w-full px-5 py-4 text-lg text-white bg-gray-800/40 border-b-2 border-gray-600 focus:border-[#F5B927] outline-none rounded transition-all duration-300 placeholder-gray-300"
     />
   </div>
 );
@@ -109,19 +111,19 @@ const TextArea = ({ placeholder }) => (
     <textarea
       rows="5"
       placeholder={placeholder}
-      className="w-full px-5 py-4 text-lg text-white bg-gray-800/40 border-b-2 border-gray-600 focus:border-[#FFEE02] outline-none rounded transition-all duration-300 placeholder-gray-300 resize-none"
+      className="w-full px-5 py-4 text-lg text-white bg-gray-800/40 border-b-2 border-gray-600 focus:border-[#F5B927] outline-none rounded transition-all duration-300 placeholder-gray-300 resize-none"
     />
   </div>
 );
 
 const ContactItem = ({ icon, label, text }) => (
   <div className="flex items-start gap-5 group cursor-pointer transition-all duration-300">
-    <div className="bg-[#FFEE02] text-gray-900 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+    <div className="bg-[#F5B927] text-white w-14 h-14 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>
     <div>
       <p className="text-gray-400 text-sm uppercase tracking-wide">{label}</p>
-      <p className="text-white text-lg font-medium group-hover:text-[#FFEE02] transition-colors duration-300">
+      <p className="text-white text-lg font-medium group-hover:text-[#F5B927] transition-colors duration-300">
         {text === '+44 161 706 1110' ? (
           <div className="flex items-center gap-4 mt-1">
             <span>{text}</span>
