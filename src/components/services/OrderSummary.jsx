@@ -107,7 +107,7 @@ const OrderSummary = () => {
           <button
             onClick={confirmOrder}
             disabled={isLoading}
-            className="flex-1 text-white bg-gradient-to-r from-[#C8BF40] to-[#D9D255] hover:opacity-90 font-medium rounded-lg py-2 transition"
+            className="flex-1 text-white bg-gradient-to-r from-[#F6B626] to-[#D9D255] hover:opacity-90 font-medium rounded-lg py-2 transition"
           >
             {isLoading ? "Processing..." : "Confirm Order"}
           </button>

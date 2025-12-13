@@ -22,10 +22,10 @@ const Testimonials = () => {
     const hasHalfStar = rating % 1 >= 0.5;
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<FaStar key={`full-${i}`} className="text-yellow-400" />);
+      stars.push(<FaStar key={`full-${i}`} className="text-[#F6B626]" />);
     }
     if (hasHalfStar) {
-      stars.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
+      stars.push(<FaStarHalfAlt key="half" className="text-[#F6B626]" />);
     }
 
     const emptyStars = 5 - stars.length;
@@ -75,7 +75,7 @@ const Testimonials = () => {
             data-aos="fade-down"
           >
             <h1 className="text-3xl my-auto font-bold text-black leading-snug">
-              Our <span className="text-[#FFF200]">Clients,</span> In Their Own
+              Our <span className="text-[#F6B626]">Clients,</span> In Their Own
               Words
             </h1>
           </div>
@@ -149,7 +149,7 @@ const Testimonials = () => {
               <button
                 data-aos="zoom-out"
                 onClick={handleAddReview}
-                className="px-2 py-2 text-xs sm:px-3 sm:py-2 cursor-pointer text-black hover:text-white sm:text-lg font-semibold rounded-md text-md shadow-lg bg-[#FFEE02] hover:bg-[#C8BF40] transition-all duration-700"
+                className="px-2 py-2 text-xs sm:px-3 sm:py-2 cursor-pointer text-black hover:text-white sm:text-lg font-semibold rounded-md text-md shadow-lg bg-[#F6B626] hover:bg-[#ce9e2f] transition-all duration-700"
                 title="Click to add your review"
               >
                 Add your reviews

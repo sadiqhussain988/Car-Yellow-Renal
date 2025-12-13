@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Button from "../../Button";
+import image from "../../../../public/Link Way 01.png"
+import image2 from "../../../../public/Link02.png"
 const Hero = () => {
   const slides = [
   {
@@ -13,7 +15,7 @@ const Hero = () => {
     description:
       "Travel between major cities with comfort, reliability, and professional chauffeurs. Perfect for business trips, corporate routing, and executive movement.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/4k07hkseEOyBAOdkoEnLYu/7eda7d4be70ba875f0b41946e7ec52d4/Hero_01__2_.jpg", 
+     image, 
     link: "/services/city-to-city",
   },
 
@@ -37,7 +39,7 @@ const Hero = () => {
     description:
       "Enjoy spacious business-class vehicles with Wi-Fi, bottled water, real-time tracking, and corporate billing options.",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp",
+     image,
     link: "/services/city-to-city",
   },
 ];

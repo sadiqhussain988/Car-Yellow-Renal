@@ -4,6 +4,7 @@ import service6 from "../../assets/home/service5-2.jpg";
 import service7 from "../../assets/home/event.png";
 import Button from "../Button";
 import { Link } from "react-router-dom";
+import image from "../../../public/Link Way 01.png"
 
 const Services = () => {
   const services = [
@@ -12,21 +13,21 @@ const Services = () => {
       subtitle: "Premium Corporate Vehicles",
       description:
         "Choose from our premium Mercedes Vito, C-Class, and E-Class vehicles for corporate transfers, client visits, or executive travel across the UK. Comfort, style, and professionalism guaranteed.",
-      image: "https://i.pinimg.com/1200x/70/97/fb/7097fbc59faf8ec5ab73e6e43f8c059e.jpg",
+      image: image,
     },
     {
       title: "Airport & Executive Transfers",
       subtitle: "Seamless Travel",
       description:
         "Reliable and punctual airport transfers for business travelers. Our team ensures smooth, stress-free journeys to and from all major UK airports, including Heathrow, Gatwick, Manchester, and Edinburgh.",
-      image: "https://www.carscoops.com/wp-content/uploads/2021/04/2021-mercedes-benz-c-class-l-long-wheelbase-china-00.jpg",
+      image: "https://cdn.pixabay.com/photo/2013/02/27/23/12/sacramento-international-airport-86684_1280.jpg",
     },
     {
       title: "Corporate & Event Transport",
       subtitle: "Group & Event Solutions",
       description:
         "Professional transport services for corporate events, conferences, team outings, and private functions. Safe, on-time, and fully managed transport for groups of any size.",
-      image: "https://c8.alamy.com/comp/W4B5M7/brussels-belgium-jan-2019-mercedes-vito-brussels-motor-show-produced-by-mercedes-benz-light-commercial-vehicle-as-cargo-van-pickup-truck-W4B5M7.jpg",
+      image: "https://cdn.pixabay.com/photo/2016/11/29/01/22/automotive-1866521_1280.jpg",
     },
   ];
 

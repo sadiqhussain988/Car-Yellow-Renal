@@ -8,10 +8,13 @@ import {
   FaStar,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import image from "../../../public/Link Way 01.png";
+import Button from "../Button";
+import { Link } from "react-router-dom";
 
 export default function FairDeal() {
   const serviceHighlights = {
-    title: "Premium Coach, Minibus & Van Hire Services Across the UK",
+    title: "Premium Linked Way Rides Services Across the UK",
     description:
       "Experience seamless travel with comfort, safety, and style at every step. Our team delivers tailored transport solutions for individuals, groups, and businesses — anywhere in the UK.",
     features: [
@@ -39,9 +42,18 @@ export default function FairDeal() {
   };
 
   // Motion Variants
-  const fadeUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
-  const fadeLeft = { hidden: { opacity: 0, x: 40 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6 } } };
-  const zoomInUp = { hidden: { opacity: 0, scale: 0.8, y: 20 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6 } } };
+  const fadeUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+  const fadeLeft = {
+    hidden: { opacity: 0, x: 40 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+  };
+  const zoomInUp = {
+    hidden: { opacity: 0, scale: 0.8, y: 20 },
+    visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6 } },
+  };
 
   return (
     <section className="relative w-full py-6 bg-gradient-to-br from-white via-gray-50 to-gray-100 overflow-hidden">
@@ -51,16 +63,27 @@ export default function FairDeal() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         {/* Header */}
-        <motion.div className="text-center mb-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+        <motion.div
+          className="text-center mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
             <FaStar className="w-4 h-4" />
             <span>Trusted Transport Solutions</span>
           </div>
-          <motion.h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight" variants={zoomInUp}>
-            Travel Together with <span className="text-[#D68F00] drop-shadow-md">Confidence</span>
+          <motion.h1
+            className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight"
+            variants={zoomInUp}
+          >
+            Travel Together with{" "}
+            <span className="text-[#D68F00] drop-shadow-md">Confidence</span>
           </motion.h1>
           <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-            Wherever your destination, we ensure your journey is smooth, safe, and stylish — every time.
+            Wherever your destination, we ensure your journey is smooth, safe,
+            and stylish — every time.
           </p>
           <div className="w-28 h-1 bg-[#D68F00] mx-auto mt-6 rounded-full"></div>
         </motion.div>
@@ -68,11 +91,17 @@ export default function FairDeal() {
         {/* Layout */}
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 justify-between">
           {/* Left Image */}
-          <motion.div className="w-full lg:w-1/2 relative" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={zoomInUp}>
+          <motion.div
+            className="w-full lg:w-1/2 relative"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={zoomInUp}
+          >
             <div className="relative group">
               <div className="rounded-3xl overflow-hidden shadow-2xl relative">
                 <motion.img
-                  src="https://cdn.pixabay.com/photo/2016/07/09/21/47/car-1506922_1280.jpg"
+                  src={image}
                   alt="Professional Transport Service"
                   className="w-full h-[380px] sm:h-[450px] lg:h-[500px] object-cover rounded-3xl transition-transform duration-700 group-hover:scale-105"
                   whileHover={{ scale: 1.05 }}
@@ -81,18 +110,25 @@ export default function FairDeal() {
               </div>
 
               {/* Badge */}
-              <div className="absolute -bottom-6 -right-6 hidden sm:flex bg-[#D68F00] text-black px-5 py-3 rounded-2xl shadow-lg">
+              <div className="absolute -bottom-6 -right-6 hidden sm:flex bg-[#D68F00] text-white px-5 py-3 rounded-2xl shadow-lg">
                 <div className="flex items-center gap-3">
                   <FaShieldAlt className="w-8 h-8" />
                   <div>
                     <p className="text-sm font-bold">Safe & Reliable</p>
-                    <p className="text-xs font-medium text-gray-700">Always on Time</p>
+                    <p className="text-xs font-medium text-gray-700">
+                      Always on Time
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Floating Secondary Image */}
-              <motion.div className="absolute -bottom-10 -left-5 w-2/3 sm:w-1/2 hidden sm:block" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+              <motion.div
+                className="absolute -bottom-10 -left-5 w-2/3 sm:w-1/2 hidden sm:block"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+              >
                 {/* <img
                   src="https://cdn.pixabay.com/photo/2021/01/12/14/58/audi-5911690_1280.jpg"
                   alt="Luxury Vehicle Interior"
@@ -103,9 +139,20 @@ export default function FairDeal() {
           </motion.div>
 
           {/* Right Text */}
-          <motion.div className="w-full lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeLeft}>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 leading-snug">{serviceHighlights.title}</h2>
-            <p className="text-gray-700 text-base md:text-lg mb-6 leading-relaxed">{serviceHighlights.description}</p>
+          <motion.div
+            className="w-full lg:w-1/2"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeLeft}
+          >
+            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[black] to-[#f7af07] bg-clip-text text-transparent mb-4 leading-snug">
+              {serviceHighlights.title}
+            </h2>
+
+            <p className="text-gray-700 text-base md:text-lg mb-6 leading-relaxed">
+              {serviceHighlights.description}
+            </p>
 
             {/* Feature Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-6">
@@ -118,17 +165,26 @@ export default function FairDeal() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 + i * 0.1 }}
                 >
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#D68F00] rounded-xl flex items-center justify-center text-white">{item.icon}</div>
-                  <p className="text-gray-800 text-sm sm:text-base leading-relaxed font-medium">{item.text}</p>
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#D68F00] rounded-xl flex items-center justify-center text-white">
+                    {item.icon}
+                  </div>
+                  <p className="text-gray-800 text-sm sm:text-base leading-relaxed font-medium">
+                    {item.text}
+                  </p>
                 </motion.div>
               ))}
             </div>
 
             {/* CTA */}
-            <motion.div className="mt-10" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}>
-              <button className="bg-[#D68F00] cursor-pointer hover:bg-black hover:text-white transition-all duration-300 text-black font-semibold px-8 py-3 rounded-full shadow-lg">
-                Get a Free Quote
-              </button>
+            <motion.div
+              className="mt-10"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+            >
+              <Link to="/services">
+                <Button text="Book Now" />
+              </Link>
             </motion.div>
           </motion.div>
         </div>

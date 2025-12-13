@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Button";
+import image from "../../../../public/Link05.png";
 
 const Hero = () => {
   // --- TEXT-ONLY CAROUSEL SLIDES ---
@@ -48,8 +49,9 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg')",
+          backgroundImage: `url(${image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
 
@@ -57,7 +59,6 @@ const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
         <div className="max-w-3xl animate-fadeIn">
-
           <h1 className="text-3xl lg:text-5xl font-extrabold mb-6 text-white leading-tight">
             {slide.title.split(" ").map((word, i) => {
               const isHL = slide.highlight.some(

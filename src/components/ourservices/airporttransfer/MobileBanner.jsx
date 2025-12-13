@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../Button";
+import image from "../../../../public/Link Way 01.png"
 
 const MobileBanner = () => {
   return (
@@ -74,9 +75,9 @@ const MobileBanner = () => {
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
               <img
-                src="https://images.ctfassets.net/ov8o7v78mnye/1TkzZQS0ECSdewiwzHTYWp/e1c47dad3ded7abb0079441dc7c19e22/01_CHF.jpg?w=1280&f=center&q=85&fm=webp"
+                src={image}
                 alt="Business Partnership Rides"
-                className="w-full max-w-[420px] rounded-2xl scale-100 group-hover:scale-105 transition-transform duration-500"
+                className="w-full lg:h-[370px] max-w-[420px] rounded-2xl scale-100 group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-3 right-3 bg-white shadow-md px-4 py-2 rounded-full text-xs font-semibold text-gray-800 flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>

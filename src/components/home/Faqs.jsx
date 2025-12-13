@@ -60,11 +60,11 @@ const Faqs = () => {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-3 mb-4"
           >
-            <div className="w-12 h-0.5 bg-[#FFEE02]"></div>
+            <div className="w-12 h-0.5 bg-[#F6B626]"></div>
             <span className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
               Got Questions?
             </span>
-            <div className="w-12 h-0.5 bg-[#FFEE02]"></div>
+            <div className="w-12 h-0.5 bg-[#F6B626]"></div>
           </motion.div>
 
           <motion.h1
@@ -107,8 +107,8 @@ const Faqs = () => {
                 layout
                 className={`relative overflow-hidden rounded-2xl border-2 transition-all duration-500 cursor-pointer ${
                   openIndex === index
-                    ? "border-[#D68F00] bg-white shadow-2xl"
-                    : "border-gray-200 bg-white hover:border-gray-300 hover:shadow-lg"
+                    ? "border-[#D68F00] bg-[#F6B626] shadow-2xl"
+                    : "border-gray-200 bg-[#F6B626] hover:border-gray-300 hover:shadow-lg"
                 }`}
                 whileHover={{ y: -2 }}
               >
@@ -180,7 +180,7 @@ const Faqs = () => {
                       className="overflow-hidden"
                     >
                       <div className="px-6 pb-6 ml-12 border-l-2 border-[#D68F00]">
-                        <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                        <p className="text-gray-950 leading-relaxed">{faq.answer}</p>
                       </div>
                     </motion.div>
                   )}

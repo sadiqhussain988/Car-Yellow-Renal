@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import Button from "../Button";
 import { Link } from "react-router-dom";
+import image2 from "../../../public/Link02.png"
+import image5 from "../../../public/Link Way 01.png"
+import image from "../../../public/Link03.png"
+import image4 from "../../../public/Link04.png"
+import image6 from "../../../public/Link05.png"
 
 const services = [
   {
@@ -15,7 +20,7 @@ const services = [
     title: "Chauffeur Hailing",
     subtitle: "On-Demand Driver",
     image:
-      "https://cdn.pixabay.com/photo/2018/07/10/10/40/mercedes-3528323_1280.jpg",
+     image2,
     description:
       "Quick chauffeur hailing with luxury standards and professional service.",
   },
@@ -31,7 +36,7 @@ const services = [
     title: "Hourly Hire",
     subtitle: "Flexible",
     image:
-      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1600&q=80",
+     image5,
     description:
       "Hire a car with driver for meetings, appointments, and flexible schedules.",
   },
@@ -39,7 +44,7 @@ const services = [
     title: "Full Day Hire",
     subtitle: "Business & Family",
     image:
-      "https://cdn.pixabay.com/photo/2020/03/13/07/34/auto-4927195_1280.jpg",
+     image,
     description:
       "Perfect for business trips, city tours, and family travel plans.",
   },
@@ -62,15 +67,14 @@ const services = [
     title: "Event Transport",
     subtitle: "Weddings & Parties",
     image:
-      "https://images.ctfassets.net/ov8o7v78mnye/1CNR5P40StxH9B9nIZ6C3y/bbbbb2f81f3166a645a4e5a17322de16/Blacklane_London_Social-13.jpg?w=768&f=center&q=85&fm=webp",
+      image6,
     description:
       "Premium travel arrangements for weddings, functions, and VIP guests.",
   },
   {
     title: "Tour Packages",
     subtitle: "Explore More",
-    image:
-      "https://cdn.pixabay.com/photo/2018/08/26/18/50/auto-3632975_1280.jpg",
+    image:image4,
     description:
       "Discover the best tourist attractions with our guided travel packages.",
   },

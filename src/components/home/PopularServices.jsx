@@ -34,7 +34,7 @@ const PopularServices = () => {
             Popular Rental Deals
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            Most Popular <span className="text-[#f0e548]">Rental Deals</span>
+            Most Popular <span className="text-[#F6B626]">Rental Deals</span>
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             Experience our top-rated vehicles with exceptional comfort and
@@ -61,7 +61,7 @@ const PopularServices = () => {
                     className="w-full h-48 md:h-full object-cover"
                   />
                   <div className="absolute top-3 right-3 bg-black/80 text-white px-2 py-1 rounded-full flex items-center text-xs">
-                    <FaStar className="text-[#FFEE02] mr-1" />
+                    <FaStar className="text-[#F6B626] mr-1" />
                     {service.rating?.toFixed(1) || "4.8"}
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const PopularServices = () => {
                 {/* Content Section */}
                 <div className="md:w-3/5 p-6 flex flex-col">
                   <div className="flex-grow">
-                    <h3 className="text-xl font-bold text-gray-900 transition duration-500 ease-in-out hover:text-amber-300">
+                    <h3 className="text-xl font-bold text-gray-900 transition duration-500 ease-in-out hover:text-[#F6B626]">
                       {service.serviceName}
                     </h3>
                     <span className="inline-block px-2 py-1 text-xs font-semibold text-gray-700 bg-gray-100 rounded-full mb-3">
@@ -79,13 +79,13 @@ const PopularServices = () => {
                     {/* Features Grid */}
                     <div className="grid grid-cols-2 gap-3 mb-4">
                       <div className="flex items-center text-gray-700">
-                        <FaUser className="w-4 h-4 mr-2 text-[#C8BF40]" />
+                        <FaUser className="w-4 h-4 mr-2 text-[#F6B626]" />
                         <span className="text-sm">
                           {service.passengers || "4"} Seats
                         </span>
                       </div>
                       <div className="flex items-center text-gray-700">
-                        <FaCarSide className="w-4 h-4 mr-2 text-[#C8BF40]" />
+                        <FaCarSide className="w-4 h-4 mr-2 text-[#F6B626]" />
                         <span className="text-sm">Automatic</span>
                       </div>
                       <div className="flex items-center text-gray-700">
@@ -116,7 +116,7 @@ const PopularServices = () => {
                       <Link
                         to={`/booking/${service._id}`}
                         state={{ service }}
-                        className="bg-[#FFEE02] hover:bg-[#0f0f0e] hover:text-gray-100 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center"
+                        className="bg-[#F6B626] hover:bg-[#0f0f0e] hover:text-gray-100 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center"
                       >
                         Book Now
                         <svg

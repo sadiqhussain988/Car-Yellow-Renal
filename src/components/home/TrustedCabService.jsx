@@ -4,7 +4,7 @@ import { FaHeadset, FaShieldAlt, FaCar, FaStar } from "react-icons/fa";
 import { IoLocationSharp, IoTime } from "react-icons/io5";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-
+import image from "../../../public/Link03.png"
 const features = [
   { icon: IoLocationSharp, text: "Live Tracking", color: "text-blue-500" },
   { icon: FaShieldAlt, text: "Safe & Secure", color: "text-green-500" },
@@ -40,7 +40,7 @@ const TrustedCabService = () => {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.ctfassets.net/ov8o7v78mnye/1CNR5P40StxH9B9nIZ6C3y/bbbbb2f81f3166a645a4e5a17322de16/Blacklane_London_Social-13.jpg?w=768&f=center&q=85&fm=webp"
+                src={image}
                 alt="Luxury Ride Interior"
                 className="w-full h-96 lg:h-[34rem] object-cover"
               />

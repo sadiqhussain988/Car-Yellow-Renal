@@ -29,8 +29,8 @@ import UserOrders from "./pages/UserOrders";
 import UpdateOrder from "./pages/UpdateOrder";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
-import Blogs from "./pages/Blogs";
-import BlogDetails from "./components/blogs/BlogDetails";
+// import Blogs from "./pages/Blogs";
+// import BlogDetails from "./components/blogs/BlogDetails";
 import AdminBlogs from "./pages/dashboard/AdminBlogs";
 import HeaderMail from "./pages/HeaderMail";
 import OrderSummary from "./components/services/OrderSummary";
@@ -85,8 +85,8 @@ const router = createBrowserRouter([
       { path: "/forgot-password", element: <ForgotPassword /> },
       { path: "/update-order/:id", element: <UpdateOrder /> },
       { path: "/reset-password", element: <ResetPassword /> },
-      { path: "/blogs", element: <Blogs /> },
-      { path: "/blog/:id", element: <BlogDetails /> },
+      // { path: "/blogs", element: <Blogs /> },
+      // { path: "/blog/:id", element: <BlogDetails /> },
       { path: "/city-to-city", element: <CityToCity /> },
       { path: "/chauffeur-hailing", element: <ChauffeurHailing /> },
       { path: "/airport-transfer", element: <AirportTransfers /> },

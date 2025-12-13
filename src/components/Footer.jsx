@@ -88,25 +88,8 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Linkway Rides streamlines transportation services by connecting
-            customers with reliable drivers, simplifying bookings, and
-            enhancing ride management through intelligent, user friendly
-            technology
+           <span className="text-[#F6B626]">Linkway Rides </span>is a smart transportation platform designed to make every journey seamless and stress free. By connecting passengers with reliable and vetted drivers, we simplify the process of booking rides while ensuring safety and efficiency. Our intuitive app allows users to schedule rides instantly, track drivers in real-time, manage trip details, and make secure payments effortlessly.
           </motion.p>
-
-          <div className="mt-4 flex items-center flex-wrap gap-2">
-            {[FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn].map(
-              (Icon, idx) => (
-                <button
-                  key={idx}
-                  className="w-8 h-8 flex items-center justify-center relative overflow-hidden border border-black/15 rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
-                >
-                  <Icon className="text-gray-900 relative z-10 transition-all duration-300 group-hover:text-white text-sm" />
-                  <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#F5B533] z-0 transition-all duration-500 group-hover:top-0"></div>
-                </button>
-              )
-            )}
-          </div>
         </div>
 
         {/* Useful Links */}
@@ -126,17 +109,21 @@ const Footer = () => {
               <hr className="w-[30%] bg-[#ba8722] h-1 rounded-full mt-[-2px]" />
             </div>
             <div className="flex flex-col gap-3 mt-2">
-              {["Home", "Services", "About-us", "Contact"].map((item, index) => (
-                <div key={index} className="flex gap-2 items-center">
-                  <LuChevronsLeft className="mt-0.5" />
-                  <Link
-                    to={`/${item ? item.toLowerCase().replace(" ", "-") : "about-us"}`}
-                    className="relative text-white transition-all duration-300 ease-in-out after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#c68a12] after:transition-all after:duration-300 hover:after:w-full rounded-full"
-                  >
-                    {item}
-                  </Link>
-                </div>
-              ))}
+              {["Home", "Services", "About-us", "Contact"].map(
+                (item, index) => (
+                  <div key={index} className="flex gap-2 items-center">
+                    <LuChevronsLeft className="mt-0.5" />
+                    <Link
+                      to={`/${
+                        item ? item.toLowerCase().replace(" ", "-") : "about-us"
+                      }`}
+                      className="relative text-white transition-all duration-300 ease-in-out after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#c68a12] after:transition-all after:duration-300 hover:after:w-full rounded-full"
+                    >
+                      {item}
+                    </Link>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
@@ -166,13 +153,18 @@ const Footer = () => {
             >
               Signup for our weekly Newsletter updates.
             </motion.p>
-            <div>
-              <input
-                type="email"
-                className="px-5 py-3 mb-4 border max-w-[139px] border-gray-300  rounded-md outline-none"
-                placeholder="Your email"
-              />
-              <Button  text="Subscribe" />
+            <div className="mt-4 flex items-center flex-wrap gap-2">
+              {[FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn].map(
+                (Icon, idx) => (
+                  <button
+                    key={idx}
+                    className="w-8 h-8 flex items-center justify-center relative overflow-hidden border border-black/15 rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
+                  >
+                    <Icon className="text-gray-900 relative z-10 transition-all duration-300 group-hover:text-white text-sm" />
+                    <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#F5B533] z-0 transition-all duration-500 group-hover:top-0"></div>
+                  </button>
+                )
+              )}
             </div>
           </div>
         </div>

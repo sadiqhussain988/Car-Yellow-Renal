@@ -9,13 +9,17 @@ import {
 } from "react-icons/fi";
 import Button from "../../Button";
 import { Link } from "react-router-dom";
+import image1 from "../../../../public/Link Way 01.png"
+import image2 from "../../../../public/Link02.png"
+import image3 from "../../../../public/Link03.png"
+import image4 from "../../../../public/Link04.png"
 
 // Corporate Fleet Carousel Images
 const images = [
-  "https://images.ctfassets.net/ov8o7v78mnye/5RoOVsGaqEGGAO8JbbmWeJ/b98b2e3168f9e67ef2baa4e64f2b8b7c/Blacklane_Socials_NYC-25.jpg?w=1280&f=center&q=85&fm=webp",
-  "https://images.ctfassets.net/ov8o7v78mnye/1CNR5P40StxH9B9nIZ6C3y/bbbbb2f81f3166a645a4e5a17322de16/Blacklane_London_Social-13.jpg?w=1280&f=center&q=85&fm=webp",
-  "https://images.ctfassets.net/ov8o7v78mnye/39dmQd6ZEdWja0T21UjcU7/e434088a17d45ee6c75a6564d6acce30/Vehicles_ready_for_all_occasions.jpg?w=1280&f=center&q=85&fm=webp",
-  "https://images.ctfassets.net/ov8o7v78mnye/26wswzRctFE9i4EoMFvvTo/ec0ad19e9cddf278216c7662fb0ec542/Additional_revenue_and_commission__without_the_hassle.jpg?w=1280&f=center&q=85&fm=webp",
+ image1,
+  image2,
+  image3,
+  image4,
 ];
 
 const CityToCitySection = () => {

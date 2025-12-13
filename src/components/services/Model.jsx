@@ -123,7 +123,7 @@ const BookingForm = () => {
                     name="date"
                     value={user.date}
                     onChange={handleChange}
-                    className="border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-yellow-400"
+                    className="border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-[#F6B626]"
                   />
                 </div>
                 <div>
@@ -133,7 +133,7 @@ const BookingForm = () => {
                     name="time"
                     value={user.time}
                     onChange={handleChange}
-                    className="border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-yellow-400"
+                    className="border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-[#F6B626]"
                   />
                 </div>
               </div>
@@ -181,7 +181,7 @@ const BookingForm = () => {
               <div className="mt-6">
                 <button
                   onClick={handleNext}
-                  className="w-full text-white bg-gradient-to-r from-[#C8BF40] to-[#D9D255] hover:opacity-90 font-medium rounded-lg text-sm px-5 py-3"
+                  className="w-full text-white bg-gradient-to-r from-[#C8BF40] to-[#F6B626] hover:opacity-90 font-medium rounded-lg text-sm px-5 py-3"
                 >
                   Next
                 </button>

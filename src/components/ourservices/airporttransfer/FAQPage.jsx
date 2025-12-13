@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import image from "../../../../public/Link02.png"
 
 const faqs = [
   {
@@ -88,9 +89,9 @@ const FAQSection = () => {
         {/* B2B Image */}
         <div className="overflow-hidden rounded-2xl shadow-lg">
           <img
-            src="https://images.ctfassets.net/ov8o7v78mnye/1CNR5P40StxH9B9nIZ6C3y/bbbbb2f81f3166a645a4e5a17322de16/Blacklane_London_Social-13.jpg?w=1280&f=center&q=85&fm=webp"
+            src={image}
             alt="Partner Hotel & Agency Transfers"
-            className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-105 hover:brightness-105"
+            className="w-full h-full lg:h-[370px] object-cover rounded-2xl transition-transform duration-500 hover:scale-105 hover:brightness-105"
           />
         </div>
       </div>

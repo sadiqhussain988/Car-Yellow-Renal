@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import image from "../../../../public/Link02.png"
 
 const faqs = [
   {
@@ -56,9 +57,9 @@ const FAQPage = () => {
 
         <div className="overflow-hidden rounded-2xl">
           <img
-            src="https://images.ctfassets.net/ov8o7v78mnye/1bGHzDEQmkTXeycJoZnH3G/aef3e646c68a8258b1812f34a31fe1a0/SEO_EQS2.jpg?w=1280&f=center&q=85&fm=webp"
+            src={image}
             alt="Corporate Travel"
-            className="w-full h-full object-cover rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
+            className="w-full h-full object-cover lg:h-[400px] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
           />
         </div>
 
@@ -68,7 +69,7 @@ const FAQPage = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-md border border-gray-200 transition-all hover:shadow-xl"
+                className="bg-white rounded-2xl px-5 py-3 shadow-md border border-gray-200 transition-all hover:shadow-xl"
               >
                 <button
                   onClick={() => toggleFAQ(index)}

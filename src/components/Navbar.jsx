@@ -88,7 +88,7 @@ const Navbar = () => {
             )}
           </div>
 
-          {["/Blogs", "/About-us", "/Contact"].map((path) => (
+          {[ "/About-us", "/Contact"].map((path) => (
             <Link key={path} to={path} className={navItemClass}>
               {path.slice(1).replace("-", " ").replace("us", "Us")}
             </Link>

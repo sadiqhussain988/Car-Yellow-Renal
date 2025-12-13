@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import image from "../../../public/Link Way 01.png"
+import image2 from "../../../public/Link02.png"
+import image3 from "../../../public/Link03.png"
+import image4 from "../../../public/Link04.png"
+import image5 from "../../../public/Link05.png"
 
 export default function PopularDestination() {
    const countries = [
@@ -15,7 +20,7 @@ export default function PopularDestination() {
         {
           name: "Alhambra Palace, Granada",
           image:
-            "https://images.ctfassets.net/ov8o7v78mnye/1bGHzDEQmkTXeycJoZnH3G/aef3e646c68a8258b1812f34a31fe1a0/SEO_EQS2.jpg?w=768&f=center&q=85&fm=webp",
+            image,
         },
         {
           name: "Park Güell, Barcelona",
@@ -31,17 +36,17 @@ export default function PopularDestination() {
       places: [
         {
           name: "Colosseum, Rome",
-          image: "https://images.ctfassets.net/ov8o7v78mnye/3dgPi0nV3HSv1tNibhVxFm/4ba3b779692796dce9a5f48606ac19b5/03_AT.jpg?w=350&h=250&fit=fill&f=center&q=95&fm=webp",
+          image: image3,
         },
         
         {
           name: "Leaning Tower of Pisa",
           image:
-            "https://cdn.pixabay.com/photo/2024/02/28/10/51/ai-generated-8601779_1280.jpg",
+            image4,
         },
         {
           name: "Amalfi Coast",
-          image: "https://images.ctfassets.net/ov8o7v78mnye/1wAh2er4Ka7t5ez8CP9lhi/289c6dfc3d72fd6827b8f80bef8a0c67/LONDON_EQS_DAY_11603_sRGBsmaller.webp?w=768&f=center&q=85&fm=webp",
+          image: image3,
         },
       ],
     },
@@ -52,17 +57,17 @@ export default function PopularDestination() {
         {
           name: "Belém Tower, Lisbon",
           image:
-            "https://images.ctfassets.net/ov8o7v78mnye/20JnvDvfXXKakSWOiXZ9Lx/15dcc1c104c3f370c7201e44f7c6f98c/narrowcitybroad3.webp?w=768&f=center&q=85&fm=webp",
+            image,
         },
         {
           name: "Pena Palace, Sintra",
           image:
-            "https://images.ctfassets.net/ov8o7v78mnye/7uqZylnYSY5Mod4B6EflzB/e67ab7a11bc2f31ffa074b0525a41571/Blacklane_Socials_NYC-15.jpg?w=350&h=250&fit=fill&f=center&q=95&fm=webp",
+           image5,
         },
         {
           name: "Douro Valley",
           image:
-            "https://images.ctfassets.net/ov8o7v78mnye/2EEbbY6DSnZkbfuyGnf1QY/5cc11a3a1892e05c4f00c8b1c03119d1/CTC.webp?w=350&h=250&fit=fill&f=center&q=95&fm=webp",
+           image3,
         },
        
       ],
@@ -80,12 +85,12 @@ export default function PopularDestination() {
         {
           name: "French Riviera",
           image:
-            "https://cdn.pixabay.com/photo/2016/07/09/21/47/car-1506922_1280.jpg",
+            image2,
         },
         {
           name: "Louvre Museum",
           image:
-            "https://cdn.pixabay.com/photo/2024/06/11/13/30/ai-generated-8823151_1280.jpg",
+            image5,
         },
       ],
     },
@@ -96,12 +101,12 @@ export default function PopularDestination() {
         {
           name: "Dubrovnik Old Town",
           image:
-            "https://cdn.pixabay.com/photo/2017/03/05/15/29/aston-martin-2118857_1280.jpg",
+            image2,
         },
         {
           name: "Plitvice Lakes",
           image:
-            "https://cdn.pixabay.com/photo/2024/05/05/10/08/car-8740899_1280.png",
+           image3,
         },
         {
           name: "Diocletian's Palace, Split",
@@ -122,12 +127,12 @@ export default function PopularDestination() {
   {
     name: "Business Class Travel",
     image:
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1600&q=80",
+     image,
   },
   {
     name: "Airport Transfers",
     image:
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80",
+      image4,
   },
   
 ],
@@ -150,7 +155,7 @@ export default function PopularDestination() {
   {
     name: "Dubai Mall",
     image:
-      "https://cdn.pixabay.com/photo/2018/08/26/18/50/auto-3632975_1280.jpg",
+      image,
   }
 ],
 
@@ -162,7 +167,7 @@ export default function PopularDestination() {
   {
     name: "Luxury Ride Experience",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80",
+     image,
   },
   {
     name: "Airport Pickup & Drop-off",
@@ -172,7 +177,7 @@ export default function PopularDestination() {
   {
     name: "Family Travel & Comfort",
     image:
-      "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1600&q=80",
+      image3,
   },
 ],
 
@@ -211,12 +216,12 @@ export default function PopularDestination() {
         {
           name: "Hassan II Mosque, Casablanca",
           image:
-            "https://cdn.pixabay.com/photo/2020/01/09/18/25/mercedes-4753564_1280.jpg",
+          image4,
         },
         {
           name: "Chefchaouen Blue City",
           image:
-            "https://cdn.pixabay.com/photo/2018/07/10/10/40/mercedes-3528323_1280.jpg",
+           image5,
         },
        
       ],
@@ -228,7 +233,7 @@ export default function PopularDestination() {
         {
           name: "Hagia Sophia, Istanbul",
           image:
-            "https://cdn.pixabay.com/photo/2020/03/13/07/34/auto-4927195_1280.jpg",
+            image5,
         },
         {
           name: "Cappadocia",
@@ -248,7 +253,7 @@ export default function PopularDestination() {
       places: [
         {
           name: "Kachikally Crocodile Pool",
-          image: "https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg",
+          image:image,
         },
         {
           name: "Banjul Arch 22",

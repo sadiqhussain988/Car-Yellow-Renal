@@ -15,7 +15,7 @@ const MobileBanner = () => {
         <div className="text-center text-black">
           <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight drop-shadow-xl">
             Experience Premium  
-            <span className="block text-yellow-400 mt-1">
+            <span className="block text-[#F6B626] mt-1">
               Chauffeur Services
             </span>
           </h2>
@@ -55,30 +55,6 @@ const MobileBanner = () => {
 
         </div>
 
-        {/* QR + App Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-8 mt-10">
-
-          {/* QR Card */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-yellow-500/20 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition"></div>
-            <div className="relative bg-white/10 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white/10">
-              <img
-                src="//images.ctfassets.net/ov8o7v78mnye/4qZi5AXwLS3ciw4lUtd4DC/68e6b66dbacbe330be3bac30cb6e7d0a/app_qrcode.svg"
-                alt="QR Code"
-                className="w-28 h-28"
-              />
-              <p className="text-xs text-gray-300 mt-2 text-center">
-                Scan to download
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button text="Download on the App Store" />
-            <Button text="Get it on Google Play" />
-          </div>
-
-        </div>
 
       </section>
     </div>
