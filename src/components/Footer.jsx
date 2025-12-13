@@ -30,9 +30,9 @@ const Footer = () => {
         </div>
 
         {/* Call for Taxi */}
-        <div className="w-full md:w-[30%] relative">
+        <div className="w-full md:w-[33%] relative">
           <div
-            className="max-w-[300px] h-[60px] md:h-[70px] bg-[#F5B533]"
+            className="max-w-[330px] h-[60px] md:h-[70px] bg-[#F5B533]"
             style={{ clipPath: "polygon(20% 3%, 100% 0, 100% 100%, 0% 100%)" }}
           ></div>
           <div className="text-black flex items-center absolute top-2 right-14 md:top-3 md:right-8 lg:right-16 xl:right-20 2xl:right-24 max-w-[250px]">
@@ -48,7 +48,7 @@ const Footer = () => {
               </motion.p>
               <div className="flex items-center justify-center space-x-4">
                 <a
-                  href="tel:+441617061110"
+                  href="tel:+00447775251519"
                   className="text-black hover:scale-110 transition-transform"
                 >
                   <FaPhoneAlt className="text-lg" />
@@ -69,7 +69,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  +4477 75251519
+                 +447775251519
                 </motion.p>
               </div>
             </div>

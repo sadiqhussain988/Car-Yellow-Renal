@@ -67,8 +67,8 @@ export default function RegisterPage() {
           className="hidden md:flex w-1/2 bg-gradient-to-br from-gray-50 to-[#f8f7e8] items-center justify-center p-8 relative overflow-hidden"
           data-aos="fade-right"
         >
-          <div className="absolute top-0 left-0 w-32 h-32 bg-[#b6aa03] opacity-10 rounded-full -translate-x-16 -translate-y-16"></div>
-          <div className="absolute bottom-0 right-0 w-40 h-40 bg-[#b6aa03] opacity-10 rounded-full translate-x-20 translate-y-20"></div>
+          <div className="absolute top-0 left-0 w-32 h-32 bg-[#F9B920] opacity-10 rounded-full -translate-x-16 -translate-y-16"></div>
+          <div className="absolute bottom-0 right-0 w-40 h-40 bg-[#F9B920] opacity-10 rounded-full translate-x-20 translate-y-20"></div>
 
           <div className="relative z-10 text-center">
             <img
@@ -101,15 +101,15 @@ export default function RegisterPage() {
           className="w-full md:w-1/2 flex flex-col p-8 md:p-12 bg-white relative"
           data-aos="fade-left"
         >
-          <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-[#b6aa03] opacity-60"></div>
-          <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-[#b6aa03] opacity-60"></div>
+          <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-[#F9B920] opacity-60"></div>
+          <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-[#F9B920] opacity-60"></div>
 
           <div className="text-center mb-8">
             <h2
               className="text-4xl font-bold text-gary-800 mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent"
               data-aos="fade-down"
             >
-              Create <span className="text-[#FFEE02]">Account</span> 
+              Create <span className="text-[#F9B920]">Account</span> 
             </h2>
           </div>
 
@@ -122,7 +122,7 @@ export default function RegisterPage() {
                 <input
                   type="text"
                   name="name"
-                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#b6aa03] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
+                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
                   placeholder="Enter your full name"
                   value={formData.name}
                   onChange={handleChange}
@@ -137,7 +137,7 @@ export default function RegisterPage() {
                 <input
                   type="email"
                   name="email"
-                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#b6aa03] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
+                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleChange}
@@ -154,7 +154,7 @@ export default function RegisterPage() {
                   name="phone"
                   inputMode="numeric"
                   pattern="[0-9]*"
-                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#b6aa03] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
+                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
                   placeholder="Enter your mobile number"
                   value={formData.phone}
                   onChange={(e) => {
@@ -173,7 +173,7 @@ export default function RegisterPage() {
                   <input
                     type={showPassword ? "text" : "password"}
                     name="password"
-                    className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#b6aa03] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400 pr-12"
+                    className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400 pr-12"
                     placeholder="Enter your password"
                     value={formData.password}
                     onChange={handleChange}
@@ -217,7 +217,7 @@ export default function RegisterPage() {
                 }
                 className={`w-5 h-5 border-2 rounded-md flex items-center justify-center cursor-pointer transition-all duration-200 ${
                   formData.rememberMe
-                    ? "bg-[#b6aa03] border-[#b6aa03]"
+                    ? "bg-[#F9B920] border-[#F9B920]"
                     : "border-gray-300 bg-white"
                 }`}
               >
@@ -249,7 +249,7 @@ export default function RegisterPage() {
               type="submit"
               data-aos="zoom-in"
               data-aos-delay="600"
-              className={`relative w-full mt-3 overflow-hidden group bg-[#FFEE02]  text-white p-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${
+              className={`relative w-full mt-3 overflow-hidden group bg-[#F9B920]  text-white p-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${
                 isLoading ? "cursor-not-allowed opacity-70" : ""
               }`}
               disabled={isLoading}

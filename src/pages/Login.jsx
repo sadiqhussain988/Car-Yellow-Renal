@@ -61,13 +61,13 @@ export default function LoginPage() {
         >
           <div className="text-center mb-8" data-aos="fade-down">
             <h2 className="text-4xl font-bold text-gray-800 mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-              Welcome <span className="text-[#FFEE02]">Back</span>
+              Welcome <span className="text-[#F9B920]">Back</span>
             </h2>
             <p className="text-gray-600 text-lg">
               Start your journey with us. Don't have an account?{" "}
               <Link
                 to="/sign-up"
-                className="text-[#b6aa03] font-semibold hover:text-[#FFEE02] transition-colors duration-300 cursor-pointer underline decoration-2 decoration-[#b6aa03] hover:decoration-[#FFEE02]"
+                className="text-[#F9B920] font-semibold hover:text-[#d19e27] transition-colors duration-300 cursor-pointer underline decoration-2 decoration-[#F9B920] hover:decoration-[#b5861a]"
               >
                 Sign up
               </Link>
@@ -79,11 +79,11 @@ export default function LoginPage() {
             <div className="relative group" data-aos="fade-up" data-aos-delay="100">
               <label className="block text-gray-700 text-lg font-semibold mb-3">Email Address</label>
               <div className="relative">
-                <FaEnvelope className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg transition-colors duration-300 group-focus-within:text-[#b6aa03]" />
+                <FaEnvelope className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg transition-colors duration-300 group-focus-within:text-[#F9B920]" />
                 <input
                   type="email"
                   name="email"
-                  className="w-full border-1 border-gray-200 bg-gray-50 p-3 pl-12 rounded-xl text-gray-800 focus:outline-none focus:border-[#b6aa03] focus:bg-white transition-all duration-300 shadow-sm hover:border-gray-300"
+                  className="w-full border-1 border-gray-200 bg-gray-50 p-3 pl-12 rounded-xl text-gray-800 focus:outline-none focus:border-[#F9B920] focus:bg-white transition-all duration-300 shadow-sm hover:border-gray-300"
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleChange}
@@ -96,11 +96,11 @@ export default function LoginPage() {
             <div className="relative group" data-aos="fade-up" data-aos-delay="200">
               <label className="block text-gray-700 text-lg font-semibold mb-3">Password</label>
               <div className="relative">
-                <FaLock className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg transition-colors duration-300 group-focus-within:text-[#b6aa03]" />
+                <FaLock className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg transition-colors duration-300 group-focus-within:text-[#F9B920]" />
                 <input
                   type={showPassword ? "text" : "password"}
                   name="password"
-                  className="w-full border-1 border-gray-200 bg-gray-50 p-3 pl-12 pr-12 rounded-xl text-gray-800 focus:outline-none focus:border-[#b6aa03] focus:bg-white transition-all duration-300 shadow-sm hover:border-gray-300"
+                  className="w-full border-1 border-gray-200 bg-gray-50 p-3 pl-12 pr-12 rounded-xl text-gray-800 focus:outline-none focus:border-[#F9B920] focus:bg-white transition-all duration-300 shadow-sm hover:border-gray-300"
                   placeholder="Enter your password"
                   value={formData.password}
                   onChange={handleChange}
@@ -108,7 +108,7 @@ export default function LoginPage() {
                 />
                 <button
                   type="button"
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-[#b6aa03] transition-colors duration-300"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-[#F9B920] transition-colors duration-300"
                   onClick={() => setShowPassword(!showPassword)}
                 >
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -130,7 +130,7 @@ export default function LoginPage() {
               </div>
               <Link
                 to="/forgot-password"
-                className="text-[#b6aa03] font-semibold cursor-pointer text-sm hover:text-[#FFEE02] transition-colors duration-300"
+                className="text-[#F9B920] font-semibold cursor-pointer text-sm hover:text-[#bd8b17] transition-colors duration-300"
               >
                 Forgot password?
               </Link>
@@ -144,7 +144,7 @@ export default function LoginPage() {
               data-aos-delay="400"
               className={`
                 relative w-full mt-4 overflow-hidden group
-                bg-[#FFEE02]
+                bg-[#F9B920]
                 text-white p-4 cursor-pointer rounded-xl font-semibold text-lg
                 transition-all duration-300 transform hover:-translate-y-0.5
                 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:transform-none disabled:hover:shadow-lg
@@ -190,8 +190,8 @@ export default function LoginPage() {
           className="hidden md:flex w-1/2 bg-gradient-to-br from-[#f8f7e6] to-[#f0eed0] items-center justify-center p-8 relative overflow-hidden"
           data-aos="fade-left"
         >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#b6aa03] to-[#c8bc1a]"></div>
-          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#b6aa03] to-[#c8bc1a]"></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#b6aa03] to-[#F9B920]"></div>
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#b6aa03] to-[#F9B920]"></div>
           <div className="relative z-10 text-center" data-aos="zoom-in" data-aos-delay="200">
             <img
               src={loginImage}
@@ -205,8 +205,8 @@ export default function LoginPage() {
               </p>
             </div>
           </div>
-          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#b6aa03] opacity-5 rounded-full"></div>
-          <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#b6aa03] opacity-5 rounded-full"></div>
+          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#F9B920] opacity-5 rounded-full"></div>
+          <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#F9B920] opacity-5 rounded-full"></div>
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ const ContactForm = () => {
 
               <div className="space-y-6">
                 <ContactItem icon={<MdEmail />} label="Email" text="info@linkwayrides.com" />
-                <ContactItem icon={<FiPhone />} label="Phone" text="+44 161 706 1110" />
+                <ContactItem icon={<FiPhone />} label="Phone" text="+447775251519" />
                 <ContactItem icon={<MdLocationOn />} label="Location" text="2739 Saint Augustine Trl, Marietta, GA, UK" />
                 <ContactItem icon={<span className="text-2xl"><IoMdTime /></span>} label="Hours" text="24/7 Available Service" />
               </div>
