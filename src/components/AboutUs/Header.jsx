@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
-import image from "../../../public/Link Way 01.png"
+import image from "../../../public/link Way 01.png"
 import image2 from "../../../public/Link02.png"
-import image3 from "../../../public/Link04.png"
+import image3 from "../../../public/link04.png"
 
 const Hero = () => {
   const slides = [
