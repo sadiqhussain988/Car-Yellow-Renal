@@ -1,29 +1,32 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import image from '../../../public/link02.png'
+import image1 from '../../../public/link04.png'
+import image3 from '../../../public/link05.png'
 
 const HowWorks = () => {
   const working = [
     {
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStamx5VGTql-QRLf4sEJqH__amRoJ1xIsCjVwiv0A5UtAZgntIHDtN5YXh7vRbo0jHbtY&usqp=CAU",
+      img: image,
       title: "Book Your Ride",
       description:
         "Easily book your coach, minibus, or van online in just a few clicks choose your destination, date, and vehicle type.",
-      cardImage: "https://cdn.pixabay.com/photo/2016/05/05/18/01/coupe-1374436_1280.jpg" // Card background image
+      cardImage:image // Card background image
     },
     {
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iqqTldwlbq2uQ2dfwwbCz6R3qHjRJPRVzSZJoEciXcGO0JMRfV0kB3qkTytr_yWOMHs&usqp=CAU",
+      img: image1,
       title: "We Pick You Up",
       description:
         "Our professional drivers arrive on time for smooth, safe, and comfortable travel from start to finish.",
-      cardImage: "https://cdn.pixabay.com/photo/2017/03/05/15/29/aston-martin-2118857_1280.jpg" // Card background image
+      cardImage: image3 // Card background image
     },
     {
-      img: "https://img.freepik.com/premium-vector/car-svg-bundle-car-svg-racecar-svg-sports-car-svg_650032-457.jpg",
+      img: image1,
       title: "Enjoy a Safe Journey",
       description:
         "Relax and enjoy reliable, on-time transport across the UK with our licensed and trusted drivers.",
-      cardImage: "https://cdn.pixabay.com/photo/2024/09/09/07/14/ai-generated-9033982_1280.jpg" // Card background image
+      cardImage: image1 // Card background image
     },
   ];
 

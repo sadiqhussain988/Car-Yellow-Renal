@@ -1,3 +1,4 @@
+import image from '../../../public/link05.png'
 export default function StorySection() {
   return (
     <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-10 px-6 md:px-20 overflow-hidden">
@@ -16,7 +17,7 @@ export default function StorySection() {
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
             {/* Replace the image URL below with your real one */}
             <img
-              src="https://thumbs.dreamstime.com/b/black-mercedes-benz-v-class-front-view-minivan-row-parking-lot-russia-saint-petersburg-march-black-mercedes-benz-v-class-183436561.jpg"
+              src={image}
               alt="Linkway Rides Fleet"
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />

@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import StatsSection from "../components/AboutUs/StatsSection";
+import Header from "../components//AboutUs/Header";
+import Working from "../components/home/Working";
 import StorySection from "../components/AboutUs/StorySection";
 import MissionSection from "../components/AboutUs/MissionSection";
 import HowWorks from "../components/AboutUs/HowWorks";
@@ -9,9 +9,9 @@ import TrustedCabService from "../components/home/TrustedCabService";
 const About1 = () => {
   return (
     <div className="overflow-x-hidden">
-      <Header  name="About Us" title="About" />
-      <StatsSection/>
+      <Header/>
       <StorySection/>
+      <Working/>
       <MissionSection/>
       <HowWorks />
       <TrustedCabService />

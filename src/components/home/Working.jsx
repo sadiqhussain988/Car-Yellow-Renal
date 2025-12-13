@@ -86,7 +86,7 @@ const ServicesCards = () => {
       {/* Heading */}
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-4xl font-bold text-gray-900">
-          Our <span className="text-yellow-600">Premium Services</span>
+          Our <span className="bg-gradient-to-r from-[#FFEE02] to-[#F5A623] bg-clip-text text-transparent">Premium Services</span>
         </h2>
         <p className="text-gray-600 mt-2 text-lg">
           Premium travel & chauffeur solutions designed for your comfort.

@@ -46,12 +46,7 @@ const TrustedCabService = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
 
-              {/* Rating Badge */}
-              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
-                <FaStar className="text-yellow-500" />
-                <span className="font-bold text-gray-900">4.9/5</span>
-                <span className="text-gray-600 text-sm">Rating</span>
-              </div>
+              
             </motion.div>
 
             {/* Floating Chauffeur */}
