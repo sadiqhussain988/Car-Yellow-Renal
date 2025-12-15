@@ -50,7 +50,7 @@ const EventTransportSection = () => {
     <section className="max-w-7xl mx-auto px-4 py-12 bg-gray-50">
       {/* Header */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
+        <h1 className="text-4xl md:text-4xl font-bold text-black leading-tight">
           Large-Scale Event
           <span className="block text-[#F3B800] text-3xl md:text-4xl font-bold mt-2">
             Transportation Management

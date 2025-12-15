@@ -19,7 +19,7 @@ const MobileBanner = () => {
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-5 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 lg:mb-5 leading-tight">
               Large-Scale Event
               <span className="block text-[#F3B800] mt-2">Transportation Management</span>
             </h2>

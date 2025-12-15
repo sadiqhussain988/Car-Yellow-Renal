@@ -102,21 +102,14 @@ const TrustedCabService = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {/* Badge */}
-            <motion.div
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-100 to-yellow-50 px-4 py-2 rounded-full border border-yellow-200"
-              initial={{ scale: 0.9, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
-              <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-              <span className="text-sm font-semibold text-yellow-800 uppercase tracking-wider">
-                Premium Experience
-              </span>
-            </motion.div>
+            <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
+            <FaStar className="w-4 h-4" />
+            <span> Premium Experience</span>
+          </div>
 
             {/* Heading */}
             <motion.h2
-              className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight"
+              className="text-4xl lg:text-4xl font-bold text-gray-900 leading-tight"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}

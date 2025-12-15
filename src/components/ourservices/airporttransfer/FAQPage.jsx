@@ -46,7 +46,7 @@ const FAQSection = () => {
     <section className="bg-gray-50 py-16 px-6">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-black">
+        <h2 className="text-4xl md:text-4xl font-bold text-black">
           FAQs for <span className="text-[#F3B800]">Partner Hotels & Agencies</span>
         </h2>
         <p className="text-gray-600 mt-4 text-lg md:text-xl">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaStar } from "react-icons/fa";
 
 const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -60,18 +61,19 @@ const Faqs = () => {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-3 mb-4"
           >
-            <div className="w-12 h-0.5 bg-[#F6B626]"></div>
-            <span className="text-sm font-semibold tracking-wider text-gray-600 uppercase">
-              Got Questions?
-            </span>
-            <div className="w-12 h-0.5 bg-[#F6B626]"></div>
+            
+            <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md mx-auto">
+            <FaStar className="w-4 h-4" />
+            <span>Got Questions?</span>
+          </div>
+           
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-4xl md:text-4xl font-bold mb-6"
           >
             <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent">
               Frequently Asked
@@ -105,7 +107,7 @@ const Faqs = () => {
                 key={index}
                 onClick={() => toggleFAQ(index)}
                 layout
-                className={`relative overflow-hidden rounded-2xl border-2 transition-all duration-500 cursor-pointer ${
+                className={`relative overflow-hidden rounded-xl border-2 transition-all duration-500 cursor-pointer ${
                   openIndex === index
                     ? "border-[#D68F00] bg-[#F6B626] shadow-2xl"
                     : "border-gray-200 bg-[#F6B626] hover:border-gray-300 hover:shadow-lg"

@@ -21,7 +21,7 @@ const TravelAgencyHotelSection = () => {
     <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
+        <h1 className="text-4xl md:text-4xl font-bold text-black leading-tight">
           Travel Agency & Hotel Partnerships
           <span className="block text-[#F3B800] text-3xl md:text-4xl font-bold mt-2">
             Premium Guest Transfers Made Simple

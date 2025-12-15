@@ -13,7 +13,7 @@ const MobileBanner = () => {
         
         {/* TOP SECTION TITLE */}
         <div className="text-center text-black">
-          <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight drop-shadow-xl">
+          <h2 className="text-4xl lg:text-4xl font-extrabold leading-tight drop-shadow-xl">
             Experience Premium  
             <span className="block text-[#F6B626] mt-1">
               Chauffeur Services

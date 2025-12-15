@@ -50,7 +50,7 @@ const HowWorks = () => {
               Simple Process
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
             How It <span className="text-yellow-500">Works</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">

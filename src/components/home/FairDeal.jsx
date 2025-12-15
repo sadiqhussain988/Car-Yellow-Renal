@@ -75,7 +75,7 @@ export default function FairDeal() {
             <span>Trusted Transport Solutions</span>
           </div>
           <motion.h1
-            className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight"
+            className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 leading-tight"
             variants={zoomInUp}
           >
             Travel Together with{" "}
@@ -146,7 +146,7 @@ export default function FairDeal() {
             viewport={{ once: true }}
             variants={fadeLeft}
           >
-            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[black] to-[#f7af07] bg-clip-text text-transparent mb-4 leading-snug">
+            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[black] to-[#d27e29] bg-clip-text text-transparent mb-4 leading-snug">
               {serviceHighlights.title}
             </h2>
 

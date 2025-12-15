@@ -102,10 +102,10 @@ export default function ContactIropsSection() {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
             Get in Touch with Our{" "}
             <span className="relative inline-block">
-              <span className="relative z-10 bg-gradient-to-r from-[#FFEE02] via-[#F5A623] to-[#FF8C00] bg-clip-text text-transparent">
+              <span className="relative z-10 bg-gradient-to-r from-[#F5A623] via-[#F5A623] to-[#FF8C00] bg-clip-text text-transparent">
                 IROPS Team
               </span>
               <span className="absolute bottom-2 left-0 w-full h-3 bg-yellow-200/40 -rotate-1"></span>
@@ -153,7 +153,7 @@ export default function ContactIropsSection() {
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-100">
           <div className="text-center mb-10">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Send Us Your Query
+              Send Us <span className="text-[#f7a027]">Your Query</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Complete the form below and our IROPS team will contact you within
@@ -196,7 +196,7 @@ export default function ContactIropsSection() {
                   onChange={handleChange}
                   required
                   disabled={formStatus.submitting}
-                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
+                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
                   placeholder="Enter your first name"
                 />
               </div>
@@ -212,7 +212,7 @@ export default function ContactIropsSection() {
                   onChange={handleChange}
                   required
                   disabled={formStatus.submitting}
-                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
+                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
                   placeholder="Enter your last name"
                 />
               </div>
@@ -231,7 +231,7 @@ export default function ContactIropsSection() {
                   onChange={handleChange}
                   required
                   disabled={formStatus.submitting}
-                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
+                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
                   placeholder="info@linkwayrides.com"
                 />
               </div>
@@ -248,7 +248,7 @@ export default function ContactIropsSection() {
                   onChange={handleChange}
                   required
                   disabled={formStatus.submitting}
-                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
+                  className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
                   placeholder="+44 161 706 1110"
                 />
               </div>
@@ -264,7 +264,7 @@ export default function ContactIropsSection() {
                 value={formData.company}
                 onChange={handleChange}
                 disabled={formStatus.submitting}
-                className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
+                className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all"
                 placeholder="Your company/organization name"
               />
             </div>
@@ -281,7 +281,7 @@ export default function ContactIropsSection() {
                 required
                 disabled={formStatus.submitting}
                 rows={5}
-                className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all resize-none"
+                className="w-full rounded-xl bg-gray-50 border border-gray-300 px-5 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/50 focus:border-transparent transition-all resize-none"
                 placeholder="Describe your situation, location, number of passengers, and timeline..."
               />
               <p className="text-xs text-gray-500 mt-2">
@@ -293,7 +293,7 @@ export default function ContactIropsSection() {
               <button
                 type="submit"
                 disabled={formStatus.submitting}
-                className="relative px-12 py-4 rounded-full font-semibold bg-gradient-to-r from-[#FFEE02] via-[#F5A623] to-[#FF8C00] text-gray-900 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed group"
+                className="relative px-5 py-2 rounded-full font-semibold bg-gradient-to-r from-[#ffab02] via-[#F5A623] to-[#FF8C00] text-gray-900 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed group"
               >
                 <span className="flex items-center justify-center">
                   {formStatus.submitting ? (
@@ -327,7 +327,7 @@ export default function ContactIropsSection() {
                     </>
                   )}
                 </span>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#FFEE02] to-[#F5A623] opacity-0 group-hover:opacity-100 blur-md -z-10 transition-opacity duration-300" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#eeba01] to-[#F5A623] opacity-0 group-hover:opacity-100 blur-md -z-10 transition-opacity duration-300" />
               </button>
 
               <p className="text-sm text-gray-500 mt-6">

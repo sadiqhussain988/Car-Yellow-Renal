@@ -56,7 +56,7 @@ const CityToCitySection = () => {
 
       {/* Header Section */}
       <div className="text-center mb-20">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        <h1 className="text-4xl md:text-4xl font-extrabold text-gray-900 leading-tight">
            B2B Reliable Transportation
         </h1>
 

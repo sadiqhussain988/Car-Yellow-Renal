@@ -9,7 +9,7 @@ import { IoMdTime } from "react-icons/io";
 
 const ContactForm = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-15">
+    <section className="bg-gradient-to-b from-gray-50 to-white pt-12">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -25,7 +25,7 @@ const ContactForm = () => {
             <div className="absolute bottom-0 right-0 w-48 h-48 bg-white opacity-5 rounded-full blur-2xl"></div>
 
             <div className="relative z-10">
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+              <h2 className="text-4xl md:text-4xl font-extrabold mb-6">
                 Let’s <span className="bg-gradient-to-r from-[#FFEE02] to-[#F5A623] bg-clip-text text-transparent">Connect</span>
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-12">
@@ -64,7 +64,7 @@ const ContactForm = () => {
               transition={{ duration: 0.8 }}
               className="relative z-10 bg-gray-900/80 text-white p-12 md:p-16 rounded-3xl"
             >
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+              <h1 className="text-4xl md:text-4xl font-extrabold mb-4">
                 Send Us a <span className="bg-gradient-to-r from-[#FFEE02] to-[#F5A623] bg-clip-text text-transparent">Message</span>
               </h1>
               <p className="text-lg mb-10 leading-relaxed">

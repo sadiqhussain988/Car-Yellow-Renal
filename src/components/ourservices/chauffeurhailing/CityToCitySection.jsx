@@ -77,7 +77,7 @@ const CityToCitySection = () => {
 
       {/* ---- Section Header ---- */}
       <div className="text-center mb-14">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+        <h1 className="text-4xl md:text-4xl font-extrabold text-gray-900">
           Long-Term Fleet Leasing
           <span className="block text-[#F3B800] mt-2 text-3xl md:text-4xl">
             Reliable Mobility Infrastructure for Enterprises

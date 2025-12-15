@@ -24,7 +24,7 @@ const MobileBanner = () => {
           </div>
 
           {/* Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
             Corporate Employee
             <span className="block text-[#F3B800] mt-2">Transportation</span>
           </h2>

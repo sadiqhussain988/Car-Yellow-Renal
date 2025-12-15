@@ -30,15 +30,19 @@ const Footer = () => {
         </div>
 
         {/* Call for Taxi */}
-        <div className="w-full md:w-[33%] relative">
+        <div className="w-full md:w-1/3 relative flex justify-end">
+          {/* Background shape */}
           <div
-            className="max-w-[330px] h-[60px] md:h-[70px] bg-[#F5B533]"
+            className="w-[85%] sm:w-[75%] md:w-[330px] h-[55px] sm:h-[65px] md:h-[70px] bg-[#F5B533] shrink-0"
             style={{ clipPath: "polygon(20% 3%, 100% 0, 100% 100%, 0% 100%)" }}
           ></div>
-          <div className="text-black flex items-center absolute top-2 right-14 md:top-3 md:right-8 lg:right-16 xl:right-20 2xl:right-24 max-w-[250px]">
+
+          {/* Content */}
+          <div className="text-black flex items-center absolute top-2 sm:top-3 md:top-4 right-2 sm:right-4 md:right-8 lg:right-12 xl:right-16 2xl:right-20 max-w-[270px]">
             <div>
+              {/* Label */}
               <motion.p
-                className="uppercase ms-4 mb-1 text-sm md:font-semibold"
+                className="uppercase ms-2 sm:ms-4 mb-1 text-sm sm:text-base md:font-semibold"
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -46,12 +50,14 @@ const Footer = () => {
               >
                 Call For Booking
               </motion.p>
-              <div className="flex items-center justify-center space-x-4">
+
+              {/* Icons & Number */}
+              <div className="flex items-center  justify-center space-x-3 sm:space-x-4 md:space-x-5">
                 <a
                   href="tel:+00447775251519"
                   className="text-black hover:scale-110 transition-transform"
                 >
-                  <FaPhoneAlt className="text-lg" />
+                  <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" />
                 </a>
 
                 <a
@@ -60,16 +66,17 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-black hover:scale-110 transition-transform"
                 >
-                  <FaWhatsapp className="text-lg" />
+                  <FaWhatsapp className="text-lg sm:text-xl md:text-2xl" />
                 </a>
+
                 <motion.p
-                  className="text-md md:text-xl lg:text-xl"
+                  className="text-sm  sm:text-md md:text-lg lg:text-xl"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                 +44 161 706 1110
+                  +44 161 706 1110
                 </motion.p>
               </div>
             </div>
@@ -88,7 +95,13 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-           <span className="text-[#F6B626]">Linkway Rides </span>is a smart transportation platform designed to make every journey seamless and stress free. By connecting passengers with reliable and vetted drivers, we simplify the process of booking rides while ensuring safety and efficiency. Our intuitive app allows users to schedule rides instantly, track drivers in real-time, manage trip details, and make secure payments effortlessly.
+            <span className="text-[#F6B626]">Linkway Rides </span>is a smart
+            transportation platform designed to make every journey seamless and
+            stress free. By connecting passengers with reliable and vetted
+            drivers, we simplify the process of booking rides while ensuring
+            safety and efficiency. Our intuitive app allows users to schedule
+            rides instantly, track drivers in real-time, manage trip details,
+            and make secure payments effortlessly.
           </motion.p>
         </div>
 

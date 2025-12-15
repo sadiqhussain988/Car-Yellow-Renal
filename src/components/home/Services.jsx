@@ -1,11 +1,9 @@
 import React from "react";
-import service5 from "../../assets/home/bus1.jpg";
-import service6 from "../../assets/home/service5-2.jpg";
-import service7 from "../../assets/home/event.png";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-import image from "../../../public/Link Way 01.png"
-import image1 from "../../../public/bg.png"
+import { FaStar } from "react-icons/fa";
+import image from "../../../public/Link Way 01.png";
+import image1 from "../../../public/bg.png";
 
 const Services = () => {
   const services = [
@@ -21,10 +19,11 @@ const Services = () => {
       subtitle: "Seamless Travel",
       description:
         "Reliable and punctual airport transfers for business travelers. Our team ensures smooth, stress-free journeys to and from all major UK airports, including Heathrow, Gatwick, Manchester, and Edinburgh.",
-      image: "https://cdn.pixabay.com/photo/2013/02/27/23/12/sacramento-international-airport-86684_1280.jpg",
+      image:
+        "https://cdn.pixabay.com/photo/2013/02/27/23/12/sacramento-international-airport-86684_1280.jpg",
     },
     {
-      title: "Corporate & event transport",
+      title: "Corporate & Event Transport",
       subtitle: "Group & Event Solutions",
       description:
         "Professional transport services for corporate events, conferences, team outings, and private functions. Safe, on-time, and fully managed transport for groups of any size.",
@@ -33,19 +32,25 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 text-center py-6 sm:py-16 md:py-20 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 sm:py-16 md:py-20 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
         {/* Section Header */}
         <div className="mb-12">
-          <p className="text-2xl text-amber-500 font-semibold tracking-wide animate-pulse">
-            OUR SERVICES
-          </p>
-          <h1 className="text-2xl md:text-5xl font-bold w-full md:w-[60%] mx-auto leading-tight text-gray-900 relative inline-block">
-            Premium Corporate <span className="text-[#D68F00]">Transport Solutions Across the UK</span>
+          <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md mx-auto">
+            <FaStar className="w-4 h-4" />
+            <span>Our Services</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold leading-tight text-gray-900 mx-auto max-w-3xl">
+            Premium Corporate{" "}
+            <span className="text-[#D68F00]">Transport Solutions Across the UK</span>
           </h1>
-          <p className="mt-4 text-gray-600 text-base md:text-lg w-full md:w-[70%] mx-auto">
+
+          <p className="mt-4 text-gray-600 text-base sm:text-lg md:text-xl mx-auto max-w-4xl">
             Reliable, comfortable, and professional transport services for businesses, clients, and corporate events. Choose the right vehicle for your needs.
           </p>
+
           <div className="w-20 h-1 bg-[#D68F00] mx-auto mt-6 rounded-full"></div>
         </div>
 
@@ -54,23 +59,22 @@ const Services = () => {
           {services.map((data, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-md hover:shadow-2xl border border-gray-200 h-[500px] sm:h-[520px] md:h-[560px] flex flex-col"
+              className="group relative bg-white rounded-2xl overflow-hidden transition-transform duration-500 hover:-translate-y-2 shadow-md hover:shadow-2xl border border-gray-200 flex flex-col"
             >
               {/* Gradient Line */}
-              <div className="relative h-1.5 bg-gradient-to-r from-[#D68F00] to-black"></div>
+              <div className="h-1 bg-gradient-to-r from-[#D68F00] to-black"></div>
 
-              {/* Image Section */}
-              <div className="relative overflow-hidden h-44 sm:h-52 md:h-56">
+              {/* Image */}
+              <div className="relative overflow-hidden aspect-[4/3] sm:aspect-[16/9]">
                 <img
                   src={data.image}
                   alt={data.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Shine Effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out"></div>
               </div>
 
-              {/* Content Section */}
+              {/* Content */}
               <div className="p-6 flex-1 flex flex-col justify-between text-left">
                 <div>
                   <div className="flex items-center justify-between mb-3">
@@ -91,7 +95,6 @@ const Services = () => {
                   </p>
                 </div>
 
-                {/* Centered Button */}
                 <div className="flex justify-center mt-auto">
                   <Link to="/services">
                     <Button

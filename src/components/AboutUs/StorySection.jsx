@@ -45,7 +45,7 @@ export default function StorySection() {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
               Our <span className="text-yellow-500">Story</span>
             </h2>
             <div className="w-20 h-1 bg-yellow-500 rounded-full"></div>

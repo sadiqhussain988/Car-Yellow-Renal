@@ -17,7 +17,7 @@ export default function MissionSection() {
               Trusted Airport Transfers
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+          <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gray-900">
             Our Mission <span className="text-yellow-500">&</span> Vision
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full mb-8"></div>
