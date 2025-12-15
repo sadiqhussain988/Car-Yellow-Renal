@@ -86,7 +86,7 @@ const Header = () => {
           className="max-w-3xl"
         >
           {/* Title with two-color effect */}
-          <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             {currentSlide.title.split(" ").map((word, i) => {
               const isWhite = currentSlide.whiteWords.some(
                 (w) => w.toLowerCase() === word.toLowerCase()
