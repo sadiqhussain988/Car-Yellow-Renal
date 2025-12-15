@@ -1,3 +1,4 @@
+import { FaStar } from 'react-icons/fa';
 import image from '../../../public/link05.png'
 export default function StorySection() {
   return (
@@ -38,12 +39,10 @@ export default function StorySection() {
         <div className="space-y-6">
           {/* Header */}
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-100 border border-yellow-200 mb-2">
-              <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-yellow-800 uppercase tracking-wide">
-                About Us
-              </span>
-            </div>
+           <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
+                       <FaStar className="w-4 h-4" />
+                       <span>About Us</span>
+                     </div>
 
             <h2 className="text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
               Our <span className="text-yellow-500">Story</span>

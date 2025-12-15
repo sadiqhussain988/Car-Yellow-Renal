@@ -1,3 +1,5 @@
+import { FaStar } from "react-icons/fa";
+
 export default function MissionSection() {
   return (
     <section className="relative py-10 px-6 md:px-20 bg-gradient-to-br from-slate-50 via-white to-slate-100 overflow-hidden">
@@ -11,11 +13,9 @@ export default function MissionSection() {
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Section Header / Tagline */}
         <div className="mb-16" data-aos="fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-100 border border-yellow-200 mb-4">
-            <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-yellow-800 uppercase tracking-wide">
-              Trusted Airport Transfers
-            </span>
+          <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
+            <FaStar className="w-4 h-4" />
+            <span> Trusted Airport Transfers</span>
           </div>
           <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gray-900">
             Our Mission <span className="text-yellow-500">&</span> Vision
@@ -105,7 +105,7 @@ export default function MissionSection() {
 
         {/* Bottom CTA */}
         <div className="mt-16" data-aos="fade-up" data-aos-delay="400">
-          <div className="inline-flex items-center gap-4 bg-white/80 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-lg border border-gray-100">
+          <div className="inline-flex items-center gap-4 bg-white/80 backdrop-blur-sm rounded-2xl px-5 py-2 shadow-lg border border-gray-100">
             <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
             <p className="text-gray-700 font-semibold text-lg">
               Ready to experience <span className="font-semibold text-yellow-600">stress-free airport transfers</span>?{" "}
