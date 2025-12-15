@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import image2 from "../../../public/Link02.png"
 import image5 from "../../../public/Link Way 01.png"
 import image from "../../../public/link03.png"
-import image4 from "../../../public/link04.png"
-import image6 from "../../../public/link05.png"
+import image4 from "../../../public/coach.png"
+import image6 from "../../../public/c2.png"
+import image7 from "../../../public/tour.png"
 
 const services = [
   {
@@ -60,21 +61,21 @@ const services = [
     title: "Family Trips",
     subtitle: "Safe & Spacious",
     image:
-      "https://cdn.pixabay.com/photo/2016/11/19/10/27/airport-1838478_1280.jpg",
+      image6,
     description: "Comfortable and safe rides for daily family trips and tours.",
   },
   {
     title: "Event Transport",
     subtitle: "Weddings & Parties",
     image:
-      image6,
+      image4,
     description:
       "Premium travel arrangements for weddings, functions, and VIP guests.",
   },
   {
     title: "Tour Packages",
     subtitle: "Explore More",
-    image:image4,
+    image:image7,
     description:
       "Discover the best tourist attractions with our guided travel packages.",
   },

@@ -5,6 +5,7 @@ import service7 from "../../assets/home/event.png";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 import image from "../../../public/Link Way 01.png"
+import image1 from "../../../public/bg.png"
 
 const Services = () => {
   const services = [
@@ -23,11 +24,11 @@ const Services = () => {
       image: "https://cdn.pixabay.com/photo/2013/02/27/23/12/sacramento-international-airport-86684_1280.jpg",
     },
     {
-      title: "Corporate & Event Transport",
+      title: "Corporate & event transport",
       subtitle: "Group & Event Solutions",
       description:
         "Professional transport services for corporate events, conferences, team outings, and private functions. Safe, on-time, and fully managed transport for groups of any size.",
-      image: "https://cdn.pixabay.com/photo/2016/11/29/01/22/automotive-1866521_1280.jpg",
+      image: image1,
     },
   ];
 

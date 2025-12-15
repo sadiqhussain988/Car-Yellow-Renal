@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Button";
+import image from "../../../public/link05.png"
 
 const Header = () => {
  const slides = [
@@ -35,7 +36,7 @@ const Header = () => {
     description:
       "Premium airport transfer services for corporate clients, guaranteeing timely pickups, punctual departures, and high-comfort vehicles for executives and teams.",
     image:
-      "https://cdn.pixabay.com/photo/2024/06/11/13/30/ai-generated-8823151_1280.jpg",
+      image,
     link: "/services/airport-transfers",
   },
 ];

@@ -4,9 +4,9 @@ import { FaHeadset, FaShieldAlt, FaCar, FaStar } from "react-icons/fa";
 import { IoLocationSharp, IoTime } from "react-icons/io5";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-import image from "../../../public/link03.png"
+import image from "../../../public/Link Way 01.png"
 const features = [
-  { icon: IoLocationSharp, text: "Live Tracking", color: "text-blue-500" },
+  { icon: IoLocationSharp, text: "Reliable Transportation", color: "text-blue-500" },
   { icon: FaShieldAlt, text: "Safe & Secure", color: "text-green-500" },
   { icon: IoTime, text: "On-Time Service", color: "text-purple-500" },
   { icon: FaCar, text: "Comfortable Fleet", color: "text-yellow-500" },
@@ -123,9 +123,9 @@ const TrustedCabService = () => {
             >
               Enjoy a{" "}
               <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
-                Linked Way Rides
+                linked way rides
               </span>{" "}
-              with Total Comfort & Safety
+              with total comfort & safety
             </motion.h2>
 
             {/* Description */}
@@ -149,7 +149,7 @@ const TrustedCabService = () => {
               {features.map((f, i) => (
                 <motion.div
                   key={i}
-                  className="flex items-center gap-3 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-xl transition-all duration-300"
+                  className="flex items-center gap-3 px-5 py-2 bg-white/90 backdrop-blur-md rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-xl transition-all duration-300"
                   whileHover={{ y: -5, scale: 1.02 }}
                 >
                   <div className={`p-3 rounded-lg ${f.color} bg-white shadow-sm`}>

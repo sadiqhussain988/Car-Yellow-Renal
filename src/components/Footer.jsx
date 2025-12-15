@@ -69,7 +69,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                 +447775251519
+                 +44 161 706 1110
                 </motion.p>
               </div>
             </div>

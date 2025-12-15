@@ -9,9 +9,9 @@ import CarRentalStats from "../components/home/CarRentalStats";
 import PopularDestination from "../components/home/PopularDestination";
 import FairDeal from "../components/home/FairDeal";
 import Working from "../components/home/Working";
+import ContactIropsSection from "../components/home/ContactIropsSection";
 // import WhyUs from "../components/home/WhyUs";
 // import Download from "../components/home/Download";
-
 const Home = () => {
   return (
     <div className="overflow-x-hidden">
@@ -25,6 +25,7 @@ const Home = () => {
       <Testimonials/>
       <PopularServices />
       <Faqs />
+      <ContactIropsSection/>
 
 
 
