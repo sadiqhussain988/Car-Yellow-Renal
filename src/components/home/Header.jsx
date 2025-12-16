@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Button";
 import image from "../../../public/link05.png"
+import header from "../../../public/header.jpg"
+import header1 from "../../../public/header1.jpg"
 
 const Header = () => {
  const slides = [
@@ -14,7 +16,7 @@ const Header = () => {
     description:
       "We provide executive-grade Mercedes Vito transport solutions designed for companies seeking consistent, professional mobility for teams, clients, and operational logistics.",
     image:
-      "https://cdn.pixabay.com/photo/2024/04/27/05/59/ai-generated-8723087_1280.jpg",
+     header,
     link: "/services/corporate-transport",
   },
   {
@@ -25,7 +27,7 @@ const Header = () => {
     description:
       "End-to-end transport solutions for corporate events, conferences, and exhibitions, ensuring staff, speakers, and VIP clients arrive punctually and comfortably.",
     image:
-      "https://cdn.pixabay.com/photo/2024/05/18/01/09/ai-generated-8769301_1280.jpg",
+     header1,
     link: "/services/event-transport",
   },
   {
