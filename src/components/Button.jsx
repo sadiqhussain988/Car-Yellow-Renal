@@ -1,50 +1,57 @@
-
+import clsx from "clsx";
 
 const Button = ({
   text,
-  // bgHover = "white",
-  // textHover = "black",
-  // cutHover = "black",
   onClick,
+  paddingY = "py-2",
+  size = "md", // sm | md | lg
+  variant = "primary", // primary | outline
+  disabled = false,
 }) => {
+  const sizes = {
+    sm: "text-sm px-3",
+    md: "text-base px-4",
+    lg: "text-lg px-6",
+  };
+
+  const variants = {
+    primary: "bg-black text-white border-white",
+    outline: "bg-transparent text-white border-white",
+  };
+
   return (
-    <div className="relative">
-      {/* <button
-        onClick={onClick}
-        className="relative overflow-hidden bg-[#FFEE02] w-[170px] px-6 py-3 cursor-pointer font-semibold text-black transition-all duration-500 group"
-        style={{ clipPath: "polygon(100% 0, 85% 100%, 0 100%, 0 0)" }}
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      aria-disabled={disabled}
+      className={clsx(
+        "relative group inline-block rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F5B533] focus-visible:ring-offset-2 focus-visible:ring-offset-black",
+        disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
+      )}
+    >
+      <span
+        className={clsx(
+          "relative inline-flex items-center justify-center font-mono font-medium tracking-tight border rounded-xl overflow-hidden transition-all duration-300 ease-out shadow-md shadow-black/30 group-hover:shadow-lg group-hover:shadow-black/40",
+          sizes[size],
+          paddingY,
+          variants[variant]
+        )}
       >
-        <div
-          className={`absolute top-0 right-2 h-[100%] w-[50px] bg-${cutHover} z-20`}
-          style={{ clipPath: "polygon(100% 0, 45% 100%, 25% 100%, 78% 0)" }}
-        ></div>
+        {/* Expanding hover circle */}
         <span
-          className={`absolute inset-0 bg-${bgHover} w-0 transition-all duration-500 group-hover:w-full z-10`}
-        ></span>
-        <span
-          className={`relative z-30 ms-[-30px] group-hover:text-${textHover}`}
-        >
+          className="pointer-events-none absolute w-2 h-2 bg-[#F5B533] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-700 ease-in-out group-hover:scale-[28] motion-reduce:transition-none motion-reduce:scale-0"
+        />
+
+        {/* Gradient overlay */}
+        <span className="pointer-events-none absolute inset-0 opacity-30 bg-gradient-to-b from-white/5 via-transparent to-black/40" />
+
+        {/* Text */}
+        <span className="relative z-10 transition-colors duration-300 group-hover:text-black group-hover:scale-105">
           {text}
         </span>
-      </button> */}
-
-
-
-      <button onClick={onClick}>
-        <span class="relative inline-flex items-center cursor-pointer justify-center px-8 border border-white py-3 overflow-hidden font-mono font-medium tracking-tighter text-white bg-black rounded-lg group">
-          {/* Expanding circle effect - changed to yellow */}
-          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#F5B533] rounded-md group-hover:w-56 group-hover:h-56"></span>
-
-          {/* Gradient overlay - updated to black/white theme */}
-          <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-900"></span>
-
-          {/* Text */}
-          <span class="relative group-hover:text-black">{text}</span>
-        </span>
-      </button>
-
-
-    </div>
+      </span>
+    </button>
   );
 };
 

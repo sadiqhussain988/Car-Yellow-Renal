@@ -5,7 +5,7 @@ import { selectUserProfile, clearProfile } from "../redux/slices/UserSlice";
 import { useLogoutMutation } from "../redux/slices/UserApi";
 import { toast } from "react-toastify";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import logo from "../assets/companyLogo.png";
+import logo from "../assets/logo01.png";
 import Button from "./Button";
 
 const serviceLinks = [
@@ -16,7 +16,8 @@ const serviceLinks = [
   { name: "Large-Scale Event Management", path: "/limousine-service" },
 ];
 
-const navItemClass = "relative hover:text-[#F5B533] transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#F5B533] after:transition-all after:duration-300 hover:after:w-full";
+const navItemClass =
+  "relative font-medium text-gray-800 hover:text-[#D68F00] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#F5B533] after:transition-all after:duration-300 hover:after:w-full";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -59,26 +60,32 @@ const Navbar = () => {
   const userInitial = userProfile?.name?.charAt(0).toUpperCase() || "";
 
   return (
-    <nav className="bg-black px-4 z-50 w-full max-w-[1440px] fixed">
-      <div className=" mx-auto py-2 flex justify-between items-center">
+    <nav className="fixed  top-0 w-full max-w-[1440px] z-50 bg-white/80 backdrop-blur-lg shadow-md border-b border-gray-200">
+      <div className="mx-auto px-8  flex justify-between items-center">
         {/* Logo */}
         <Link to="/" onClick={closeAll}>
-          <img src={logo} alt="Company Logo" className="w-20" />
+          <img src={logo} alt="Company Logo" className="w-20 transition" />
         </Link>
 
-        {/* Desktop Navigation - Right Aligned */}
-        <div className="hidden md:flex items-center ml-auto gap-6 text-white font-medium">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center ml-auto gap-6">
           <Link to="/" className={navItemClass}>Home</Link>
-          
-          <div className="relative" onMouseEnter={handleServicesMouseEnter} onMouseLeave={handleServicesMouseLeave}>
+
+          {/* Services */}
+          <div
+            className="relative"
+            onMouseEnter={handleServicesMouseEnter}
+            onMouseLeave={handleServicesMouseLeave}
+          >
             <button className={navItemClass}>Services</button>
+
             {servicesOpen && (
-              <div className="absolute top-full left-0 bg-white text-black mt-2 rounded-lg shadow-lg z-50 min-w-[220px]">
+              <div className="absolute top-full left-0 mt-3 bg-white rounded-xl shadow-xl border border-gray-100 min-w-[260px] overflow-hidden animate-fade-in">
                 {serviceLinks.map((service) => (
                   <Link
                     key={service.name}
                     to={service.path}
-                    className="block px-4 py-2 hover:bg-[#c0bbbb] hover:text-[#060606] transition-colors"
+                    className="block px-5 py-3 text-sm text-gray-700 hover:bg-[#FFF4DB] hover:text-black transition"
                     onClick={closeAll}
                   >
                     {service.name}
@@ -88,42 +95,49 @@ const Navbar = () => {
             )}
           </div>
 
-          {[ "/About-us", "/Contact"].map((path) => (
+          {["/About-us", "/Contact"].map((path) => (
             <Link key={path} to={path} className={navItemClass}>
               {path.slice(1).replace("-", " ").replace("us", "Us")}
             </Link>
           ))}
 
-          {/* Buttons & User */}
+          {/* Buttons */}
           <div className="flex items-center gap-4">
             <Link to="/services">
-              <Button textHover="black" text="Book Now" />
+              <Button text="Book Now"   paddingY="py-1.5" className="shadow-md hover:shadow-lg transition" />
             </Link>
 
             {!userProfile && (
               <Link to="/login">
-                <Button textHover="black" text="Login" />
+                <Button text="Login"   paddingY="py-1.5" className="shadow-md hover:shadow-lg transition" />
               </Link>
             )}
 
             {userProfile && (
               <div className="relative">
                 <div
-                  className="w-10 h-10 flex items-center justify-center bg-[#F5B533] text-black font-bold rounded-full cursor-pointer overflow-hidden border-2 border-white hover:opacity-90 transition"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-[#F5B533] to-[#D68F00] text-black font-bold shadow-md cursor-pointer hover:scale-105 transition"
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
                   {userProfile.profilePic ? (
-                    <img src={userProfile.profilePic} alt="User Avatar" className="w-full h-full object-cover" />
+                    <img
+                      src={userProfile.profilePic}
+                      alt="Avatar"
+                      className="w-full h-full object-cover rounded-full"
+                    />
                   ) : (
                     <span>{userInitial}</span>
                   )}
                 </div>
 
                 {dropdownOpen && (
-                  <div className="absolute right-0 mt-2 w-40 bg-white text-black border rounded-lg shadow-lg z-50">
-                    <ul className="py-2">
+                  <div className="absolute right-0 mt-3 w-44 bg-white rounded-xl shadow-xl border border-gray-100 animate-fade-in">
+                    <ul className="py-2 text-sm">
                       {userProfile.role === "Admin" && (
-                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => navigate("/dashboard")}>
+                        <li
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                          onClick={() => navigate("/dashboard")}
+                        >
                           Dashboard
                         </li>
                       )}
@@ -136,7 +150,10 @@ const Navbar = () => {
                           {path.slice(1).replace("-", " ")}
                         </li>
                       ))}
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={handleLogout}>
+                      <li
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-red-500"
+                        onClick={handleLogout}
+                      >
                         Logout
                       </li>
                     </ul>
@@ -147,42 +164,47 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Icon */}
+        {/* Mobile Menu */}
         <IoMdMenu
-          className="md:hidden text-white text-4xl cursor-pointer"
+          className="md:hidden text-3xl text-gray-800 cursor-pointer"
           onClick={() => setShowSidebar(true)}
         />
       </div>
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed z-50 top-0 right-0 w-[70%] h-full bg-white p-5 shadow-lg transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 right-0 w-[75%] h-full bg-white shadow-2xl p-6 transition-transform duration-300 md:hidden ${
           showSidebar ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <IoMdClose className="absolute top-5 right-5 text-2xl cursor-pointer" onClick={closeAll} />
-        
-        <ul className="flex flex-col gap-4 mt-10">
-          {["/", "/blogs", "/about-us", "/contact"].map((path) => (
-            <Link key={path} to={path} className="font-bold text-xl" onClick={closeAll}>
-              {path === "/" ? "Home" : path.slice(1).replace("-", " ").replace("us", "Us")}
+        <IoMdClose
+          className="absolute top-5 right-5 text-3xl text-gray-700 hover:rotate-90 transition cursor-pointer"
+          onClick={closeAll}
+        />
+
+        <ul className="flex flex-col gap-4 mt-10 text-lg font-semibold">
+          {["/", "/about-us", "/contact"].map((path) => (
+            <Link key={path} to={path} onClick={closeAll}>
+              {path === "/" ? "Home" : path.slice(1).replace("-", " ")}
             </Link>
           ))}
 
-          <div>
-            <button onClick={() => setServicesOpen(!servicesOpen)} className="font-bold text-xl w-full text-left">
-              Services
-            </button>
-            {servicesOpen && (
-              <div className="ml-4 mt-2 flex flex-col gap-2">
-                {serviceLinks.map((service) => (
-                  <Link key={service.name} to={service.path} className="text-base" onClick={closeAll}>
-                    {service.name}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+          <button
+            onClick={() => setServicesOpen(!servicesOpen)}
+            className="text-left"
+          >
+            Services
+          </button>
+
+          {servicesOpen && (
+            <div className="ml-4 flex flex-col gap-2 text-sm">
+              {serviceLinks.map((service) => (
+                <Link key={service.name} to={service.path} onClick={closeAll}>
+                  {service.name}
+                </Link>
+              ))}
+            </div>
+          )}
 
           <Link to="/services" onClick={closeAll}>
             <Button text="Book Now" />
@@ -190,26 +212,11 @@ const Navbar = () => {
 
           {!userProfile ? (
             <>
-              <Link to="/sign-up" className="text-[#FAC200] font-bold border border-[#FAC200] text-center py-2 rounded-md hover:bg-[#FAC200] hover:text-white transition" onClick={closeAll}>
-                Sign up
-              </Link>
-              <Link to="/login" className="bg-[#FAC200] font-bold text-black text-center py-2 rounded-md" onClick={closeAll}>
-                Login
-              </Link>
+              <Link to="/login" onClick={closeAll}>Login</Link>
             </>
           ) : (
             <>
-              {["/my-profile", "/my-orders"].map((path) => (
-                <Link key={path} to={path} className="text-lg font-semibold" onClick={closeAll}>
-                  {path.slice(1).replace("-", " ")}
-                </Link>
-              ))}
-              {userProfile.role === "Admin" && (
-                <Link to="/dashboard" className="text-lg font-semibold" onClick={closeAll}>
-                  Dashboard
-                </Link>
-              )}
-              <button className="text-left text-red-600 font-semibold mt-4" onClick={handleLogout}>
+              <button className="text-red-500 text-left mt-4" onClick={handleLogout}>
                 Logout
               </button>
             </>
