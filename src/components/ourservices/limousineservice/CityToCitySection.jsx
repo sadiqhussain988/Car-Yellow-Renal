@@ -15,32 +15,32 @@ const eventFleetImage = image;
 const EventTransportSection = () => {
   const features = [
     {
-      icon: <FiClock className="text-3xl text-[#F3B800]" />,
+      icon: <FiClock className="text-3xl text-[black]" />,
       title: "On-Time Arrivals",
       description: "Professional drivers ensure punctual service for all guests.",
     },
     {
-      icon: <FiCalendar className="text-3xl text-[#F3B800]" />,
+      icon: <FiCalendar className="text-3xl text-[black]" />,
       title: "Flexible Scheduling",
       description: "Coordinate pickups, drop-offs, and multiple stops efficiently.",
     },
     {
-      icon: <MdEventSeat className="text-3xl text-[#F3B800]" />,
+      icon: <MdEventSeat className="text-3xl text-[black]" />,
       title: "Multiple Vehicle Support",
       description: "Manage large groups with our fleet of buses, vans, and cars.",
     },
     {
-      icon: <FiDollarSign className="text-3xl text-[#F3B800]" />,
+      icon: <FiDollarSign className="text-3xl text-[black]" />,
       title: "Transparent Pricing",
       description: "All costs included with no hidden fees for large-scale events.",
     },
     {
-      icon: <FiRefreshCcw className="text-3xl text-[#F3B800]" />,
+      icon: <FiRefreshCcw className="text-3xl text-[black]" />,
       title: "Reliable Drivers",
       description: "Experienced professionals for smooth and safe travel.",
     },
     {
-      icon: <FiWifi className="text-3xl text-[#F3B800]" />,
+      icon: <FiWifi className="text-3xl text-[black]" />,
       title: "Connectivity & Coordination",
       description: "Stay in touch and track logistics during transport.",
     },
@@ -52,7 +52,7 @@ const EventTransportSection = () => {
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-4xl font-bold text-black leading-tight">
           Large-Scale Event
-          <span className="block text-[#F3B800] text-3xl md:text-4xl font-bold mt-2">
+          <span className="block text-[black] text-3xl md:text-4xl font-bold mt-2">
             Transportation Management
           </span>
         </h1>
@@ -73,11 +73,11 @@ const EventTransportSection = () => {
             />
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">100+</div>
+                <div className="text-2xl font-bold text-[black]">100+</div>
                 <div className="text-sm text-gray-600">Vehicles Available</div>
               </div>
               <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">99%</div>
+                <div className="text-2xl font-bold text-[black]">99%</div>
                 <div className="text-sm text-gray-600">On-Time Service</div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const EventTransportSection = () => {
             key={index}
             className="bg-white p-7 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FFEE02] to-black"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[black] to-black"></div>
             <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-[#f9f9f7] to-[#f9f8f7] shadow rounded-xl mb-4 text-3xl">
               {feature.icon}
             </div>

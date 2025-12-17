@@ -37,21 +37,21 @@ const Services = () => {
 
         {/* Section Header */}
         <div className="mb-12">
-          <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md mx-auto">
+          <div className="inline-flex items-center gap-2 bg-[black] text-white px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md mx-auto">
             <FaStar className="w-4 h-4" />
             <span>Our Services</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold leading-tight text-gray-900 mx-auto max-w-3xl">
             Premium Corporate{" "}
-            <span className="text-[#D68F00]">Transport Solutions Across the UK</span>
+            <span className="text-[black]">Transport Solutions Across the UK</span>
           </h1>
 
           <p className="mt-4 text-gray-600 text-base sm:text-lg md:text-xl mx-auto max-w-4xl">
             Reliable, comfortable, and professional transport services for businesses, clients, and corporate events. Choose the right vehicle for your needs.
           </p>
 
-          <div className="w-20 h-1 bg-[#D68F00] mx-auto mt-6 rounded-full"></div>
+          <div className="w-20 h-1 bg-[black] mx-auto mt-6 rounded-full"></div>
         </div>
 
         {/* Services Grid */}
@@ -62,7 +62,7 @@ const Services = () => {
               className="group relative bg-white rounded-2xl overflow-hidden transition-transform duration-500 hover:-translate-y-2 shadow-md hover:shadow-2xl border border-gray-200 flex flex-col"
             >
               {/* Gradient Line */}
-              <div className="h-1 bg-gradient-to-r from-[#D68F00] to-black"></div>
+              <div className="h-1 bg-gradient-to-r from-[black] to-black"></div>
 
               {/* Image */}
               <div className="relative overflow-hidden aspect-[4/3] sm:aspect-[16/9]">
@@ -81,12 +81,10 @@ const Services = () => {
                     <h2 className="text-xl font-bold text-gray-900 group-hover:text-black transition-colors duration-300">
                       {data.title}
                     </h2>
-                    <div className="w-8 h-8 bg-[#D68F00] rounded-full flex items-center justify-center transform group-hover:rotate-90 transition-transform duration-500">
-                      <div className="w-2 h-2 bg-black rounded-full"></div>
-                    </div>
+                   
                   </div>
 
-                  <h3 className="text-sm uppercase text-amber-500 font-medium mb-2">
+                  <h3 className="text-sm uppercase text-black font-medium mb-2">
                     {data.subtitle}
                   </h3>
 

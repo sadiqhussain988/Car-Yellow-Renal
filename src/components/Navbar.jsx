@@ -30,7 +30,7 @@ const serviceLinks = [
 ];
 
 const navItemClass =
-  "relative font-medium text-gray-800 hover:text-[#D68F00] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#F5B533] after:transition-all after:duration-300 hover:after:w-full";
+  "relative font-medium text-gray-800 hover:text-[black] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[black] after:transition-all after:duration-300 hover:after:w-full";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -136,7 +136,7 @@ const Navbar = () => {
                       <Link
                         key={service.name}
                         to={service.path}
-                        className="block px-4 py-3 text-base text-gray-700 hover:bg-[#FFF4DB] hover:text-black transition hover:text-base"
+                        className="block px-4 py-3 text-base text-gray-700 hover:bg-black/5 hover:shadow-black/10 hover:text-black transition hover:text-base"
                         onClick={closeAll}
                       >
                         {service.name}
@@ -341,7 +341,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <IoMdMenu
-              className="text-2xl sm:text-3xl text-gray-800 cursor-pointer hover:text-[#D68F00] transition"
+              className="text-2xl sm:text-3xl text-gray-800 cursor-pointer hover:text-[black] transition"
               onClick={() => setShowSidebar(true)}
             />
           </div>

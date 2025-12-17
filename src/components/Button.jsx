@@ -40,7 +40,7 @@ const Button = ({
       >
         {/* Expanding hover circle */}
         <span
-          className="pointer-events-none absolute w-2 h-2 bg-[#F5B533] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-700 ease-in-out group-hover:scale-[28] motion-reduce:transition-none motion-reduce:scale-0"
+          className="pointer-events-none absolute w-2 h-2 bg-[white] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-700 ease-in-out group-hover:scale-[28] motion-reduce:transition-none motion-reduce:scale-0"
         />
 
         {/* Gradient overlay */}

@@ -42,71 +42,72 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-14 px-6">
-      
-      {/* ---------- HEADER ---------- */}
+    <section className="bg-gray-50 min-h-screen py-16 px-6">
+      {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="text-4xl font-extrabold text-black leading-tight">
           Long-Term Fleet Leasing for{" "}
-          <span className="text-[#F3B800]">Businesses</span>
+          <span className="text-gray-900">Businesses</span>
         </h1>
         <p className="text-gray-600 mt-4 text-lg">
-          Get complete control of your company’s mobility needs with reliable, cost-efficient,
-          and professionally managed fleet leasing solutions.
+          Get complete control of your company’s mobility needs with reliable,
+          cost-efficient, and professionally managed fleet leasing solutions.
         </p>
       </div>
 
-      {/* ---------- 2-COLUMN FAQ GRID ---------- */}
+      {/* FAQ Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-[#F3B800] p-6 rounded-2xl shadow-md border border-gray-200
+            className="bg-white p-6 rounded-2xl shadow-md border border-gray-200
                        hover:shadow-xl transition-all duration-300"
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center"
+              className="w-full flex justify-between items-center text-left"
             >
-              <span className="text-lg font-semibold text-black text-left">
+              <span className="text-lg font-semibold text-gray-900">
                 {faq.question}
               </span>
 
               {openIndex === index ? (
-                <FiMinus className="text-xl cursor-pointer text-gray-900" />
+                <FiMinus className="text-xl text-black" />
               ) : (
-                <FiPlus className="text-xl cursor-pointer text-gray-900" />
+                <FiPlus className="text-xl text-black" />
               )}
             </button>
 
             <div
               className={`overflow-hidden transition-all duration-300 ${
-                openIndex === index ? "max-h-52 mt-3" : "max-h-0"
+                openIndex === index ? "max-h-52 mt-4" : "max-h-0"
               }`}
             >
-              <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+              <p className="text-gray-600 leading-relaxed">
+                {faq.answer}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* ---------- FOOTER CALL TO ACTION ---------- */}
-      <div className="text-center mt-16">
+      {/* CTA */}
+      <div className="text-center mt-20">
         <h3 className="text-2xl font-bold text-black mb-3">
           Need a Custom Fleet Plan?
         </h3>
-        <p className="text-gray-600 mb-5">
+        <p className="text-gray-600 mb-6">
           Our enterprise specialists will help you design a tailored mobility solution.
         </p>
         <a
           href="/contact"
-          className="bg-[#F3B800] text-black font-semibold px-8 py-3 rounded-xl 
-                     shadow-md hover:bg-black hover:text-white transition-all duration-300"
+          className="inline-block bg-black text-white font-semibold px-8 py-3 rounded-xl
+                     shadow-md hover:bg-gray-900 transition-all duration-300"
         >
           Request Consultation
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

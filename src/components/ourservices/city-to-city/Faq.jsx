@@ -46,7 +46,7 @@ const FAQPage = () => {
     <div className="bg-gray-50 min-h-screen py-6 px-6">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="text-4xl font-extrabold text-gray-900">
-          Frequently <span className="text-[#F3B800]">Asked Questions</span>
+          Frequently <span className="text-[black]">Asked Questions</span>
         </h1>
         <p className="text-gray-600 mt-4">
           Learn everything you need about our corporate employee transportation services, compliance, analytics, and booking solutions.

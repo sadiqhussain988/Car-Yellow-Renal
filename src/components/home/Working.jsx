@@ -87,7 +87,7 @@ const ServicesCards = () => {
       {/* Heading */}
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-4xl font-bold text-gray-900">
-          Our <span className="bg-gradient-to-r from-[#cb8c28] to-[#F5A623] bg-clip-text text-transparent">Premium Services</span>
+          Our <span className="text-black">Premium Services</span>
         </h2>
         <p className="text-gray-600 mt-2 text-lg">
           Premium travel & chauffeur solutions designed for your comfort.
@@ -122,11 +122,11 @@ const ServicesCards = () => {
               </div>
 
               <div className="p-6 space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 transition-colors duration-300">
                   {item.title}
                 </h3>
 
-                <p className="text-sm font-medium text-yellow-600 tracking-wide">
+                <p className="text-sm font-medium text-black tracking-wide">
                   {item.subtitle}
                 </p>
 

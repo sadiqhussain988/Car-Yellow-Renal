@@ -8,6 +8,7 @@ import {
   FaDoorOpen,
   FaStar,
 } from "react-icons/fa";
+import Button from "../Button";
 
 const PopularServices = () => {
   const { data, isLoading, error } = useGetAllServicesQuery();
@@ -30,12 +31,12 @@ const PopularServices = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md mx-auto">
+          <div className="inline-flex items-center gap-2 bg-[black] text-white px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md mx-auto">
                      <FaStar className="w-4 h-4" />
                      <span>Popular Rental Deals</span>
                    </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            Most Popular <span className="text-[#F6B626]">Rental Deals</span>
+            Most Popular <span className="text-[black]">Rental Deals</span>
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             Experience our top-rated vehicles with exceptional comfort and
@@ -62,7 +63,7 @@ const PopularServices = () => {
                     className="w-full h-48 md:h-full object-cover"
                   />
                   <div className="absolute top-3 right-3 bg-black/80 text-white px-2 py-1 rounded-full flex items-center text-xs">
-                    <FaStar className="text-[#F6B626] mr-1" />
+                    <FaStar className="text-[black] mr-1" />
                     {service.rating?.toFixed(1) || "4.8"}
                   </div>
                 </div>
@@ -70,7 +71,7 @@ const PopularServices = () => {
                 {/* Content Section */}
                 <div className="md:w-3/5 p-6 flex flex-col">
                   <div className="flex-grow">
-                    <h3 className="text-xl font-bold text-gray-900 transition duration-500 ease-in-out hover:text-[#F6B626]">
+                    <h3 className="text-xl font-bold text-gray-900 transition duration-500 ease-in-out hover:text-[black]">
                       {service.serviceName}
                     </h3>
                     <span className="inline-block px-2 py-1 text-xs font-semibold text-gray-700 bg-gray-100 rounded-full mb-3">
@@ -80,13 +81,13 @@ const PopularServices = () => {
                     {/* Features Grid */}
                     <div className="grid grid-cols-2 gap-3 mb-4">
                       <div className="flex items-center text-gray-700">
-                        <FaUser className="w-4 h-4 mr-2 text-[#F6B626]" />
+                        <FaUser className="w-4 h-4 mr-2 text-[black]" />
                         <span className="text-sm">
                           {service.passengers || "4"} Seats
                         </span>
                       </div>
                       <div className="flex items-center text-gray-700">
-                        <FaCarSide className="w-4 h-4 mr-2 text-[#F6B626]" />
+                        <FaCarSide className="w-4 h-4 mr-2 text-[black]" />
                         <span className="text-sm">Automatic</span>
                       </div>
                       <div className="flex items-center text-gray-700">
@@ -117,23 +118,10 @@ const PopularServices = () => {
                       <Link
                         to={`/booking/${service._id}`}
                         state={{ service }}
-                        className="bg-[#F6B626] hover:bg-[#0f0f0e] hover:text-gray-100 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center"
+                       
                       >
-                        Book Now
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          ></path>
-                        </svg>
+                       <Button text="Book Now" />
+                       
                       </Link>
                     </div>
                   </div>

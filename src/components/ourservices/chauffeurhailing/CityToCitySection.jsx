@@ -35,37 +35,37 @@ const CityToCitySection = () => {
   // Enterprise B2B Feature Grid
   const features = [
     {
-      icon: <FiTruck className="text-3xl text-[#F3B800]" />,
+      icon: <FiTruck className="text-3xl text-[black]" />,
       title: "Enterprise Fleet Deployment",
       description:
         "Deploy fully managed sedans, SUVs, and vans for daily employee commute or corporate assignments.",
     },
     {
-      icon: <FiTrendingUp className="text-3xl text-[#F3B800]" />,
+      icon: <FiTrendingUp className="text-3xl text-[black]" />,
       title: "Cost Optimization Programs",
       description:
         "Reduce expenses with predictable monthly billing and zero maintenance overhead.",
     },
     {
-      icon: <FiUsers className="text-3xl text-[#F3B800]" />,
+      icon: <FiUsers className="text-3xl text-[black]" />,
       title: "HR & Admin Integration",
       description:
         "Sync transport needs directly with HR shifts, attendance, and workforce schedules.",
     },
     {
-      icon: <FiClipboard className="text-3xl text-[#F3B800]" />,
+      icon: <FiClipboard className="text-3xl text-[black]" />,
       title: "Contract-Based Leasing",
       description:
         "Flexible 6–24 month leasing contracts with guaranteed uptime and vehicle replacements.",
     },
     {
-      icon: <FiPieChart className="text-3xl text-[#F3B800]" />,
+      icon: <FiPieChart className="text-3xl text-[black]" />,
       title: "Advanced Fleet Analytics",
       description:
         "Track performance, route efficiency, vehicle usage, and punctuality in real-time.",
     },
     {
-      icon: <FiShield className="text-3xl text-[#F3B800]" />,
+      icon: <FiShield className="text-3xl text-[black]" />,
       title: "Corporate Level Safety Standards",
       description:
         "GPS surveillance, trained chauffeurs, and enterprise-grade compliance for secure mobility.",
@@ -79,7 +79,7 @@ const CityToCitySection = () => {
       <div className="text-center mb-14">
         <h1 className="text-4xl md:text-4xl font-extrabold text-gray-900">
           Long-Term Fleet Leasing
-          <span className="block text-[#F3B800] mt-2 text-3xl md:text-4xl">
+          <span className="block text-[black] mt-2 text-3xl md:text-4xl">
             Reliable Mobility Infrastructure for Enterprises
           </span>
         </h1>
@@ -107,7 +107,7 @@ const CityToCitySection = () => {
               <div
                 key={i}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  current === i ? "bg-[#F3B800]" : "bg-white opacity-60"
+                  current === i ? "bg-[black]" : "bg-white opacity-60"
                 }`}
               ></div>
             ))}
@@ -180,7 +180,7 @@ const CityToCitySection = () => {
               relative overflow-hidden
             "
           >
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FFEE02] to-black"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[black] to-black"></div>
 
             <div className="w-14 h-14 flex items-center justify-center 
               bg-gradient-to-r from-[#fbfbfa] to-[#f9f8f7] shadow rounded-xl mb-4 text-3xl">

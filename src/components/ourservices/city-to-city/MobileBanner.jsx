@@ -17,8 +17,8 @@ const MobileBanner = () => {
         <div className="flex-1 text-center lg:text-left">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-black px-4 py-2 rounded-full mb-6">
-            <div className="w-2 h-2 bg-[#FFEE02] rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-[#FFEE02]">
+            <div className="w-2 h-2 bg-[white] rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-white">
               Corporate Service
             </span>
           </div>
@@ -26,7 +26,7 @@ const MobileBanner = () => {
           {/* Title */}
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-900 leading-tight">
             Corporate Employee
-            <span className="block text-[#F3B800] mt-2">Transportation</span>
+            <span className="block  mt-2">Transportation</span>
           </h2>
 
           {/* Description */}
@@ -49,7 +49,7 @@ const MobileBanner = () => {
                 className="flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-lg"
               >
                 <svg
-                  className="w-4 h-4 text-blue-500"
+                  className="w-4 h-4 text-black"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >

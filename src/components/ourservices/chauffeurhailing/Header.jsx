@@ -55,7 +55,7 @@ const Hero = () => {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0B121A]/90 to-[#1A2533]/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0B121A]/70 to-[#1A2533]/70"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
         <div className="max-w-3xl animate-fadeIn">
@@ -67,11 +67,7 @@ const Hero = () => {
               return (
                 <span
                   key={i}
-                  className={
-                    isHL
-                      ? "bg-gradient-to-r from-[#FFEE02] to-[#F5A623] text-transparent bg-clip-text"
-                      : ""
-                  }
+                  className="text-white"
                 >
                   {word + " "}
                 </span>
@@ -99,8 +95,8 @@ const Hero = () => {
               onClick={() => setIndex(i)}
               className={`transition-all rounded-full ${
                 index === i
-                  ? "w-8 h-3 bg-gradient-to-r from-[#FFEE02] to-[#F5A623]"
-                  : "w-3 h-3 bg-white/30 hover:bg-[#FFEE02]"
+                ? "bg-white w-8 h-3 shadow-lg"
+                  : "bg-white/30 w-3 h-3 hover:bg-[white]"
               }`}
             />
           ))}

@@ -17,8 +17,8 @@ const MobileBanner = () => {
         <div className="flex-1 text-center lg:text-left max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-black/90 px-4 py-1.5 rounded-full mb-5 shadow-md">
-            <span className="w-2 h-2 bg-[#FFEE02] rounded-full animate-pulse"></span>
-            <span className="text-xs font-semibold text-[#FFEE02] tracking-wide">
+            <span className="w-2 h-2 bg-[white] rounded-full animate-pulse"></span>
+            <span className="text-xs font-semibold text-[white] tracking-wide">
               B2B PARTNER SOLUTION
             </span>
           </div>
@@ -26,11 +26,11 @@ const MobileBanner = () => {
           {/* Heading */}
           <h2 className="text-4xl lg:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
             Enterprise Transport with
-            <span className="block text-[#F3B800] mt-2">Linked Way Rides</span>
+            <span className="block text-[black] mt-2">Linked Way Rides</span>
           </h2>
 
           {/* Sub-text */}
-          <p className="text-gray-700 text-lg lg:text-xl leading-relaxed mb-7">
+          <p className="text-gray-900 text-lg lg:text-xl leading-relaxed mb-7">
             Offer your guests seamless car rides and transfers backed by corporate billing, priority dispatch, and dedicated account management. Perfect for hotels, resorts, and travel agencies.
           </p>
 
@@ -71,7 +71,7 @@ const MobileBanner = () => {
         {/* RIGHT IMAGE */}
         <div className="flex-1 mt-12 lg:mt-0 flex justify-center relative">
           <div className="relative group">
-            <div className="absolute -inset-6 bg-[#FFEE02] rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-30 transition"></div>
+            <div className="absolute -inset-6 bg-[black] rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-30 transition"></div>
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
               <img

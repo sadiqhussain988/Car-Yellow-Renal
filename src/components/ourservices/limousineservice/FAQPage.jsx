@@ -46,7 +46,7 @@ const FAQPage = () => {
       {/* PAGE HEADER */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h1 className="text-4xl font-bold text-black">
-          Frequently <span className="text-[#F3B800]">Asked Questions</span>
+          Frequently <span className="text-[black]">Asked Questions</span>
         </h1>
         <p className="text-gray-600 mt-4">
           Learn everything about our Event Transportation Management services, booking options, fleet coordination, and premium event logistics.
@@ -60,7 +60,7 @@ const FAQPage = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-[#F3B800] to-[#debe2e] border border-gray-200 rounded-2xl p-5 shadow-md hover:shadow-lg transition-all"
+              className=" border border-gray-200 rounded-2xl p-5 shadow-md hover:shadow-lg transition-all"
             >
               <button
                 onClick={() => toggleFAQ(index)}

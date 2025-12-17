@@ -47,7 +47,7 @@ const FAQSection = () => {
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-4xl md:text-4xl font-bold text-black">
-          FAQs for <span className="text-[#F3B800]">Partner Hotels & Agencies</span>
+          FAQs for <span className="text-[black]">Partner Hotels & Agencies</span>
         </h2>
         <p className="text-gray-600 mt-4 text-lg md:text-xl">
           Everything you need to know about partnering with Linked Way Rides to provide seamless airport transfers to your guests.
@@ -61,7 +61,7 @@ const FAQSection = () => {
            {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-[#F3B800] to-[#debe2e] border border-gray-200 rounded-2xl px-5 py-2 shadow-md hover:shadow-lg transition-all"
+              className=" border border-gray-200 rounded-2xl px-5 py-2 shadow-md hover:shadow-lg transition-all"
             >
               <button
                 onClick={() => toggleFAQ(index)}

@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useGetAllServicesQuery } from "../../redux/slices/ServiceApi";
+import Button from "../Button";
 
 const OurServices = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -84,7 +85,7 @@ const OurServices = () => {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Our Premium Services
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-900 max-w-2xl mx-auto">
           Choose from our wide range of transportation services tailored to your
           needs
         </p>
@@ -101,7 +102,7 @@ const OurServices = () => {
             <input
               type="text"
               placeholder="Search services..."
-              className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#F6B626] focus:border-transparent"
+              className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[black] focus:border-transparent"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               aria-label="Search services"
@@ -115,8 +116,8 @@ const OurServices = () => {
                 key={name}
                 className={`flex items-center gap-2 px-5 py-2.5 rounded-full shadow-sm cursor-pointer transition-all duration-200 ${
                   selectedCategory.toLowerCase() === name.toLowerCase()
-                    ? "bg-[#F6B626] text-gray-900 font-medium shadow-md"
-                    : "bg-white text-gray-700 hover:bg-gray-100"
+                    ? "bg-[black] text-gray-50 font-medium shadow-md"
+                    : "bg-white text-gray-900 hover:bg-gray-100"
                 }`}
                 onClick={() => setSelectedCategory(name)}
               >
@@ -148,7 +149,7 @@ const OurServices = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute top-3 right-3 bg-black bg-opacity-70 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center shadow-md">
-                    <FaStar className="text-[#F6B626] mr-1" />
+                    <FaStar className="text-[white] mr-1" />
                     4.8
                   </div>
 
@@ -160,7 +161,7 @@ const OurServices = () => {
                 <div className="p-6 sm:w-[60%] w-full flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-start mb-3">
-                      <h2 className="text-xl font-bold text-gray-900 transition duration-500 ease-in-out group-hover:text-[#F6B626]">
+                      <h2 className="text-xl font-bold text-gray-900 transition duration-500 ease-in-out">
                         {service.serviceName}
                       </h2>
 
@@ -203,11 +204,10 @@ const OurServices = () => {
                     </div> */}
                     <Link
                       to={`/booking/${service._id}`}
-                      state={{ service }}
-                      className="bg-[#F6B626] hover:bg-black hover:text-[#F6B626] text-gray-900 font-semibold py-2 px-5 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg"
+                      
                     >
-                      Book Now
-                      <FaArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    <Button text="Book Now" />
+                      
                     </Link>
                   </div>
                 </div>

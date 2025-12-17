@@ -60,7 +60,7 @@ const CityToCitySection = () => {
            B2B Reliable Transportation
         </h1>
 
-        <p className="text-[#F3B800] text-2xl md:text-3xl font-bold mt-3">
+        <p className="text-[black] text-2xl md:text-3xl font-bold mt-3">
           Reliable, Safe & Intelligent Mobility Solutions
         </p>
 
@@ -85,12 +85,12 @@ const CityToCitySection = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-gray-100 p-5 rounded-xl shadow-sm border border-gray-200 text-center">
-                <div className="text-3xl font-extrabold text-[#F3B800]">98%</div>
+                <div className="text-3xl font-extrabold text-[black]">98%</div>
                 <div className="text-sm text-gray-600">On-Time Arrival Rate</div>
               </div>
 
               <div className="bg-gray-100 p-5 rounded-xl shadow-sm border border-gray-200 text-center">
-                <div className="text-3xl font-extrabold text-[#F3B800]">100%</div>
+                <div className="text-3xl font-extrabold text-[black]">100%</div>
                 <div className="text-sm text-gray-600">Safety Compliance</div>
               </div>
             </div>
@@ -115,14 +115,14 @@ const CityToCitySection = () => {
               >
                 {/* Hover Animated Line */}
                 <div className="
-                  absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#F3B800] to-black
+                  absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[black] to-black
                   group-hover:w-full transition-all duration-500
                 "></div>
 
                 <div className="flex items-start">
                   {/* Hover Icon Reveal */}
                   <div className="
-                    text-3xl text-[#F3B800] mr-4 opacity-0 translate-x-[-10px]
+                    text-3xl text-[black] mr-4 opacity-0 translate-x-[-10px]
                     group-hover:opacity-100 group-hover:translate-x-0 
                     transition-all duration-500
                   ">
@@ -172,12 +172,12 @@ const CityToCitySection = () => {
             {/* Top Gradient Line */}
             <div className="
               absolute top-0 left-0 h-1 w-full 
-              bg-gradient-to-r from-[#FFEE02] to-black
+              bg-black
             "></div>
 
             {/* Hidden Icon on Hover */}
             <div className="
-              text-4xl text-[#F3B800] mb-4 opacity-0 translate-y-2 
+              text-4xl text-[black] mb-4 opacity-0 translate-y-2 
               group-hover:opacity-100 group-hover:translate-y-0 
               transition-all duration-500
             ">
@@ -195,7 +195,7 @@ const CityToCitySection = () => {
             {/* Bottom Hover Line */}
             <div className="
               absolute bottom-0 left-0 h-1 w-0 
-              bg-gradient-to-r from-[#F3B800] to-black
+              bg-gradient-to-r from-[black] to-black
               group-hover:w-full transition-all duration-500
             "></div>
           </div>

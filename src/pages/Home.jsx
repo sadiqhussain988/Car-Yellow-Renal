@@ -6,10 +6,11 @@ import Services from "../components/home/Services";
 import Faqs from "../components/home/Faqs";
 import Testimonials from '../components/home/Testimonials'
 import CarRentalStats from "../components/home/CarRentalStats";
-import PopularDestination from "../components/home/PopularDestination";
+// import PopularDestination from "../components/home/PopularDestination";
 import FairDeal from "../components/home/FairDeal";
 import Working from "../components/home/Working";
 import ContactIropsSection from "../components/home/ContactIropsSection";
+import BookingForm from "../components/home/BookingForm";
 // import WhyUs from "../components/home/WhyUs";
 // import Download from "../components/home/Download";
 const Home = () => {
@@ -18,13 +19,14 @@ const Home = () => {
       <Header />
       <TrustedCabService />
       <Working />
-      <PopularDestination/>
+      {/* <PopularDestination/> */}
       <FairDeal/>
       <CarRentalStats />
       <Services />
       <Testimonials/>
       <PopularServices />
       <Faqs />
+      <BookingForm/>
       <ContactIropsSection/>
 
 

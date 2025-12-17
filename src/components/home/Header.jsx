@@ -99,7 +99,7 @@ const Header = () => {
                   className={`relative ${
                     isWhite
                       ? "text-white"
-                      : "bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent"
+                      : "bg-gradient-to-r from-white to-white bg-clip-text text-transparent"
                   }`}
                 >
                   {word + " "}
@@ -149,8 +149,8 @@ const Header = () => {
               onClick={() => setCurrentIndex(index)}
               className={`transition-all duration-500 cursor-pointer rounded-full ${
                 currentIndex === index
-                  ? "bg-gradient-to-r from-yellow-400 to-yellow-600 w-10 h-3 shadow-lg"
-                  : "bg-white/30 w-3 h-3 hover:bg-yellow-400"
+                  ? "bg-white w-10 h-3 shadow-lg"
+                  : "bg-white/30 w-3 h-3 hover:bg-white"
               }`}
               whileHover={{ scale: 1.3 }}
             />

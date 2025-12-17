@@ -423,7 +423,7 @@ export default function PopularDestination() {
         className="text-center text-3xl sm:text-4xl font-bold mb-8 text-gray-900"
         variants={zoomIn}
       >
-        Our Most <span className="text-[#D68F00]">Popular Destinations</span>
+        Our Most <span className="text-[black]">Popular Destinations</span>
       </motion.h1>
 
       {/* Country List with scroll + arrows */}
@@ -433,7 +433,7 @@ export default function PopularDestination() {
           onClick={handlePrev}
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full z-10 hover:bg-blue-100 transition-all duration-300"
         >
-          <ChevronLeft className="w-6 h-6 text-blue-600" />
+          <ChevronLeft className="w-6 h-6 text-black" />
         </button>
 
         {/* Scrollable Countries */}
@@ -448,8 +448,8 @@ export default function PopularDestination() {
               onClick={() => handleCountryClick(value)}
               className={`flex items-center gap-2 px-4 py-3 cursor-pointer border-b-2 min-w-max transition-all duration-300 rounded-lg ${
                 activeCountry.title === value.title
-                  ? "border-blue-600 text-blue-600 font-semibold scale-105 bg-blue-50 shadow-sm"
-                  : "border-transparent text-gray-600 hover:text-blue-500"
+                  ? "border-black text-black font-semibold scale-105 bg-blue-50 shadow-sm"
+                  : "border-transparent text-gray-600 hover:text-black"
               }`}
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, x: -20 }}
@@ -476,7 +476,7 @@ export default function PopularDestination() {
           onClick={handleNext}
           className="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full z-10 hover:bg-blue-100 transition-all duration-300"
         >
-          <ChevronRight className="w-6 h-6 text-blue-600" />
+          <ChevronRight className="w-6 h-6 text-black" />
         </button>
       </div>
 
@@ -484,7 +484,7 @@ export default function PopularDestination() {
       <motion.div className="mt-8 text-center" variants={fadeUp}>
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
           Popular in{" "}
-          <span className="text-blue-600">{activeCountry.title}</span>
+          <span className="text-black">{activeCountry.title}</span>
         </h2>
       </motion.div>
 

@@ -16,32 +16,32 @@ const airportImage = image;
 const CorporateAirportTransfers = () => {
   const features = [
     {
-      icon: <FiClock className="text-3xl text-[#F3B800]" />,
+      icon: <FiClock className="text-3xl text-[black]" />,
       title: "On-Time Pickups",
       description: "Ensure your staff and clients arrive on schedule, every time.",
     },
     {
-      icon: <FiCalendar className="text-3xl text-[#F3B800]" />,
+      icon: <FiCalendar className="text-3xl text-[black]" />,
       title: "Flexible Scheduling",
       description: "Book in advance or adjust based on flight times and business needs.",
     },
     {
-      icon: <MdEventSeat className="text-3xl text-[#F3B800]" />,
+      icon: <MdEventSeat className="text-3xl text-[black]" />,
       title: "Premium Comfort",
       description: "Travel in executive vehicles with ample space and amenities.",
     },
     {
-      icon: <FiDollarSign className="text-3xl text-[#F3B800]" />,
+      icon: <FiDollarSign className="text-3xl text-[black]" />,
       title: "Transparent Pricing",
       description: "Corporate rates with all taxes, tolls, and fees included—no surprises.",
     },
     {
-      icon: <FiRefreshCcw className="text-3xl text-[#F3B800]" />,
+      icon: <FiRefreshCcw className="text-3xl text-[black]" />,
       title: "Reliable Service",
       description: "Professional chauffeurs track flights and adjust pickup timings.",
     },
     {
-      icon: <FiWifi className="text-3xl text-[#F3B800]" />,
+      icon: <FiWifi className="text-3xl text-[black]" />,
       title: "Stay Connected",
       description: "Wi-Fi and charging available in most vehicles for productivity on the go.",
     },
@@ -53,7 +53,7 @@ const CorporateAirportTransfers = () => {
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-4xl font-bold text-black leading-tight">
           Corporate Airport Transfers
-          <span className="block text-[#F3B800] text-3xl md:text-4xl font-bold mt-2">
+          <span className="block text-[black] text-3xl md:text-4xl font-bold mt-2">
             Reliable Rides for Airlines & Businesses
           </span>
         </h1>
@@ -74,11 +74,11 @@ const CorporateAirportTransfers = () => {
             />
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">99%</div>
+                <div className="text-2xl font-bold text-[black]">99%</div>
                 <div className="text-sm text-gray-600">On-Time Arrivals</div>
               </div>
               <div className="bg-gray-100 p-4 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-2xl font-bold text-[#F3B800]">100%</div>
+                <div className="text-2xl font-bold text-[black]">100%</div>
                 <div className="text-sm text-gray-600">Door-to-Door Convenience</div>
               </div>
             </div>
@@ -123,7 +123,7 @@ const CorporateAirportTransfers = () => {
             key={index}
             className="bg-white p-7 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FFEE02] to-black"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[black] to-black"></div>
             <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-[#f9f9f7] to-[#f9f8f7] shadow rounded-xl mb-4 text-3xl">
               {feature.icon}
             </div>

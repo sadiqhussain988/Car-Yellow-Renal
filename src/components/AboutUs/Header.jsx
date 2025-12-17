@@ -88,11 +88,7 @@ const Hero = () => {
               return (
                 <span
                   key={i}
-                  className={
-                    isWhite
-                      ? "text-white"
-                      : "bg-gradient-to-r from-[#FFEE02] to-[#F5A623] bg-clip-text text-transparent"
-                  }
+                  className="text-white"
                 >
                   {word + " "}
                 </span>
@@ -120,8 +116,8 @@ const Hero = () => {
               onClick={() => setCurrentIndex(index)}
               className={`transition-all duration-500 cursor-pointer rounded-full ${
                 currentIndex === index
-                  ? "bg-gradient-to-r from-[#FFEE02] to-[#F5A623] w-8 h-3 shadow-lg"
-                  : "bg-white/30 w-3 h-3 hover:bg-[#FFEE02]"
+                  ? "bg-white w-8 h-3 shadow-lg"
+                  : "bg-white/30 w-3 h-3 hover:bg-white"
               }`}
             />
           ))}

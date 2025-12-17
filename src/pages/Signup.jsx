@@ -106,10 +106,10 @@ export default function RegisterPage() {
 
           <div className="text-center mb-8">
             <h2
-              className="text-4xl font-bold text-gary-800 mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent"
+              className="text-4xl font-bold text-gary-800 mb-3 bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent"
               data-aos="fade-down"
             >
-              Create <span className="text-[#F9B920]">Account</span> 
+              Create <span className="text-[black]">Account</span> 
             </h2>
           </div>
 
@@ -122,7 +122,7 @@ export default function RegisterPage() {
                 <input
                   type="text"
                   name="name"
-                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
+                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[black] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
                   placeholder="Enter your full name"
                   value={formData.name}
                   onChange={handleChange}
@@ -137,7 +137,7 @@ export default function RegisterPage() {
                 <input
                   type="email"
                   name="email"
-                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
+                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[black] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleChange}
@@ -154,7 +154,7 @@ export default function RegisterPage() {
                   name="phone"
                   inputMode="numeric"
                   pattern="[0-9]*"
-                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
+                  className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[black] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400"
                   placeholder="Enter your mobile number"
                   value={formData.phone}
                   onChange={(e) => {
@@ -173,7 +173,7 @@ export default function RegisterPage() {
                   <input
                     type={showPassword ? "text" : "password"}
                     name="password"
-                    className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#F9B920] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400 pr-12"
+                    className="w-full border border-gray-200 p-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-[black] focus:border-transparent transition-all duration-200 bg-gray-50 placeholder-gray-400 pr-12"
                     placeholder="Enter your password"
                     value={formData.password}
                     onChange={handleChange}
@@ -217,7 +217,7 @@ export default function RegisterPage() {
                 }
                 className={`w-5 h-5 border-2 rounded-md flex items-center justify-center cursor-pointer transition-all duration-200 ${
                   formData.rememberMe
-                    ? "bg-[#F9B920] border-[#F9B920]"
+                    ? "bg-[black] border-[black]"
                     : "border-gray-300 bg-white"
                 }`}
               >
@@ -249,7 +249,7 @@ export default function RegisterPage() {
               type="submit"
               data-aos="zoom-in"
               data-aos-delay="600"
-              className={`relative w-full mt-3 overflow-hidden group bg-[#F9B920]  text-white p-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${
+              className={`relative w-full mt-3 overflow-hidden group bg-[black]  text-white p-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${
                 isLoading ? "cursor-not-allowed opacity-70" : ""
               }`}
               disabled={isLoading}

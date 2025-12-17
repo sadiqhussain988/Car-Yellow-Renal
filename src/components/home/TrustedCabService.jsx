@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { CiCalendarDate } from "react-icons/ci";
-import { FaHeadset, FaShieldAlt, FaCar, FaStar } from "react-icons/fa";
+import { FaHeadset, FaShieldAlt, FaCar, FaStar, FaCarAlt } from "react-icons/fa";
 import { IoLocationSharp, IoTime } from "react-icons/io5";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 import image from "../../../public/Link Way 01.png"
 const features = [
-  { icon: IoLocationSharp, text: "Reliable Transportation", color: "text-blue-500" },
-  { icon: FaShieldAlt, text: "Safe & Secure", color: "text-green-500" },
-  { icon: IoTime, text: "On-Time Service", color: "text-purple-500" },
-  { icon: FaCar, text: "Comfortable Fleet", color: "text-yellow-500" },
+  { icon: FaCarAlt, text: "Reliable Transportation", color: "text-black" },
+  { icon: FaShieldAlt, text: "Safe & Secure", color: "text-black" },
+  { icon: IoTime, text: "On-Time Service", color: "text-black" },
+  { icon: FaCar, text: "Comfortable Fleet", color: "text-black" },
 ];
 
 const TrustedCabService = () => {
@@ -63,7 +63,7 @@ const TrustedCabService = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <div className="flex items-center gap-2 text-white">
-                  <FaShieldAlt className="text-green-400" />
+                  <FaShieldAlt className="text-white" />
                   <span className="text-sm font-medium">Verified Chauffeurs</span>
                 </div>
               </div>
@@ -102,7 +102,7 @@ const TrustedCabService = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
+            <div className="inline-flex items-center gap-2 bg-[black] text-white px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
             <FaStar className="w-4 h-4" />
             <span> Premium Experience</span>
           </div>
@@ -115,7 +115,7 @@ const TrustedCabService = () => {
               transition={{ delay: 0.4 }}
             >
               Enjoy a{" "}
-              <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
+              <span className="text-black">
                 linked way rides
               </span>{" "}
               with total comfort & safety
@@ -142,7 +142,7 @@ const TrustedCabService = () => {
               {features.map((f, i) => (
                 <motion.div
                   key={i}
-                  className="flex items-center gap-3 px-5 py-2 bg-white/90 backdrop-blur-md rounded-xl border border-gray-200 hover:border-yellow-300 hover:shadow-xl transition-all duration-300"
+                  className="flex items-center gap-3 px-5 py-2 bg-white/90 backdrop-blur-md rounded-xl border border-gray-200 hover:border-black/10 hover:shadow-xl transition-all duration-300"
                   whileHover={{ y: -5, scale: 1.02 }}
                 >
                   <div className={`p-3 rounded-lg ${f.color} bg-white shadow-sm`}>
@@ -172,12 +172,12 @@ const TrustedCabService = () => {
 
               <div className="flex items-center gap-4 text-gray-600">
                 <div className="flex items-center gap-2">
-                  <FaHeadset className="text-yellow-600 text-xl" />
+                  <FaHeadset className="text-black text-xl" />
                   <span className="text-sm">24/7 Support</span>
                 </div>
                 <div className="h-4 w-px bg-gray-300"></div>
                 <div className="flex items-center gap-2">
-                  <CiCalendarDate className="text-yellow-600 text-xl" />
+                  <CiCalendarDate className="text-black text-xl" />
                   <span className="text-sm">Easy Booking</span>
                 </div>
               </div>
@@ -200,7 +200,7 @@ const TrustedCabService = () => {
                 <div>
                   <div className="flex items-center gap-1 mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} className="text-yellow-500 text-sm" />
+                      <FaStar key={i} className="text-black text-sm" />
                     ))}
                   </div>
 

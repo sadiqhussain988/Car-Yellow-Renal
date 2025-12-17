@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import logo from "../assets/companyLogo.png";
+import logo from "../assets/f-logo.png";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { LuChevronsLeft } from "react-icons/lu";
@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="w-full md:w-1/3 relative flex justify-end">
           {/* Background shape */}
           <div
-            className="w-[85%] sm:w-[75%] md:w-[330px] h-[55px] sm:h-[65px] md:h-[70px] bg-[#F5B533] shrink-0"
+            className="w-[85%] sm:w-[75%] md:w-[330px] h-[55px] sm:h-[65px] md:h-[70px] bg-white shrink-0"
             style={{ clipPath: "polygon(20% 3%, 100% 0, 100% 100%, 0% 100%)" }}
           ></div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
               </motion.p>
 
               {/* Icons & Number */}
-              <div className="flex items-center  justify-center space-x-3 sm:space-x-4 md:space-x-5">
+              <div className="flex items-center justify-center space-x-3 sm:space-x-4 md:space-x-5">
                 <a
                   href="tel:+00447775251519"
                   className="text-black hover:scale-110 transition-transform"
@@ -70,7 +70,7 @@ const Footer = () => {
                 </a>
 
                 <motion.p
-                  className="text-sm  sm:text-md md:text-lg lg:text-xl"
+                  className="text-sm sm:text-md md:text-lg lg:text-xl"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -95,7 +95,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-[#F6B626]">Linkway Rides </span>is a smart
+            <span className="text-gray-200">Linkway Rides </span>is a smart
             transportation platform designed to make every journey seamless and
             stress free. By connecting passengers with reliable and vetted
             drivers, we simplify the process of booking rides while ensuring
@@ -119,18 +119,18 @@ const Footer = () => {
             </motion.h3>
             <div className="relative mt-2">
               <hr className="w-[90%] border-gray-500" />
-              <hr className="w-[30%] bg-[#ba8722] h-1 rounded-full mt-[-2px]" />
+              <hr className="w-[30%] bg-gray-500 h-1 rounded-full mt-[-2px]" />
             </div>
             <div className="flex flex-col gap-3 mt-2">
               {["Home", "Services", "About-us", "Contact"].map(
                 (item, index) => (
                   <div key={index} className="flex gap-2 items-center">
-                    <LuChevronsLeft className="mt-0.5" />
+                    <LuChevronsLeft className="mt-0.5 text-white" />
                     <Link
                       to={`/${
                         item ? item.toLowerCase().replace(" ", "-") : "about-us"
                       }`}
-                      className="relative text-white transition-all duration-300 ease-in-out after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#c68a12] after:transition-all after:duration-300 hover:after:w-full rounded-full"
+                      className="relative text-white transition-all duration-300 ease-in-out after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 hover:after:w-full rounded-full"
                     >
                       {item}
                     </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
             </motion.h3>
             <div className="relative mt-2">
               <hr className="w-[90%] border-gray-500" />
-              <hr className="w-[30%] bg-[#bc8924] h-1 rounded-full mt-[-2px]" />
+              <hr className="w-[30%] bg-gray-500 h-1 rounded-full mt-[-2px]" />
             </div>
             <motion.p
               className="my-2 text-sm text-gray-400"
@@ -174,7 +174,7 @@ const Footer = () => {
                     className="w-8 h-8 flex items-center justify-center relative overflow-hidden border border-black/15 rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
                   >
                     <Icon className="text-gray-900 relative z-10 transition-all duration-300 group-hover:text-white text-sm" />
-                    <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#F5B533] z-0 transition-all duration-500 group-hover:top-0"></div>
+                    <div className="absolute top-full left-0 w-full h-full rounded-full bg-gray-700 z-0 transition-all duration-500 group-hover:top-0"></div>
                   </button>
                 )
               )}
@@ -196,7 +196,7 @@ const Footer = () => {
         >
           © Copyright Reserved By Linkway Rides 2025
         </motion.p>
-        <div className="text-white items-center cursor-pointer flex gap-1 hover:text-[#cc8f16] mt-2 md:mt-0">
+        <div className="text-white items-center cursor-pointer flex gap-1 hover:text-gray-400 mt-2 md:mt-0">
           <FaFacebook className="text-white" />
           <p>Facebook</p>
         </div>

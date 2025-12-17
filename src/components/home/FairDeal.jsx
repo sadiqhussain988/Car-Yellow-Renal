@@ -70,7 +70,7 @@ export default function FairDeal() {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <div className="inline-flex items-center gap-2 bg-[#D68F00] text-black px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
+          <div className="inline-flex items-center gap-2 bg-[black] text-white px-5 py-2 rounded-full text-sm font-medium mb-5 shadow-md">
             <FaStar className="w-4 h-4" />
             <span>Trusted Transport Solutions</span>
           </div>
@@ -79,13 +79,13 @@ export default function FairDeal() {
             variants={zoomInUp}
           >
             Travel Together with{" "}
-            <span className="text-[#D68F00] drop-shadow-md">Confidence</span>
+            <span className="text-[black] drop-shadow-md">Confidence</span>
           </motion.h1>
           <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Wherever your destination, we ensure your journey is smooth, safe,
             and stylish — every time.
           </p>
-          <div className="w-28 h-1 bg-[#D68F00] mx-auto mt-6 rounded-full"></div>
+          <div className="w-28 h-1 bg-[black] mx-auto mt-6 rounded-full"></div>
         </motion.div>
 
         {/* Layout */}
@@ -110,12 +110,12 @@ export default function FairDeal() {
               </div>
 
               {/* Badge */}
-              <div className="absolute -bottom-6 -right-6 hidden sm:flex bg-[#D68F00] text-white px-5 py-3 rounded-2xl shadow-lg">
+              <div className="absolute -bottom-6 -right-6 hidden sm:flex bg-[black] text-white px-5 py-3 rounded-2xl shadow-lg">
                 <div className="flex items-center gap-3">
                   <FaShieldAlt className="w-8 h-8" />
                   <div>
                     <p className="text-sm font-bold">Safe & Reliable</p>
-                    <p className="text-xs font-medium text-gray-700">
+                    <p className="text-xs font-medium text-gray-50">
                       Always on Time
                     </p>
                   </div>
@@ -146,7 +146,7 @@ export default function FairDeal() {
             viewport={{ once: true }}
             variants={fadeLeft}
           >
-            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[black] to-[#d27e29] bg-clip-text text-transparent mb-4 leading-snug">
+            <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 leading-snug">
               {serviceHighlights.title}
             </h2>
 
@@ -159,13 +159,13 @@ export default function FairDeal() {
               {serviceHighlights.features.map((item, i) => (
                 <motion.div
                   key={item.id}
-                  className="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-md hover:translate-y-1 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#D68F00]"
+                  className="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-md hover:translate-y-1 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-black/10"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 + i * 0.1 }}
                 >
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#D68F00] rounded-xl flex items-center justify-center text-white">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[black] rounded-xl flex items-center justify-center text-white">
                     {item.icon}
                   </div>
                   <p className="text-gray-800 text-sm sm:text-base leading-relaxed font-medium">
